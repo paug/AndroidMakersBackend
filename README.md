@@ -6,8 +6,6 @@ You can explore the API using the [playground](https://androidmakers-2023.ew.r.a
 https://androidmakers-2023.ew.r.appspot.com/playground
 ```
 
-![sandbox](https://user-images.githubusercontent.com/3974977/229364452-21c8e97e-fed1-47b0-8a41-d679884e579d.png)
-
 For an example, the following query (used in the screenshot above) returns the 100 first sessions:
 
 ```graphql
