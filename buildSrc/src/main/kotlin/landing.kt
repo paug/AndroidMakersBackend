@@ -6,7 +6,7 @@ import com.google.cloud.storage.StorageOptions
 import org.gradle.api.Project
 import java.io.File
 
-fun Project.gcpServiceAccountFile() = rootProject.file("backend/datastore/src/jvmMain/resources/gcp_service_account_key.json")
+fun Project.gcpServiceAccountFile() = rootProject.file("backend/service-graphql/src/main/resources/firebase_service_account_key.json")
 
 fun Project.uploadLandingPage() {
     val storage: Storage = StorageOptions.newBuilder()
