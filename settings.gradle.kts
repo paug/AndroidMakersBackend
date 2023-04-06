@@ -3,18 +3,8 @@ pluginManagement {
         it.apply {
             mavenCentral()
             google()
-            maven(url = "https://androidx.dev/storage/compose-compiler/repository")
-            maven(url = "https://maven.pkg.jetbrains.space/public/p/compose/dev")
-            gradlePluginPortal {
-                content {
-                }
-            }
-            maven {
-                url = uri("https://jitpack.io")
-                content {
-                    includeGroup("com.github.QuickBirdEng.kotlin-snapshot-testing")
-                }
-            }
+            gradlePluginPortal()
+
             exclusiveContent {
                 forRepository {
                     maven {
@@ -43,15 +33,8 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Confetti"
-include(":androidApp")
-include(":androidBenchmark")
-include(":shared")
+rootProject.name = "AndroidMakersBackend"
 include(":backend:service-graphql")
-include(":landing-page")
-include(":wearApp")
-include(":wearBenchmark")
-include(":compose-desktop")
 
 check(JavaVersion.current().isCompatibleWith(JavaVersion.VERSION_17)) {
     "This project needs to be run with Java 17 or higher (found: ${JavaVersion.current()})."

@@ -51,7 +51,11 @@ fun List<String>.toListValue() = ListValue(map { StringValue(it)})
 fun ListValue.toList() = this.get().map { it.get() as String }
 
 private fun FullEntity<*>.bookmarks(): Bookmarks {
-    return Bookmarks(getList<StringValue>("bookmarks").map { it.get() })
+    return try {
+        Bookmarks(getList<StringValue>("bookmarks").map { it.get() })
+    } catch (e: Exception) {
+        Bookmarks(emptyList())
+    }
 }
 
 @Component
@@ -67,7 +71,7 @@ class RootMutation : Mutation {
                 .set("bookmarks", existingEntity.getList<StringValue>("bookmarks") + StringValue(sessionId))
                 .build()
         } catch (e: Exception) {
-            Entity.newBuilder()
+            Entity.newBuilder(keyForUser(uid))
                 .set("bookmarks", listOf(StringValue(sessionId)))
                 .build()
         }
@@ -193,8 +197,12 @@ class RootQuery : Query {
             "This call requires authentication"
         }
 
-        val existingEntity = datastore.get(keyForUser(uid))
-        return existingEntity.bookmarks()
+        return try {
+            val existingEntity  = datastore.get(keyForUser(uid))
+            existingEntity.bookmarks()
+        } catch (e: Exception) {
+            Bookmarks(emptyList())
+        }
     }
 
     fun conferences(orderBy: ConferenceOrderBy? = null): List<Conference> {
