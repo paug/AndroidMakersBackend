@@ -24,11 +24,8 @@ import com.expediagroup.graphql.server.types.GraphQLServerRequest
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.type.MapType
 import com.fasterxml.jackson.databind.type.TypeFactory
-import dev.johnoreilly.confetti.backend.datastore.ConferenceId
-import dev.johnoreilly.confetti.backend.graphql.DataStoreDataSource
 import dev.johnoreilly.confetti.backend.graphql.RootMutation
 import dev.johnoreilly.confetti.backend.graphql.RootQuery
-import dev.johnoreilly.confetti.backend.graphql.TestDataSource
 import graphql.GraphQL
 import graphql.GraphQLContext
 import graphql.execution.AsyncSerialExecutionStrategy
@@ -426,23 +423,15 @@ class MyGraphQLContextFactory : DefaultSpringGraphQLContextFactory() {
             conference = request.headers().firstHeader("conference")
         }
         if (conference == null) {
-            conference = ConferenceId.KotlinConf2023.id
+            conference = "androidmakers2023"
         }
 
         val uid = request.headers().firstHeader("authorization")
             ?.substring("bearer_".length)
             ?.firebaseUid()
 
-        if (ConferenceId.values().find { it.id == conference } == null && conference != "all") {
-            throw BadConferenceException(conference)
-        }
-        val source = when (conference) {
-            ConferenceId.TestConference.id -> TestDataSource()
-            else -> DataStoreDataSource(conference, uid)
-        }
 
         return super.generateContext(request)
-            .put(DefaultApplication.KEY_SOURCE, source)
             .put(DefaultApplication.KEY_REQUEST, request)
             .put(DefaultApplication.KEY_CONFERENCE, conference)
             .apply {

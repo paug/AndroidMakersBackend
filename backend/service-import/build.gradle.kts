@@ -145,7 +145,7 @@ appengine {
     setServiceAccountKeyFile(gcpServiceAccountFile())
   }
   deploy {
-    projectId = "confetti-349319"
+    projectId = "androidmakers-2023"
     version = "GCLOUD_CONFIG"
   }
 }

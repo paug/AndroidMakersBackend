@@ -3,7 +3,7 @@ package dev.johnoreilly.confetti.backend
 import com.google.firebase.FirebaseApp
 import com.google.firebase.FirebaseOptions
 import com.google.firebase.auth.FirebaseAuth
-import dev.johnoreilly.confetti.backend.datastore.googleCredentials
+import dev.johnoreilly.confetti.backend.graphql.googleCredentials
 
 
 private val lock = Object()

@@ -19,5 +19,4 @@ dependencies {
     implementation(libs.plugin.google.services)
     implementation(libs.plugin.firebase.crashlytics)
     implementation(libs.plugin.wire)
-
 }

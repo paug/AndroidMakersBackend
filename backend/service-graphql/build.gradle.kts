@@ -17,13 +17,13 @@ dependencies {
   implementation(libs.kotlinx.datetime)
   implementation(libs.kotlinx.serialization)
   implementation(libs.bare.graphQL)
-  implementation(project(":backend:datastore"))
   implementation(libs.okhttp)
   implementation(libs.reflect)
   implementation(libs.xoxo)
   implementation(libs.apollo.tooling)
   implementation(libs.apollo.annotations)
   implementation(libs.firebase.admin)
+  implementation(libs.google.cloud.datastore)
 
   testImplementation(libs.junit)
 }
@@ -43,7 +43,7 @@ appengine {
     setServiceAccountKeyFile(gcpServiceAccountFile())
   }
   deploy {
-    projectId = "confetti-349319"
+    projectId = "androidmakers-2023"
     version = "GCLOUD_CONFIG"
   }
 }

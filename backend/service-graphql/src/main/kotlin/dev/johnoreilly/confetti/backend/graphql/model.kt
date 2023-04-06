@@ -4,18 +4,35 @@ import com.expediagroup.graphql.generator.annotations.GraphQLDescription
 import com.expediagroup.graphql.generator.annotations.GraphQLDirective
 import com.expediagroup.graphql.server.operations.Mutation
 import com.expediagroup.graphql.server.operations.Query
+import com.google.auth.oauth2.GoogleCredentials
+import com.google.cloud.datastore.Datastore
+import com.google.cloud.datastore.DatastoreOptions
+import com.google.cloud.datastore.Entity
+import com.google.cloud.datastore.FullEntity
+import com.google.cloud.datastore.Key
+import com.google.cloud.datastore.ListValue
+import com.google.cloud.datastore.StringValue
 import dev.johnoreilly.confetti.backend.DefaultApplication.Companion.KEY_SOURCE
 import dev.johnoreilly.confetti.backend.DefaultApplication.Companion.KEY_UID
-import dev.johnoreilly.confetti.backend.datastore.ConferenceId
-import dev.johnoreilly.confetti.backend.datastore.DDirection
-import dev.johnoreilly.confetti.backend.datastore.DOrderBy
-import dev.johnoreilly.confetti.backend.datastore.DataStore
 import graphql.introspection.Introspection
 import graphql.schema.DataFetchingEnvironment
 import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.LocalDateTime
 import org.springframework.stereotype.Component
+
+internal fun googleCredentials(name: String): GoogleCredentials {
+    return GoogleCredentials::class.java.classLoader.getResourceAsStream(name)?.use {
+        GoogleCredentials.fromStream(it)
+    } ?: error("no credentials found for $name")
+}
+
+internal fun initDatastore(): Datastore {
+    return DatastoreOptions.newBuilder()
+        .setCredentials(googleCredentials("firebase_service_account_key.json")).build().service
+}
+
+private val datastore = initDatastore()
 
 @GraphQLDirective(
     name = "requiresOptIn",
@@ -24,26 +41,69 @@ import org.springframework.stereotype.Component
 )
 annotation class RequiresOptIn(val feature: String)
 
+val userKeyFactory = datastore.newKeyFactory().setKind("KIND_USER")
+
+private fun keyForUser(uid: String): Key {
+    return userKeyFactory.newKey(uid)
+}
+
+fun List<String>.toListValue() = ListValue(map { StringValue(it)})
+fun ListValue.toList() = this.get().map { it.get() as String }
+
+private fun FullEntity<*>.bookmarks(): Bookmarks {
+    return Bookmarks(getList<StringValue>("bookmarks").map { it.get() })
+}
+
 @Component
 class RootMutation : Mutation {
     fun addBookmark(dfe: DataFetchingEnvironment, sessionId: String): Bookmarks {
-        return Bookmarks(dfe.source().addBookmark(sessionId).toList())
+        val uid = dfe.uid()
+        check(uid != null) {
+            "This call requires authentication"
+        }
+        val entity = try {
+            val existingEntity = datastore.get(keyForUser(uid))
+            Entity.newBuilder(existingEntity)
+                .set("bookmarks", existingEntity.getList<StringValue>("bookmarks") + StringValue(sessionId))
+                .build()
+        } catch (e: Exception) {
+            Entity.newBuilder()
+                .set("bookmarks", listOf(StringValue(sessionId)))
+                .build()
+        }
+
+        datastore.put(entity)
+
+        return entity.bookmarks()
     }
 
     fun removeBookmark(dfe: DataFetchingEnvironment, sessionId: String): Bookmarks {
-        return Bookmarks(dfe.source().removeBookmark(sessionId).toList())
+        val uid = dfe.uid()
+        check(uid != null) {
+            "This call requires authentication"
+        }
+        val existingEntity = datastore.get(keyForUser(uid))
+
+        val entity = Entity.newBuilder(existingEntity)
+            .set("bookmarks", existingEntity.getList<StringValue>("bookmarks").filter { it.get() != sessionId })
+            .build()
+
+        datastore.put(entity)
+        return entity.bookmarks()
     }
 }
 
 @Component
 class RootQuery : Query {
     fun rooms(dfe: DataFetchingEnvironment): List<Room> {
-        return dfe.source().rooms()
+        return seData.sessions.mapNotNull { it.roomId }.distinct().map {
+            Room(it.toString(), it.toString(), null)
+        }
     }
 
     fun sessions(
         dfe: DataFetchingEnvironment,
-        first: Int? = 10,
+        first: Int? = 100,
         after: String? = null,
         filter: SessionFilter? = null,
         orderBy: SessionOrderBy? = SessionOrderBy(
@@ -51,17 +111,34 @@ class RootQuery : Query {
             direction = OrderByDirection.ASCENDING
         )
     ): SessionConnection {
-        return dfe.source().sessions(
-            first ?: 10,
-            after,
-            filter,
-            orderBy
+        val nodes = seData.sessions.page(first ?: 100, after) { it.id }.map { it.toSession() }
+        return SessionConnection(
+            nodes = nodes,
+            pageInfo = PageInfo(
+                endCursor = nodes.lastOrNull()?.id
+            )
         )
+    }
+
+    fun <T> List<T>.page(first: Int, after: String?, block: (T) -> String): List<T> {
+        val startIndex = if (after != null) {
+            val i = after.let { map { block(it) }.indexOf(it) }
+
+            if (i < 0) {
+                error("Invalid cursor: $after")
+            }
+            i + 1
+        } else {
+            0
+        }
+        val endIndex = minOf(size, startIndex + (first ?: 100))
+
+        return subList(startIndex, endIndex)
     }
 
     @Deprecated("Use speakersPage instead")
     fun speakers(dfe: DataFetchingEnvironment): List<Speaker> {
-        return dfe.source().speakers(first = 100, after = null).nodes
+        return seData.speakers.map { it.toSpeaker() }
     }
 
     fun speakersPage(
@@ -69,52 +146,59 @@ class RootQuery : Query {
         first: Int? = 10,
         after: String? = null,
     ): SpeakerConnection {
-        return dfe.source().speakers(first ?: 10, after)
+        val nodes = seData.speakers.page(first ?: 100, after) { it.id }.map { it.toSpeaker() }
+
+        return SpeakerConnection(
+            nodes = nodes,
+            pageInfo = PageInfo(
+                endCursor = nodes.lastOrNull()?.id
+            )
+        )
     }
 
     fun speaker(dfe: DataFetchingEnvironment, id: String): Speaker {
-        return dfe.source().speaker(id)
+        return seData.speakers.first { it.id == id }.toSpeaker()
     }
 
     fun venue(dfe: DataFetchingEnvironment, id: String): Venue {
-        return dfe.source().venues().first { it.id == id }
+        return seData.venues.first { it.id == id }.toVenue()
     }
 
     fun venues(dfe: DataFetchingEnvironment): List<Venue> {
-        return dfe.source().venues()
+        return seData.venues.map { it.toVenue() }
     }
 
     fun partnerGroups(dfe: DataFetchingEnvironment): List<PartnerGroup> {
-        return dfe.source().partnerGroups()
+        return seData.partners.map { it.toPartnerGroup() }
     }
 
     fun session(dfe: DataFetchingEnvironment, id: String): Session {
-        val nodes = dfe.source().sessions(100, after = null, null, null)
-            .nodes
-
-        return nodes.firstOrNull { it.id == id }
-            ?: error("Cannot find id '$id' in ${nodes.size} nodes")
+        return seData.sessions.first { it.id == id }.toSession()
     }
 
+    private val conference = Conference(
+        id = "androidmakers2023",
+        name = "Android Makers by droidcon",
+        timezone = "Europe/Paris",
+        days = listOf(LocalDate(2023, 4, 27), LocalDate(2023, 4, 28))
+    )
+
     fun config(dfe: DataFetchingEnvironment): Conference {
-        return dfe.source().conference()
+        return conference
     }
 
     fun bookmarks(dfe: DataFetchingEnvironment): Bookmarks? {
-        if (dfe.uid() == null) {
-            return null
+        val uid = dfe.uid()
+        check(uid != null) {
+            "This call requires authentication"
         }
-        return Bookmarks(dfe.source().bookmarks().toList())
+
+        val existingEntity = datastore.get(keyForUser(uid))
+        return existingEntity.bookmarks()
     }
 
     fun conferences(orderBy: ConferenceOrderBy? = null): List<Conference> {
-        val orderBy1 =
-            orderBy ?: ConferenceOrderBy(ConferenceField.DAYS, OrderByDirection.DESCENDING)
-        return DataStore().readConfigs(
-            DOrderBy(orderBy1.field.value, orderBy1.direction.toDDirection())
-        ).map {
-            it.toConference()
-        }
+        return listOf(conference)
     }
 }
 
@@ -122,12 +206,6 @@ class Bookmarks(val sessionIds: List<String>) {
     val id = "Bookmarks"
 }
 
-internal fun OrderByDirection.toDDirection(): DDirection {
-    return when (this) {
-        OrderByDirection.ASCENDING -> DDirection.ASCENDING
-        OrderByDirection.DESCENDING -> DDirection.DESCENDING
-    }
-}
 
 class LocalDateTimeFilter(
     val before: LocalDateTime? = null,
@@ -165,9 +243,6 @@ enum class ConferenceField(val value: String) {
 fun DataFetchingEnvironment.uid(): String? {
     return graphQlContext.get(KEY_UID)
 }
-private fun DataFetchingEnvironment.source(): DataSource {
-    return graphQlContext.get(KEY_SOURCE)
-}
 
 data class Room(
     val id: String,
@@ -191,8 +266,10 @@ data class Session(
     val id: String,
     val title: String,
     val description: String?,
-    @GraphQLDescription("""A shorter version of description for use when real estate is scarce like watches for an example.
-This field might have the same value as description if a shortDescription is not available""")
+    @GraphQLDescription(
+        """A shorter version of description for use when real estate is scarce like watches for an example.
+This field might have the same value as description if a shortDescription is not available"""
+    )
     val shortDescription: String?,
     @GraphQLDescription("""An [IETF language code](https://en.wikipedia.org/wiki/IETF_language_tag) like en-US""")
     val language: String?,
@@ -211,23 +288,19 @@ This field might have the same value as description if a shortDescription is not
     val type: String,
 ) {
     fun speakers(dfe: DataFetchingEnvironment): List<Speaker> {
-        return dfe.source().speakers(speakerIds.toList())
+        return seData.speakers.filter { speakerIds.contains(it.id) }.map { it.toSpeaker() }
     }
 
     fun room(dfe: DataFetchingEnvironment): Room? {
-        val roomId = roomIds.firstOrNull()
-        if (roomId == null) {
-            return null
-        }
-        return dfe.source().rooms().firstOrNull {
-            it.id == roomId
-        }
+        return Room(
+            id = roomIds.single(),
+            name = roomIds.single(),
+            capacity = null
+        )
     }
 
     fun rooms(dfe: DataFetchingEnvironment): List<Room> {
-        return dfe.source().rooms().filter {
-            roomIds.contains(it.id)
-        }
+        return listOf(room(dfe)!!)
     }
 }
 
@@ -251,9 +324,7 @@ data class Speaker(
     fun sessions(
         dfe: DataFetchingEnvironment,
     ): List<Session> {
-        return dfe.source().sessions(
-            sessionIds
-        )
+        return seData.sessions.filter { sessionIds.contains(it.id) }.map { it.toSession() }
     }
 }
 
