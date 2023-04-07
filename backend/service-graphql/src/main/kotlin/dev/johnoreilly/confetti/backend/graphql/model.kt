@@ -100,9 +100,7 @@ class RootMutation : Mutation {
 @Component
 class RootQuery : Query {
     fun rooms(dfe: DataFetchingEnvironment): List<Room> {
-        return seData.sessions.mapNotNull { it.roomId }.distinct().map {
-            Room(it.toString(), it.toString(), null)
-        }
+        return seData.rooms.mapNotNull { it.toRoom() }
     }
 
     fun sessions(

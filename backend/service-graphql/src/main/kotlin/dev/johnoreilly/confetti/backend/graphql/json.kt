@@ -13,7 +13,8 @@ class SeData(
     val sessions: List<JsonSession>,
     val speakers: List<JsonSpeaker>,
     val partners: List<JsonPartnerGroup>,
-    val venues: List<JsonVenue>
+    val venues: List<JsonVenue>,
+    val rooms: List<JsonRoom>,
 )
 
 @Serializable
@@ -32,6 +33,12 @@ class SeLink(
     val url: String
 )
 
+@Serializable
+class JsonRoom(
+    val id: Int,
+    val name: String,
+    val sort: Int,
+)
 @Serializable
 class JsonSession(
     val id: String,
@@ -130,3 +137,10 @@ private fun JsonPartner.toPartner(): Partner {
         logoUrl = this.photoUrl,
     )
 }
+
+
+fun JsonRoom.toRoom() = Room(
+    id = id.toString(),
+    name = name,
+    capacity = null
+)
