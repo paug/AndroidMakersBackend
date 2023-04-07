@@ -109,7 +109,8 @@ class JsonPartner(
 class JsonVenue(
     val id: String,
     val name: String,
-    val address: String
+    val address: String,
+    val imageUrl: String?
 )
 
 fun JsonVenue.toVenue() = Venue(
@@ -118,7 +119,7 @@ fun JsonVenue.toVenue() = Venue(
     address = address,
     latitude = null,
     longitude = null,
-    imageUrl = null,
+    imageUrl = imageUrl,
     floorPlanUrl = null,
     descriptions = emptyMap()
 )
