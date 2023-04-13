@@ -298,11 +298,7 @@ This field might have the same value as description if a shortDescription is not
     }
 
     fun room(dfe: DataFetchingEnvironment): Room? {
-        return Room(
-            id = roomIds.single(),
-            name = roomIds.single(),
-            capacity = null
-        )
+        return seData.rooms.firstOrNull { roomIds.contains(it.id.toString()) }?.toRoom()
     }
 
     fun rooms(dfe: DataFetchingEnvironment): List<Room> {
