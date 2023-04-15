@@ -34,7 +34,10 @@ pluginManagement {
 }
 
 rootProject.name = "AndroidMakersBackend"
-include(":backend:service-graphql")
+include(":service-graphql")
+include(":sessionize")
+include(":data")
+include(":sync")
 
 check(JavaVersion.current().isCompatibleWith(JavaVersion.VERSION_17)) {
     "This project needs to be run with Java 17 or higher (found: ${JavaVersion.current()})."

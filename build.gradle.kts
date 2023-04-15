@@ -21,6 +21,6 @@ tasks.register("setupCredentials") {
 
 tasks.register("quickChecks") {
     dependsOn(
-        ":backend:service-graphql:build",
+        ":service-graphql:build",
     )
 }
