@@ -276,7 +276,7 @@ data class Session(
 This field might have the same value as description if a shortDescription is not available"""
     )
     val shortDescription: String?,
-    @GraphQLDescription("""either "french" or "english" """)
+    @GraphQLDescription("""either "French" or "English" """)
     val language: String?,
     private val speakerIds: Set<String>,
     val tags: List<String>,
