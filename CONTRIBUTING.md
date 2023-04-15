@@ -38,7 +38,7 @@ API docs are available at [backend/README.md](backend/README.md)
 
 You can run the backend locally with the following task:
 
-* `./gradle :backend:service-graphql:bootRun` 
+* `./gradle :service-graphql:bootRun` 
 
 When running `bootRun`, you will only be able to use the "test" conference as access to the real data requires additional credentials.
 

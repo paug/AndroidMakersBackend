@@ -1,0 +1,16 @@
+name: Update Data
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  update:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: gradle/gradle-build-action@v2
+      - name: Execute Gradle build
+        run: ./gradlew updateData && ./scripts/makepr.main.kts
