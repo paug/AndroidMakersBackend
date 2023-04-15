@@ -44,8 +44,8 @@ fun SeSession.toSession() = Session(
 
 private fun SeSession.language(): String {
     return when {
-        categoryItems.contains(frenchItemId) -> "fr"
-        else -> "en"
+        categoryItems.contains(frenchItemId) -> "french"
+        else -> "english"
     }
 }
 
