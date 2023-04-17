@@ -19,6 +19,7 @@ apollo.key.unused
 **/.idea/*
 !**/.idea/codeStyles
 !**/.idea/icon.png
+!**/.idea/icon.svg
 !**/.idea/runConfigurations
 !**/.idea/scopes
 
