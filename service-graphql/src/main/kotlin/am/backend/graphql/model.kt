@@ -302,7 +302,11 @@ This field might have the same value as description if a shortDescription is not
     }
 
     fun rooms(dfe: DataFetchingEnvironment): List<Room> {
-        return listOf(room(dfe)!!)
+        return if (isServiceSession) {
+            seData.rooms.map { it.toRoom() }
+        } else {
+            listOf(room(dfe)!!)
+        }
     }
 }
 
