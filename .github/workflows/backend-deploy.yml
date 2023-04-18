@@ -29,6 +29,6 @@ jobs:
       uses: gradle/gradle-build-action@v2
 
     - name: Build
-      run: ./gradlew :setupCredentials appengineDeploy
+      run: ./gradlew setupCredentials && ./gradlew appengineDeploy
       env:
         FIREBASE_SERVICES_JSON: ${{ secrets.FIREBASE_SERVICES_JSON }}

@@ -14,7 +14,7 @@ tasks.register("setupCredentials") {
     doLast {
         if (System.getenv("CI")?.isNotEmpty() == true) {
             println("setting up google services...")
-            file("backend/service-graphql/src/main/resources/firebase_service_account_key.json").writeEnv("FIREBASE_SERVICES_JSON")
+            file("service-graphql/src/main/resources/firebase_service_account_key.json").writeEnv("FIREBASE_SERVICES_JSON")
         }
     }
 }
