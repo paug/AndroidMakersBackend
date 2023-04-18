@@ -33,7 +33,7 @@ Authorization: Bearer ${firebaseIdToken}
 
 ### Changing data:
 
-You can modify data in [backend/service-graphql/src/main/resources/data.json](backend/service-graphql/src/main/resources/data.json). Changes are deployed when pushed to main
+You can modify data in [service-graphql/src/main/resources/data.json](service-graphql/src/main/resources/data.json). Changes are deployed when pushed to main
 
 ### Running locally: 
 

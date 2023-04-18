@@ -2813,6 +2813,31 @@
       ]
     },
     {
+      "kind": "speaker",
+      "items": [
+        {
+          "name": "Datadog",
+          "url": "https://www.datadoghq.com/product/real-user-monitoring/",
+          "photoUrl": "https://androidmakers.droidcon.com/wp-content/uploads/sites/5/2023/03/datadog.png"
+        },
+        {
+          "name": "Deezer",
+          "url": "https://www.deezer.com/en/",
+          "photoUrl": "https://androidmakers.droidcon.com/wp-content/uploads/sites/5/2023/04/deezer.png"
+        },
+        {
+          "name": "Jetbrains",
+          "url": "https://www.jetbrains.com/",
+          "photoUrl": "https://androidmakers.droidcon.com/wp-content/uploads/sites/5/2023/03/Jet-brains.png"
+        },
+        {
+          "name": "Snapp Mobile",
+          "url": "https://www.snappmobile.io/",
+          "photoUrl": "https://androidmakers.droidcon.com/wp-content/uploads/sites/5/2023/04/snapmobile.png"
+        }
+      ]
+    },
+    {
       "kind": "media",
       "items": [
         {
