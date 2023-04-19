@@ -240,8 +240,8 @@
     },
     {
       "id": "429911",
-      "title": "Collapsing toolbar with parallax effect and curved motion in Jetpack Compose",
-      "description": "Animations are super important when building an application. They highlight relations between elements, bring attention to what is important and they also can express a brand style.\r\n\r\nIn this talk, I’ll show you how to implement a collapsing toolbar with parallax effect in jetpack compose only (no third party library). I’ll also show you how to implement curved motion using  the power of quadratic Bézier curve which is already ubiquitous in game development but now become so accessible in Jetpack Compose.\r\n\r\nSo if you want to learn how to build any custom linear animations, or animate objects along a curved path in Compose, without impacting performance, join in 😎",
+      "title": "Collapsing toolbar avec effet parallaxe et animation en courbe avec Jetpack Compose",
+      "description": "Animations are super important when building an application. They highlight relations between elements, bring attention to what is important and they also can express a brand style.\r\n\r\nIn this talk, I’ll show you how to implement a collapsing toolbar with parallax effect in jetpack compose only (no third party library). I’ll also show you how to implement curved motion using  the power of quadratic Bézier curve which is already ubiquitous in game development but now become so accessible in Jetpack Compose.\r\n\r\nSo if you want to learn how to build any custom linear animations, or animate objects along a curved path in Compose without impacting performance, join in 😎",
       "startsAt": "2023-04-27T11:50:00",
       "endsAt": "2023-04-27T12:15:00",
       "speakers": [
@@ -412,7 +412,6 @@
       "startsAt": "2023-04-27T15:15:00",
       "endsAt": "2023-04-27T15:35:00",
       "speakers": [
-        "f8c30c09-8132-4ac8-91a5-9e7b293063a4",
         "791d1128-88d2-4f3f-9917-9e4c1f1ea961"
       ],
       "roomId": 31080,
@@ -1168,6 +1167,20 @@
         158846,
         158849,
         158850
+      ],
+      "isServiceSession": false
+    },
+    {
+      "id": "480888",
+      "title": "Office hours: Boostez votre application mobile grâce à ChatGPT",
+      "description": "Come discuss about ChatGPT and more with David Silvera, Lead Android developer at WeMoms",
+      "startsAt": "2023-04-28T15:40:00",
+      "endsAt": "2023-04-28T16:00:00",
+      "speakers": [
+        "edfe420a-8175-4064-9f50-b77a64358dd6"
+      ],
+      "roomId": 33635,
+      "categoryItems": [
       ],
       "isServiceSession": false
     },
@@ -2501,27 +2514,6 @@
         }
       ],
       "tagLine": "Android Staff Engineer - Delivery Hero"
-    },
-    {
-      "id": "f8c30c09-8132-4ac8-91a5-9e7b293063a4",
-      "bio": "Thomas Ezan is an Android Engineer. He is currently working in the Android Developer Relations Team at Google. Before joining Google he spent 6 years in Lyft’s Growth team and worked at Pocket and Eventbrite. He is currently based in Seattle, WA.",
-      "fullName": "Thomas Ezan",
-      "profilePicture": "https://sessionize.com/image/7453-400o400o2-09-8132-4ac8-91a5-9e7b293063a4.5bfff84a-3ddf-47af-a9ca-06baeb80662b.jpg",
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/lethargicpanda"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/tezan/"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://developer.android.com/ml"
-        }
-      ],
-      "tagLine": "Android Developer Relations @Google"
     },
     {
       "id": "9860a793-5622-47ae-83bc-61d1e9c0fa0e",
