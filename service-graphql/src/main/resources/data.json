@@ -2845,13 +2845,17 @@
       "id": "conference",
       "name": "Beffroi de Montrouge",
       "address": "Av. de la République, 92120 Montrouge",
-      "imageUrl": "https://www.beffroidemontrouge.com/wp-content/uploads/2019/09/moebius-1.jpg"
+      "imageUrl": "https://www.beffroidemontrouge.com/wp-content/uploads/2019/09/moebius-1.jpg",
+      "latitude": 48.8188958,
+      "longitude": 2.3193016
     },
     {
       "id": "afterparty",
-      "name": "Surprise",
-      "address": "Coming soon 🍻",
-      "imageUrl": "https://wallpapers.com/images/featured/1y550aojs77u58wk.jpg"
+      "name": "Café Oz Denfert",
+      "address": "3 Pl. Denfert-Rochereau, 75014 Paris",
+      "imageUrl": "https://user-images.githubusercontent.com/3974977/233316160-09b583ac-af59-41d9-b6e8-c6df86f0cd0e.png",
+      "latitude": 48.8327857,
+      "longitude": 2.3328001
     }
   ]
 }
