@@ -34,5 +34,7 @@ data class JsonVenue(
     val id: String,
     val name: String,
     val address: String,
-    val imageUrl: String?
+    val imageUrl: String?,
+    val latitude: Double?,
+    val longitude: Double?
 )
