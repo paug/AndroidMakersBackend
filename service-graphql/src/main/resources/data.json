@@ -99,9 +99,9 @@
       "isServiceSession": false
     },
     {
-      "id": "454563",
-      "title": "Developing system apps without AOSP",
-      "description": "If you work with Android development long enough, there is a high chance that you eventually will be developing system applications for a custom Android device. This is quite different from doing regular apps we publish on Google Play Store, and used to require that you have the entire AOSP source code checked out in order to work with it. \r\n\r\nHowever, with some understanding of how Android internals work and how to use some undocumented features of the regular build tools, we can actually develop system apps without the whole mess that comes with AOSP.\r\n\r\nIn this session you'll learn how to use system and signature level permissions, how to efficiently call system APIs, and how to test all of this on a regular Android emulator. Hopefully this will make the daily life easier for all the Android developers working on system applications.",
+      "id": "454559",
+      "title": "State of Bluetooth LE on Android in 2023",
+      "description": "It's 2023 and we've had Bluetooth LE APIs on Android for almost 10 years. Are they stable now? Can you work with them? Why is this so difficult? In this session you'll learn how to use BLE on Android and how to avoid the common pitfalls. This session is useful for anyone doing anything around Bluetooth connectivity on Android.",
       "startsAt": "2023-04-27T10:30:00",
       "endsAt": "2023-04-27T11:15:00",
       "speakers": [
@@ -110,7 +110,7 @@
       "roomId": 33634,
       "categoryItems": [
         158838,
-        158843,
+        158842,
         158845
       ],
       "isServiceSession": false
@@ -256,6 +256,20 @@
       "isServiceSession": false
     },
     {
+      "id": "480897",
+      "title": "Office Hour: KMM/KMP",
+      "description": "Come discuss KMM/KMP and more with Pamela Hill, Developer Advocate at JetBrains.",
+      "startsAt": "2023-04-27T11:50:00",
+      "endsAt": "2023-04-27T12:10:00",
+      "speakers": [
+        "62216efe-dd8b-4d8b-9800-1d51b57c4001"
+      ],
+      "roomId": 33635,
+      "categoryItems": [
+      ],
+      "isServiceSession": false
+    },
+    {
       "id": "6ef3a0b9-9aa5-464c-aa80-10bd2f12c649",
       "title": "Lunch",
       "description": null,
@@ -320,6 +334,20 @@
         158842,
         158845,
         158850
+      ],
+      "isServiceSession": false
+    },
+    {
+      "id": "480892",
+      "title": "Office hour: Flutter",
+      "description": "Come discuss Flutter and more with Elaine Dias Batista, Team Leader at SFEIR.",
+      "startsAt": "2023-04-27T14:15:00",
+      "endsAt": "2023-04-27T14:35:00",
+      "speakers": [
+        "7c888e22-f254-4e04-aa56-1853ab18c000"
+      ],
+      "roomId": 33635,
+      "categoryItems": [
       ],
       "isServiceSession": false
     },
@@ -441,6 +469,21 @@
       "isServiceSession": false
     },
     {
+      "id": "482667",
+      "title": "Office Hour: foldables",
+      "description": "Come discuss Foldables and more with: Enrique Lopez Manas, Google Developer Expert and Pierluigi Rufo, Design Lead at Snapp Mobile",
+      "startsAt": "2023-04-27T15:15:00",
+      "endsAt": "2023-04-27T15:35:00",
+      "speakers": [
+        "2f606e32-997a-4b74-8420-76a47e7d66a3",
+        "97bc557b-01db-4ffc-813c-2c4c1a99500c"
+      ],
+      "roomId": 33635,
+      "categoryItems": [
+      ],
+      "isServiceSession": false
+    },
+    {
       "id": "da60a02c-c5e7-409e-8858-c7e45e9583f4",
       "title": "Break",
       "description": null,
@@ -526,6 +569,20 @@
       "isServiceSession": false
     },
     {
+      "id": "481525",
+      "title": "Office Hour: Machine Learning",
+      "description": "Come discuss Machine Learning and more with: Adrien Couque, Engineer @Google",
+      "startsAt": "2023-04-27T15:50:00",
+      "endsAt": "2023-04-27T16:10:00",
+      "speakers": [
+        "791d1128-88d2-4f3f-9917-9e4c1f1ea961"
+      ],
+      "roomId": 33635,
+      "categoryItems": [
+      ],
+      "isServiceSession": false
+    },
+    {
       "id": "441542",
       "title": "The Rise and Fall of Feature Teams",
       "description": "At some point, organizations scale up – they move their platform teams to a setup with cross-functional teams. From now on designers, backend and mobile developers will work together day by day instead of waiting for each other. You will have all the resources you need within your team. And it makes sure that everyone in your team is working on the same thing, preventing isolated islands or working at different speeds, the perfect knowledge-sharing approach,\r\nWhat if I tell you that in practice this promising world often collapses and at least leads to a new world of problems you have to deal with now? Was it just a nice dream that can turn into a nightmare?\r\n\r\nAt SoundCloud we went through these setups, we worked like this and we realized it wasn't helping us in the way we wanted. Let me tell you why and what where we ended up with now!\r\n",
@@ -594,6 +651,20 @@
         158837,
         158841,
         158845
+      ],
+      "isServiceSession": false
+    },
+    {
+      "id": "482370",
+      "title": "Office hour: State of Bluetooth LE on Android in 2023",
+      "description": "Come discuss about Bluetooth and more with Erik Hellman",
+      "startsAt": "2023-04-27T16:15:00",
+      "endsAt": "2023-04-27T16:35:00",
+      "speakers": [
+        "79823093-1b16-4a2b-b0a9-ea4cd25b92f5"
+      ],
+      "roomId": 33635,
+      "categoryItems": [
       ],
       "isServiceSession": false
     },
@@ -744,9 +815,23 @@
       "isServiceSession": false
     },
     {
+      "id": "480894",
+      "title": "Office Hour: Practical ADB usage to enhance your life!",
+      "description": "Come discuss ADB and more with Benjamin Kadel, Senior Android Developer at Babbel.",
+      "startsAt": "2023-04-27T17:50:00",
+      "endsAt": "2023-04-27T18:10:00",
+      "speakers": [
+        "5f8860b3-e669-4717-91bf-ddceb872fd55"
+      ],
+      "roomId": 33635,
+      "categoryItems": [
+      ],
+      "isServiceSession": false
+    },
+    {
       "id": "dbc9fca5-44e0-4873-914f-4525fad5a0e3",
-      "title": "Party",
-      "description": null,
+      "title": "Party 🎉",
+      "description": "Let’s talk and drink! 🎉 From 19:00, come for chat, networking, drinks and food! 😎\nThe Makers Party will be held in \"Café Oz Denfert\"\nThis is a large venue with australian beers and bar meals just at 10 minutes in transport from the conference venue, at Denfert Rochereau\n\n\nDirections\nAddress: 3 Place Denfert-Rochereau, 75014 Paris\nM ° Denfert-Rochereau, M ° Raspail (lines 4, 6)\nJust take the Metro 4 to Denfert\nhttps://goo.gl/maps/sC5kxJrWfhQ2",
       "startsAt": "2023-04-27T19:00:00",
       "endsAt": "2023-04-27T20:00:00",
       "speakers": [
@@ -884,6 +969,37 @@
       "isServiceSession": false
     },
     {
+      "id": "481523",
+      "title": "Office Hour: AI won't take your job but it sure will help you do it better",
+      "description": "Come discuss AI advancement, tools and more with Orel Zion, Viz.ai Sr. Android Developer",
+      "startsAt": "2023-04-28T10:40:00",
+      "endsAt": "2023-04-28T11:00:00",
+      "speakers": [
+        "3192eb25-047c-4d7e-874a-53206c185074"
+      ],
+      "roomId": 33635,
+      "categoryItems": [
+        158841,
+        158845
+      ],
+      "isServiceSession": false
+    },
+    {
+      "id": "483135",
+      "title": "Office Hour: Tests",
+      "description": "Come discuss Tests and more with:\r\n- Jordan Dahnoun, Mobile Engineering Manager at JobTeaser\r\n- Romain Rivollier, Staff Engineer at Jobteaser",
+      "startsAt": "2023-04-28T11:00:00",
+      "endsAt": "2023-04-28T11:25:00",
+      "speakers": [
+        "05385600-cf94-4333-afb3-0ebb5f9d0269",
+        "22ac76a5-35b4-478c-a2c6-f7b8a4169928"
+      ],
+      "roomId": 33635,
+      "categoryItems": [
+      ],
+      "isServiceSession": false
+    },
+    {
       "id": "0fa7e624-76c5-44e0-8579-dbb2329f3385",
       "title": "Break",
       "description": null,
@@ -916,8 +1032,8 @@
     },
     {
       "id": "417890",
-      "title": "Level up on Kotlin Multiplatform",
-      "description": "Kotlin Multiplatform is a new cross-platform technology from JetBrains that is taking the mobile world by storm. Many Android and iOS developers have given this exciting technology a try. But how do you take your skills from building simple apps to more complex ones?\r\n\r\nThis talk aims to help mobile developers level up their Kotlin Multiplatform skills by introducing libraries such as Ktor, SQLDelight, and Koin. I will also discuss implementing common architectural patterns such as MVVM, MVI, and Clean. By the end of the talk, the audience will have a richer understanding of how to build complex Kotlin Multiplatform apps.",
+      "title": "Exploring the Kotlin Multiplatform Ecosystem",
+      "description": "Kotlin Multiplatform is a new cross-platform technology from JetBrains that is taking the mobile world by storm. Many Android and iOS developers have given this exciting technology a try. However, an essential consideration for any technology's adoption is the state of its ecosystem.\r\n\r\nThis talk aims to help mobile developers understand the depth and breadth of the Kotlin Multiplatform ecosystem. It will focus on areas common to most applications, such as:\r\n- Networking\r\n- Persistence\r\n- Concurrency\r\n- Dependency Injection\r\n- Crash Reporting\r\n- Logging\r\nBy the end of the talk, the audience will have a richer understanding of the state of the ecosystem and be able to decide whether Kotlin Multiplatform will work for their apps. ",
       "startsAt": "2023-04-28T11:40:00",
       "endsAt": "2023-04-28T12:25:00",
       "speakers": [
@@ -983,9 +1099,9 @@
       "isServiceSession": false
     },
     {
-      "id": "454559",
-      "title": "State of Bluetooth LE on Android in 2023",
-      "description": "It's 2023 and we've had Bluetooth LE APIs on Android for almost 10 years. Are they stable now? Can you work with them? Why is this so difficult? In this session you'll learn how to use BLE on Android and how to avoid the common pitfalls. This session is useful for anyone doing anything around Bluetooth connectivity on Android.",
+      "id": "454563",
+      "title": "Developing system apps without AOSP",
+      "description": "If you work with Android development long enough, there is a high chance that you eventually will be developing system applications for a custom Android device. This is quite different from doing regular apps we publish on Google Play Store, and used to require that you have the entire AOSP source code checked out in order to work with it. \r\n\r\nHowever, with some understanding of how Android internals work and how to use some undocumented features of the regular build tools, we can actually develop system apps without the whole mess that comes with AOSP.\r\n\r\nIn this session you'll learn how to use system and signature level permissions, how to efficiently call system APIs, and how to test all of this on a regular Android emulator. Hopefully this will make the daily life easier for all the Android developers working on system applications.",
       "startsAt": "2023-04-28T14:00:00",
       "endsAt": "2023-04-28T14:45:00",
       "speakers": [
@@ -994,7 +1110,7 @@
       "roomId": 31081,
       "categoryItems": [
         158838,
-        158842,
+        158843,
         158845
       ],
       "isServiceSession": false
@@ -1002,7 +1118,7 @@
     {
       "id": "455173",
       "title": "~/git --help",
-      "description": "Have you ever had an issue with git? Don't know which git command to use? Is your git slow in a big mono repo project?\r\n\r\nIf you answered YES to any of these questions, this talk is for you. First we will learn how git works under the hood which will give us a better understanding of several git commands. Second we will dive into the git features on Android Studio. Last but not least, share some tips on how to make the most out of git.\r\n\r\nAfter this talk, you will have the right knowledge to master git. Once you start to understand it, the terminology will make more sense and you’ll eventually learn to love it!",
+      "description": "Have you ever had an issue with git? Don't know which git command to use? Is your git slow in a big mono repo project?\r\n\r\nIf you answered YES to any of these questions, this talk is for you. First we will learn how git works under the hood which will give us a better understanding of several git commands. Second we will dive into the git features on Android Studio. Last but not least, share some tips on how to make the most out of git.\r\n\r\nAfter this talk, you will have the right knowledge to master git. Once you start to understand it, the terminology will make more sense and you'll eventually learn to love it!",
       "startsAt": "2023-04-28T14:00:00",
       "endsAt": "2023-04-28T14:45:00",
       "speakers": [
@@ -1013,6 +1129,21 @@
         158838,
         158841,
         158845
+      ],
+      "isServiceSession": false
+    },
+    {
+      "id": "480893",
+      "title": "Office Hour: Compose",
+      "description": "Come discuss Compose and more with:\r\n- Maia Grotepass, Staff Engineer: Android principal at Luno\r\n- Fatih Giriş, Android Lead @DNB",
+      "startsAt": "2023-04-28T14:00:00",
+      "endsAt": "2023-04-28T14:45:00",
+      "speakers": [
+        "2313d8eb-7d6e-444d-8e8d-4d223f896ce8",
+        "5f7faf69-dd61-4ad6-b6d8-0173cae292d8"
+      ],
+      "roomId": 33635,
+      "categoryItems": [
       ],
       "isServiceSession": false
     },
@@ -1101,6 +1232,21 @@
       "isServiceSession": false
     },
     {
+      "id": "482369",
+      "title": "Office Hour: Design System",
+      "description": "Come discuss Design System and more with: Julie Gléonnec, Android developer @Deezer and Jean-Baptiste Vincey ,Android developer & tech expert @Deezer",
+      "startsAt": "2023-04-28T15:00:00",
+      "endsAt": "2023-04-28T15:20:00",
+      "speakers": [
+        "8e90a4dc-33fc-4000-9bcb-802e45b50d87",
+        "d74d249a-ce9e-4887-93a0-fa19d73a501d"
+      ],
+      "roomId": 33635,
+      "categoryItems": [
+      ],
+      "isServiceSession": false
+    },
+    {
       "id": "755c57b9-28f1-4fdc-97ff-af9743df578c",
       "title": "Break",
       "description": null,
@@ -1172,7 +1318,7 @@
     },
     {
       "id": "480888",
-      "title": "Office hours: Boostez votre application mobile grâce à ChatGPT",
+      "title": "Office hour: Boostez votre application mobile grâce à ChatGPT",
       "description": "Come discuss about ChatGPT and more with David Silvera, Lead Android developer at WeMoms",
       "startsAt": "2023-04-28T15:40:00",
       "endsAt": "2023-04-28T16:00:00",
@@ -1393,7 +1539,7 @@
           "url": "https://www.babbel.com/"
         }
       ],
-      "tagLine": "Senior Android Developer at Babbel"
+      "tagLine": "Principal Platform Engineer for Android at Babbel"
     },
     {
       "id": "449b4215-55cc-444f-8ff4-b0c434a96019",
@@ -1711,7 +1857,7 @@
     },
     {
       "id": "5f7faf69-dd61-4ad6-b6d8-0173cae292d8",
-      "bio": "Fatih has studied Computer Engineering in his bachelor's degree. He got his master's degree in \"Natural Language Processing\" and he was a research assistant for 2 years. After that, he started working as a freelance mobile developer for 2 years. He joined DNB Bank as a Senior Android Developer and now he is an Android Lead in DNB Bank for Norway's top used finance app \"Mobilbank\" and the savings app \"Spare\".",
+      "bio": "Fatih studied Computer Engineering in his bachelor's degree. He got his master's degree in \"Natural Language Processing\" and he was a research assistant for 2 years. After that, he started working as a freelance mobile developer for 2 years. He joined DNB Bank as a Senior Android Developer and now he is an Android Lead in DNB Bank for Norway's top used finance app \"Mobilbank\" and the savings app \"Spare\".",
       "fullName": "Fatih Giriş",
       "profilePicture": "https://sessionize.com/image/0593-400o400o2-M5pgNeuj2M86joAE5FuHRt.jpg",
       "links": [
