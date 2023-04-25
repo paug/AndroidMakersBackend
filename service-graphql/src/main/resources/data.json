@@ -1135,12 +1135,13 @@
     {
       "id": "480893",
       "title": "Office Hour: Compose",
-      "description": "Come discuss Compose and more with:\r\n- Maia Grotepass, Staff Engineer: Android principal at Luno\r\n- Fatih Giriş, Android Lead @DNB",
+      "description": "Come discuss Compose and more with:\r\n- Maia Grotepass, Staff Engineer: Android principal at Luno\r\n- Fatih Giriş, Android Lead @DNB\r\n- Louis CAD, Amande - Founder",
       "startsAt": "2023-04-28T14:00:00",
       "endsAt": "2023-04-28T14:45:00",
       "speakers": [
         "2313d8eb-7d6e-444d-8e8d-4d223f896ce8",
-        "5f7faf69-dd61-4ad6-b6d8-0173cae292d8"
+        "5f7faf69-dd61-4ad6-b6d8-0173cae292d8",
+        "7c1cede6-5f59-46bb-ad1e-22b63758dae7"
       ],
       "roomId": 33635,
       "categoryItems": [
@@ -2712,6 +2713,10 @@
         {
           "title": "Blog",
           "url": "https://medium.com/@yostane"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://worldline.com"
         }
       ],
       "tagLine": "Worldline. Mobile developer,  lead  dev"

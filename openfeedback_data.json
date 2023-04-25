@@ -1,13 +1,6 @@
 {
+  "trackTitle": "",
   "sessions": {
-    "2d8010f1-62cc-4540-82c2-e5e9a0f57804": {
-      "id": "2d8010f1-62cc-4540-82c2-e5e9a0f57804",
-      "title": "Check-In & Registration",
-      "startTime": "2023-04-27T08:00:00",
-      "endTime": "2023-04-27T09:15:00",
-      "speakers": [
-      ]
-    },
     "461143": {
       "id": "461143",
       "title": "Android Graphics: the Path to [UI] Riches",
@@ -16,14 +9,6 @@
       "speakers": [
         "05fa719f-1528-43ef-adf9-eca92f383262",
         "152f613f-841b-407d-9a65-3703ec2dfae2"
-      ]
-    },
-    "cbfbf549-ac89-419a-9c13-506e09bb354a": {
-      "id": "cbfbf549-ac89-419a-9c13-506e09bb354a",
-      "title": "Break",
-      "startTime": "2023-04-27T10:00:00",
-      "endTime": "2023-04-27T10:30:00",
-      "speakers": [
       ]
     },
     "433220": {
@@ -144,14 +129,6 @@
         "62216efe-dd8b-4d8b-9800-1d51b57c4001"
       ]
     },
-    "6ef3a0b9-9aa5-464c-aa80-10bd2f12c649": {
-      "id": "6ef3a0b9-9aa5-464c-aa80-10bd2f12c649",
-      "title": "Lunch",
-      "startTime": "2023-04-27T12:35:00",
-      "endTime": "2023-04-27T13:50:00",
-      "speakers": [
-      ]
-    },
     "469867": {
       "id": "469867",
       "title": "Exposing Data",
@@ -187,14 +164,6 @@
       "endTime": "2023-04-27T14:35:00",
       "speakers": [
         "7c888e22-f254-4e04-aa56-1853ab18c000"
-      ]
-    },
-    "864c40a7-bbf1-490b-8fab-312911ddbdec": {
-      "id": "864c40a7-bbf1-490b-8fab-312911ddbdec",
-      "title": "Break",
-      "startTime": "2023-04-27T14:35:00",
-      "endTime": "2023-04-27T14:50:00",
-      "speakers": [
       ]
     },
     "453896": {
@@ -259,14 +228,6 @@
       "speakers": [
         "2f606e32-997a-4b74-8420-76a47e7d66a3",
         "97bc557b-01db-4ffc-813c-2c4c1a99500c"
-      ]
-    },
-    "da60a02c-c5e7-409e-8858-c7e45e9583f4": {
-      "id": "da60a02c-c5e7-409e-8858-c7e45e9583f4",
-      "title": "Break",
-      "startTime": "2023-04-27T15:35:00",
-      "endTime": "2023-04-27T15:50:00",
-      "speakers": [
       ]
     },
     "454972": {
@@ -362,14 +323,6 @@
         "79823093-1b16-4a2b-b0a9-ea4cd25b92f5"
       ]
     },
-    "b08dd7ed-1371-4cf6-96e9-a5f37a54df4e": {
-      "id": "b08dd7ed-1371-4cf6-96e9-a5f37a54df4e",
-      "title": "Break",
-      "startTime": "2023-04-27T16:35:00",
-      "endTime": "2023-04-27T16:50:00",
-      "speakers": [
-      ]
-    },
     "442732": {
       "id": "442732",
       "title": "Practical ADB usage to enhance your life!",
@@ -397,14 +350,6 @@
         "c73c2377-026f-4b6a-b1f7-91a536c33c67"
       ]
     },
-    "6ae29154-bed0-4ddb-8a73-b6135b0e27e1": {
-      "id": "6ae29154-bed0-4ddb-8a73-b6135b0e27e1",
-      "title": "Break",
-      "startTime": "2023-04-27T17:35:00",
-      "endTime": "2023-04-27T17:50:00",
-      "speakers": [
-      ]
-    },
     "455494": {
       "id": "455494",
       "title": "Un Design System, ça se Compose !",
@@ -422,14 +367,6 @@
       "endTime": "2023-04-27T18:35:00",
       "speakers": [
         "c35f2359-2c5c-4b88-a4bc-024a6c025ce4"
-      ]
-    },
-    "fd36b22f-dd2a-414c-806f-fdad9d68b14b": {
-      "id": "fd36b22f-dd2a-414c-806f-fdad9d68b14b",
-      "title": "(Cont. from 4:15 session start) Réaliser rapidement un jeu cross-platform avec Flutter et Firebase",
-      "startTime": "2023-04-27T17:50:00",
-      "endTime": "2023-04-27T18:35:00",
-      "speakers": [
       ]
     },
     "433488": {
@@ -450,30 +387,6 @@
         "5f8860b3-e669-4717-91bf-ddceb872fd55"
       ]
     },
-    "dbc9fca5-44e0-4873-914f-4525fad5a0e3": {
-      "id": "dbc9fca5-44e0-4873-914f-4525fad5a0e3",
-      "title": "Party 🎉",
-      "startTime": "2023-04-27T19:00:00",
-      "endTime": "2023-04-27T20:00:00",
-      "speakers": [
-      ]
-    },
-    "52ca2f2c-31ac-492c-88fe-50f92084a797": {
-      "id": "52ca2f2c-31ac-492c-88fe-50f92084a797",
-      "title": "Check-in & Registration",
-      "startTime": "2023-04-28T08:30:00",
-      "endTime": "2023-04-28T09:20:00",
-      "speakers": [
-      ]
-    },
-    "6ffcdfcd-4967-40a3-8463-fca33e654d74": {
-      "id": "6ffcdfcd-4967-40a3-8463-fca33e654d74",
-      "title": "Opening",
-      "startTime": "2023-04-28T09:20:00",
-      "endTime": "2023-04-28T09:30:00",
-      "speakers": [
-      ]
-    },
     "452238": {
       "id": "452238",
       "title": "What a Long Strange Trip it's Been: A Year In Android",
@@ -481,14 +394,6 @@
       "endTime": "2023-04-28T10:15:00",
       "speakers": [
         "10659767-356c-4cd5-ba9c-12cec7a3ce79"
-      ]
-    },
-    "48935f5b-4e47-4a6d-81cc-74fa7520ce7f": {
-      "id": "48935f5b-4e47-4a6d-81cc-74fa7520ce7f",
-      "title": "Break",
-      "startTime": "2023-04-28T10:15:00",
-      "endTime": "2023-04-28T10:40:00",
-      "speakers": [
       ]
     },
     "419559": {
@@ -547,14 +452,6 @@
         "22ac76a5-35b4-478c-a2c6-f7b8a4169928"
       ]
     },
-    "0fa7e624-76c5-44e0-8579-dbb2329f3385": {
-      "id": "0fa7e624-76c5-44e0-8579-dbb2329f3385",
-      "title": "Break",
-      "startTime": "2023-04-28T11:25:00",
-      "endTime": "2023-04-28T11:40:00",
-      "speakers": [
-      ]
-    },
     "456499": {
       "id": "456499",
       "title": "Off to the Races with Android",
@@ -572,14 +469,6 @@
       "endTime": "2023-04-28T12:25:00",
       "speakers": [
         "62216efe-dd8b-4d8b-9800-1d51b57c4001"
-      ]
-    },
-    "9cfd7417-4060-49cc-9eed-8bad800ee158": {
-      "id": "9cfd7417-4060-49cc-9eed-8bad800ee158",
-      "title": "Lunch",
-      "startTime": "2023-04-28T12:25:00",
-      "endTime": "2023-04-28T14:00:00",
-      "speakers": [
       ]
     },
     "450710": {
@@ -626,15 +515,8 @@
       "endTime": "2023-04-28T14:45:00",
       "speakers": [
         "2313d8eb-7d6e-444d-8e8d-4d223f896ce8",
-        "5f7faf69-dd61-4ad6-b6d8-0173cae292d8"
-      ]
-    },
-    "a53f543c-f61e-46d5-8982-e86d4c1c2bf0": {
-      "id": "a53f543c-f61e-46d5-8982-e86d4c1c2bf0",
-      "title": "Break",
-      "startTime": "2023-04-28T14:45:00",
-      "endTime": "2023-04-28T15:00:00",
-      "speakers": [
+        "5f7faf69-dd61-4ad6-b6d8-0173cae292d8",
+        "7c1cede6-5f59-46bb-ad1e-22b63758dae7"
       ]
     },
     "435622": {
@@ -684,14 +566,6 @@
         "d74d249a-ce9e-4887-93a0-fa19d73a501d"
       ]
     },
-    "755c57b9-28f1-4fdc-97ff-af9743df578c": {
-      "id": "755c57b9-28f1-4fdc-97ff-af9743df578c",
-      "title": "Break",
-      "startTime": "2023-04-28T15:25:00",
-      "endTime": "2023-04-28T15:40:00",
-      "speakers": [
-      ]
-    },
     "417949": {
       "id": "417949",
       "title": "10 years of Android Development: The Retrospective",
@@ -730,14 +604,6 @@
         "edfe420a-8175-4064-9f50-b77a64358dd6"
       ]
     },
-    "29093d9e-5c35-4ade-8c77-26f43f84487e": {
-      "id": "29093d9e-5c35-4ade-8c77-26f43f84487e",
-      "title": "Break",
-      "startTime": "2023-04-28T16:25:00",
-      "endTime": "2023-04-28T16:40:00",
-      "speakers": [
-      ]
-    },
     "461149": {
       "id": "461149",
       "title": "Defensive Programming: The Best Software Development Methodology Ever Invented",
@@ -746,14 +612,6 @@
       "speakers": [
         "05fa719f-1528-43ef-adf9-eca92f383262",
         "152f613f-841b-407d-9a65-3703ec2dfae2"
-      ]
-    },
-    "9161e94d-fbac-44a7-826b-03b3ffea7a15": {
-      "id": "9161e94d-fbac-44a7-826b-03b3ffea7a15",
-      "title": "Closing",
-      "startTime": "2023-04-28T17:15:00",
-      "endTime": "2023-04-28T17:25:00",
-      "speakers": [
       ]
     }
   },
@@ -1967,6 +1825,10 @@
         {
           "name": "Blog",
           "link": "https://medium.com/@yostane"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://worldline.com"
         }
       ]
     },
