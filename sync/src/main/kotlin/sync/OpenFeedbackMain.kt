@@ -11,21 +11,15 @@ import java.time.ZoneOffset
 
 fun main() {
     val seData = sessionizeData()
-    var start = LocalDateTime.of(2023, 4, 27, 9, 0).atOffset(ZoneOffset.of("+01:00"))
     val ofData = OfData(
         sessions = seData.sessions.map {
-            val end = start + Duration.ofMinutes(30)
             OfSession(
                 id = it.id,
                 title = it.title,
-//                    startTime = it.startsAt.withOffset(),
-//                    endTime = it.endsAt.withOffset(),
-                startTime = start.toString(),
-                endTime = end.toString(),
+                startTime = it.startsAt.toString(),
+                endTime = it.endsAt.toString(),
                 speakers = it.speakers
-            ).also {
-                start = end
-            }
+            )
         }.associateBy { it.id },
         speakers = seData.speakers.map {
             OfSpeaker(
