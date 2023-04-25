@@ -29,6 +29,9 @@ if (runCommand("git", "status", "--porcelain").isEmpty()) {
 val now = LocalDateTime.ofEpochSecond(Instant.now().epochSecond, 0, ZoneOffset.UTC)
 val slug = "${now.year}-${now.monthValue}-${now.dayOfMonth}_${now.hour}-${now.minute}"
 val branchName = "update_$slug"
+runCommand("git", "config", "--global", "user.email", "bot@androidmakers.fr")
+runCommand("git", "config", "--global", "user.name", "Android Makers bot")
+
 runCommand("git", "checkout", "-b", branchName)
 runCommand("git", "add", ".")
 runCommand("git", "commit", "-a", "-m", "Update data at $slug")
