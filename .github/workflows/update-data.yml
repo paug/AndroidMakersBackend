@@ -17,4 +17,4 @@ jobs:
           java-version: 17
       - uses: gradle/gradle-build-action@v2
       - name: Execute Gradle build
-        run: ./gradlew updateGraphQLData && ./scripts/makepr.main.kts
+        run: ./gradlew updateGraphQLData updateOpenfeedbackData && ./scripts/makepr.main.kts
