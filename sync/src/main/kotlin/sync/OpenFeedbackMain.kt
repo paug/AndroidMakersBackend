@@ -12,7 +12,8 @@ import java.time.ZoneOffset
 fun main() {
     val seData = sessionizeData()
     val ofData = OfData(
-        sessions = seData.sessions.map {
+        trackTitle = "",
+        sessions = seData.sessions.filter { !it.isServiceSession }.map {
             OfSession(
                 id = it.id,
                 title = it.title,
@@ -40,6 +41,7 @@ fun main() {
 
 @Serializable
 class OfData(
+    val trackTitle: String,
     val sessions: Map<String, OfSession>,
     val speakers: Map<String, OfSpeaker>
 )
