@@ -1,1 +1,2004 @@
-{"sessions":{"461143":{"id":"461143","title":"Android Graphics: the Path to [UI] Riches","startTime":"2023-04-27T09:00+01:00","endTime":"2023-04-27T09:30+01:00","speakers":["05fa719f-1528-43ef-adf9-eca92f383262","152f613f-841b-407d-9a65-3703ec2dfae2"]},"433220":{"id":"433220","title":"Using Compose Runtime to create a client library","startTime":"2023-04-27T09:30+01:00","endTime":"2023-04-27T10:00+01:00","speakers":["5f7faf69-dd61-4ad6-b6d8-0173cae292d8"]},"457041":{"id":"457041","title":"En quête de perf: l'art subtile du profiling Android","startTime":"2023-04-27T10:00+01:00","endTime":"2023-04-27T10:30+01:00","speakers":["a733fc42-dcb9-4107-9675-70335f2889e9"]},"432816":{"id":"432816","title":"Demystifying the test pyramid","startTime":"2023-04-27T10:30+01:00","endTime":"2023-04-27T11:00+01:00","speakers":["bf58d77f-fad3-49b7-a6b3-82b5f46e5549"]},"454563":{"id":"454563","title":"Developing system apps without AOSP","startTime":"2023-04-27T11:00+01:00","endTime":"2023-04-27T11:30+01:00","speakers":["79823093-1b16-4a2b-b0a9-ea4cd25b92f5"]},"456474":{"id":"456474","title":"Help! What is my place in the IC vs. EM career path?","startTime":"2023-04-27T11:30+01:00","endTime":"2023-04-27T12:00+01:00","speakers":["7c888e22-f254-4e04-aa56-1853ab18c000"]},"455615":{"id":"455615","title":"Clean Code Base: Harnessing the Power of Android Lint and Custom Rules","startTime":"2023-04-27T12:00+01:00","endTime":"2023-04-27T12:30+01:00","speakers":["9a7f5add-ce7a-49a3-ab3d-f3c4484453e8"]},"455769":{"id":"455769","title":"The joys and challenges of building a paywall with BillingClient 5","startTime":"2023-04-27T12:30+01:00","endTime":"2023-04-27T13:00+01:00","speakers":["944b39a5-752a-40e4-aa2b-dcc8e0f6da38","1fcef224-ed23-4d8d-8e07-4855817796fd"]},"454815":{"id":"454815","title":"Tauri / Dioxus : ces nouveaux frameworks Rust qui veulent faire du mobile","startTime":"2023-04-27T13:00+01:00","endTime":"2023-04-27T13:30+01:00","speakers":["b88bee58-a4e3-4a47-be4d-85c9421457cc"]},"430933":{"id":"430933","title":"Staying passionate about your craft","startTime":"2023-04-27T13:30+01:00","endTime":"2023-04-27T14:00+01:00","speakers":["b3770b77-c9c8-454d-8b7a-045ca1d66b7b"]},"434436":{"id":"434436","title":"Forging the path from monolith to multi-module app","startTime":"2023-04-27T14:00+01:00","endTime":"2023-04-27T14:30+01:00","speakers":["aeddc24f-0e47-4934-ad76-2de7a9dc9fac"]},"464671":{"id":"464671","title":"How Wildlife Studios maximizes mobile game performance and discoverability","startTime":"2023-04-27T14:30+01:00","endTime":"2023-04-27T15:00+01:00","speakers":["bd3e3257-9d05-4f72-9225-50908473778d"]},"429911":{"id":"429911","title":"Collapsing toolbar with parallax effect and curved motion in Jetpack Compose","startTime":"2023-04-27T15:00+01:00","endTime":"2023-04-27T15:30+01:00","speakers":["ca3e1da2-cfce-4823-8e14-a886f2483c2c"]},"469867":{"id":"469867","title":"Exposing Data","startTime":"2023-04-27T15:30+01:00","endTime":"2023-04-27T16:00+01:00","speakers":["3ff1f933-847b-4e0d-8e01-c2ca21bbab5d"]},"423061":{"id":"423061","title":"SwiftUI vs Jetpack Compose par un Ingénieur Android","startTime":"2023-04-27T16:00+01:00","endTime":"2023-04-27T16:30+01:00","speakers":["6520ad1e-8c4e-45c1-b34d-91ca73db27fe"]},"456540":{"id":"456540","title":"Designing for foldables in 2023","startTime":"2023-04-27T16:30+01:00","endTime":"2023-04-27T17:00+01:00","speakers":["2f606e32-997a-4b74-8420-76a47e7d66a3","97bc557b-01db-4ffc-813c-2c4c1a99500c"]},"453896":{"id":"453896","title":"90s Website …  in 2023 on mobile in Compose … for science","startTime":"2023-04-27T17:00+01:00","endTime":"2023-04-27T17:30+01:00","speakers":["2313d8eb-7d6e-444d-8e8d-4d223f896ce8"]},"419284":{"id":"419284","title":"Collaborating with Protobuf & Type-Safe APIs","startTime":"2023-04-27T17:30+01:00","endTime":"2023-04-27T18:00+01:00","speakers":["e79f9a2d-dd0a-4e40-bd83-57abdcc07147"]},"422755":{"id":"422755","title":"AI won't take your job but it sure will help you do it better","startTime":"2023-04-27T18:00+01:00","endTime":"2023-04-27T18:30+01:00","speakers":["3192eb25-047c-4d7e-874a-53206c185074"]},"455254":{"id":"455254","title":"Embarquer votre modèle de machine learning dans votre app ?","startTime":"2023-04-27T18:30+01:00","endTime":"2023-04-27T19:00+01:00","speakers":["60549250-148e-46a0-9868-f5d31b5f7499"]},"445351":{"id":"445351","title":"How to use hardware acceleration for Machine Learning inference on Android","startTime":"2023-04-27T19:00+01:00","endTime":"2023-04-27T19:30+01:00","speakers":["f8c30c09-8132-4ac8-91a5-9e7b293063a4","791d1128-88d2-4f3f-9917-9e4c1f1ea961"]},"455750":{"id":"455750","title":"Tests unitaires avec KotlinFlow","startTime":"2023-04-27T19:30+01:00","endTime":"2023-04-27T20:00+01:00","speakers":["f63fcbea-0846-4b5e-b174-e1e9a5359964"]},"454972":{"id":"454972","title":"Unusable or Undebuggable? Rebelling against \"best practices\"","startTime":"2023-04-27T20:00+01:00","endTime":"2023-04-27T20:30+01:00","speakers":["7c1cede6-5f59-46bb-ad1e-22b63758dae7"]},"454421":{"id":"454421","title":"Going on a road trip with Android Auto","startTime":"2023-04-27T20:30+01:00","endTime":"2023-04-27T21:00+01:00","speakers":["2bc1e95f-1243-4ad0-8a11-75541fee10e0"]},"454627":{"id":"454627","title":"Comment gagner en efficacité avec les file templates ?","startTime":"2023-04-27T21:00+01:00","endTime":"2023-04-27T21:30+01:00","speakers":["13e3361f-310d-4d75-a593-bb3acfee08a7","424072c4-ac7b-45e0-9d63-34903356b74c"]},"441771":{"id":"441771","title":"I have a Date","startTime":"2023-04-27T21:30+01:00","endTime":"2023-04-27T22:00+01:00","speakers":["4674e36f-50f8-4ffb-a486-679d730c759e"]},"441542":{"id":"441542","title":"The Rise and Fall of Feature Teams","startTime":"2023-04-27T22:00+01:00","endTime":"2023-04-27T22:30+01:00","speakers":["4d3a31b1-61e5-4a26-9ca3-c9f30e3eaa08"]},"442026":{"id":"442026","title":"Become a Maestro of Mobile Testing in 5 minutes","startTime":"2023-04-27T22:30+01:00","endTime":"2023-04-27T23:00+01:00","speakers":["05385600-cf94-4333-afb3-0ebb5f9d0269","22ac76a5-35b4-478c-a2c6-f7b8a4169928"]},"424855":{"id":"424855","title":"Réaliser rapidement un jeu cross-platform avec Flutter et Firebase","startTime":"2023-04-27T23:00+01:00","endTime":"2023-04-27T23:30+01:00","speakers":["3d34325b-8080-415c-9324-b06d036c5cab"]},"452498":{"id":"452498","title":"Make Gradle work for you, create your own tasks and plugins","startTime":"2023-04-27T23:30+01:00","endTime":"2023-04-28T00:00+01:00","speakers":["a20010e8-b898-465f-84c8-69d93ae46194","23c58f10-a1d1-4c3d-aa8c-caed84503b97"]},"442732":{"id":"442732","title":"Practical ADB usage to enhance your life!","startTime":"2023-04-28T00:00+01:00","endTime":"2023-04-28T00:30+01:00","speakers":["5f8860b3-e669-4717-91bf-ddceb872fd55"]},"436372":{"id":"436372","title":"Go with the Flow","startTime":"2023-04-28T00:30+01:00","endTime":"2023-04-28T01:00+01:00","speakers":["a82de654-53d7-4c16-989a-5efddf36983e"]},"418036":{"id":"418036","title":"Let's shake the Flutter tree","startTime":"2023-04-28T01:00+01:00","endTime":"2023-04-28T01:30+01:00","speakers":["c73c2377-026f-4b6a-b1f7-91a536c33c67"]},"455494":{"id":"455494","title":"Un Design System, ça se Compose !","startTime":"2023-04-28T01:30+01:00","endTime":"2023-04-28T02:00+01:00","speakers":["d74d249a-ce9e-4887-93a0-fa19d73a501d","8e90a4dc-33fc-4000-9bcb-802e45b50d87"]},"456538":{"id":"456538","title":"Journey of the Android white label process","startTime":"2023-04-28T02:00+01:00","endTime":"2023-04-28T02:30+01:00","speakers":["c35f2359-2c5c-4b88-a4bc-024a6c025ce4"]},"433488":{"id":"433488","title":"Take a look at Jetpack Glance","startTime":"2023-04-28T02:30+01:00","endTime":"2023-04-28T03:00+01:00","speakers":["b6dc4b56-ca5d-4e55-8a57-e37f6e6d6af0"]},"452238":{"id":"452238","title":"What a Long Strange Trip it's Been: A Year In Android","startTime":"2023-04-28T03:00+01:00","endTime":"2023-04-28T03:30+01:00","speakers":["10659767-356c-4cd5-ba9c-12cec7a3ce79"]},"419559":{"id":"419559","title":"Sweet Architecture","startTime":"2023-04-28T03:30+01:00","endTime":"2023-04-28T04:00+01:00","speakers":["449b4215-55cc-444f-8ff4-b0c434a96019"]},"454848":{"id":"454848","title":"How to ship apps better, faster, stronger","startTime":"2023-04-28T04:00+01:00","endTime":"2023-04-28T04:30+01:00","speakers":["0b1323da-2946-49de-be5c-e54d44e12325"]},"446247":{"id":"446247","title":"Let's discover the possibilities of Kotlin beyond Android","startTime":"2023-04-28T04:30+01:00","endTime":"2023-04-28T05:00+01:00","speakers":["53bb8035-14c0-479a-9c9d-cc7c9b50c6ff","fa6ac12a-6cbe-4dd0-8ee0-3d05ddbc2262"]},"455676":{"id":"455676","title":"App Clinic","startTime":"2023-04-28T05:00+01:00","endTime":"2023-04-28T05:30+01:00","speakers":["9f35aab3-8baf-4a74-97a0-735dd9a2479f"]},"456499":{"id":"456499","title":"Off to the Races with Android","startTime":"2023-04-28T05:30+01:00","endTime":"2023-04-28T06:00+01:00","speakers":["878ec0bb-f4d7-4b83-a9af-ff6e359a35dc","8f01dc41-f26d-41d9-a12d-1801e80795cf"]},"417890":{"id":"417890","title":"Level up on Kotlin Multiplatform","startTime":"2023-04-28T06:00+01:00","endTime":"2023-04-28T06:30+01:00","speakers":["62216efe-dd8b-4d8b-9800-1d51b57c4001"]},"450710":{"id":"450710","title":"Confetti: building a Kotlin conference app in 40min 🎊","startTime":"2023-04-28T06:30+01:00","endTime":"2023-04-28T07:00+01:00","speakers":["0392772c-28d4-47f6-bd39-47d743fb4a81","56fda597-4927-4d25-9a80-4795d15ef080"]},"439280":{"id":"439280","title":"Are your secrets secure - How mobile apps are leaking millions of credentials","startTime":"2023-04-28T07:00+01:00","endTime":"2023-04-28T07:30+01:00","speakers":["4e52cb59-2074-4f77-ad95-1f7c36f3bb28"]},"454559":{"id":"454559","title":"State of Bluetooth LE on Android in 2023","startTime":"2023-04-28T07:30+01:00","endTime":"2023-04-28T08:00+01:00","speakers":["79823093-1b16-4a2b-b0a9-ea4cd25b92f5"]},"455173":{"id":"455173","title":"~/git --help","startTime":"2023-04-28T08:00+01:00","endTime":"2023-04-28T08:30+01:00","speakers":["1ee57fa9-790a-4a61-a980-6ef301818aea"]},"435622":{"id":"435622","title":"The Art of KMP: how I learned backend development with Kotlin and why you should too","startTime":"2023-04-28T08:30+01:00","endTime":"2023-04-28T09:00+01:00","speakers":["6a7c1f8a-784d-46be-8840-9cf519c4bc78"]},"417951":{"id":"417951","title":"Migrate to Gradle version catalog and convention plugins","startTime":"2023-04-28T09:00+01:00","endTime":"2023-04-28T09:30+01:00","speakers":["12052406-2d03-4184-95a1-1098d88b9ce8"]},"454354":{"id":"454354","title":"Boostez votre application mobile grâce à ChatGPT","startTime":"2023-04-28T09:30+01:00","endTime":"2023-04-28T10:00+01:00","speakers":["edfe420a-8175-4064-9f50-b77a64358dd6"]},"441204":{"id":"441204","title":"Introduction à l'observabilité sur mobile","startTime":"2023-04-28T10:00+01:00","endTime":"2023-04-28T10:30+01:00","speakers":["7659a5f9-d376-4ddb-aa96-892b34f40c23","9860a793-5622-47ae-83bc-61d1e9c0fa0e"]},"417949":{"id":"417949","title":"10 years of Android Development: The Retrospective","startTime":"2023-04-28T10:30+01:00","endTime":"2023-04-28T11:00+01:00","speakers":["462e6b97-01f9-44b1-864c-9d85bedf911b"]},"431337":{"id":"431337","title":"Les différentes stratégies de monétisation d'une application mobile","startTime":"2023-04-28T11:00+01:00","endTime":"2023-04-28T11:30+01:00","speakers":["ae702dc9-e083-4643-b977-77b1f10cd26f","85dc1d24-7fae-4f37-93f7-051b38f8a74d"]},"453147":{"id":"453147","title":"Animations avec Compose : rendez vos apps chat-oyantes","startTime":"2023-04-28T11:30+01:00","endTime":"2023-04-28T12:00+01:00","speakers":["33443e15-f66d-4f8a-848e-31da9db7ef68","2e99f60c-b3db-48d0-a155-e50064d67d36"]},"461149":{"id":"461149","title":"Defensive Programming: The Best Software Development Methodology Ever Invented","startTime":"2023-04-28T12:00+01:00","endTime":"2023-04-28T12:30+01:00","speakers":["05fa719f-1528-43ef-adf9-eca92f383262","152f613f-841b-407d-9a65-3703ec2dfae2"]}},"speakers":{"791d1128-88d2-4f3f-9917-9e4c1f1ea961":{"id":"791d1128-88d2-4f3f-9917-9e4c1f1ea961","name":"Adrien Couque","photoUrl":"https://sessionize.com/image/3c70-400o400o2-QTFm7PWFZM4NUUVNjpPVeu.png","socials":[]},"a82de654-53d7-4c16-989a-5efddf36983e":{"id":"a82de654-53d7-4c16-989a-5efddf36983e","name":"Akshay Chordiya","photoUrl":"https://sessionize.com/image/3f47-400o400o2-54-53d7-4c16-989a-5efddf36983e.80e8c68a-14d0-4ee8-8aa6-bb6b1f39936b.png","socials":[{"name":"Twitter","link":"https://twitter.com/Akshay_Chordiya"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/akshaychordiya/"}]},"e79f9a2d-dd0a-4e40-bd83-57abdcc07147":{"id":"e79f9a2d-dd0a-4e40-bd83-57abdcc07147","name":"Alan Chiu","photoUrl":"https://sessionize.com/image/fb9b-400o400o2-XYLzKPk6LbhzuBwLPbcxiy.png","socials":[{"name":"Twitter","link":"https://twitter.com/awlchiu"},{"name":"Blog","link":"https://github.com/buildbreaker/"}]},"c73c2377-026f-4b6a-b1f7-91a536c33c67":{"id":"c73c2377-026f-4b6a-b1f7-91a536c33c67","name":"Aleksandr Denisov","photoUrl":"https://sessionize.com/image/d3f1-400o400o2-77-026f-4b6a-b1f7-91a536c33c67.b048a543-27ec-463d-9935-2536de713d68.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/ShuregDenisov"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/aleks-denisov/"}]},"ae702dc9-e083-4643-b977-77b1f10cd26f":{"id":"ae702dc9-e083-4643-b977-77b1f10cd26f","name":"Anthony Stéphan Guilloteau","photoUrl":"https://sessionize.com/image/db95-400o400o2-BySvXDg2WbvDNQX1jPGtYL.jpg","socials":[{"name":"LinkedIn","link":"https://www.linkedin.com/in/stephananthony/"},{"name":"Blog","link":"https://asmobile.dev/blog/"},{"name":"Company Website","link":"https://asmobile.dev/"}]},"33443e15-f66d-4f8a-848e-31da9db7ef68":{"id":"33443e15-f66d-4f8a-848e-31da9db7ef68","name":"Antoine Robiez","photoUrl":"https://sessionize.com/image/b93f-400o400o2-e4471913-8a5b-4275-8b0c-95f8946794ff.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/enthuan"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/arobiez/"}]},"10659767-356c-4cd5-ba9c-12cec7a3ce79":{"id":"10659767-356c-4cd5-ba9c-12cec7a3ce79","name":"Ash Davies","photoUrl":"https://sessionize.com/image/7162-400o400o2-3sSDTUEzJHmdfEFfg8AvLq.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/askashdavies"},{"name":"Blog","link":"https://ashdavies.dev/"},{"name":"Company Website","link":"https://snappmobile.io/"}]},"2e99f60c-b3db-48d0-a155-e50064d67d36":{"id":"2e99f60c-b3db-48d0-a155-e50064d67d36","name":"Baptiste Carlier","photoUrl":"https://sessionize.com/image/bd08-400o400o2-UjhjPEcN6qHJwFGA5a83mV.jpg","socials":[{"name":"Twitter","link":"https://www.twitter.com/@bapness"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/baptiste-carlier-a3b9a91b"},{"name":"Blog","link":"https://medium.com/@BapNesS"}]},"5f8860b3-e669-4717-91bf-ddceb872fd55":{"id":"5f8860b3-e669-4717-91bf-ddceb872fd55","name":"Benjamin Kadel","photoUrl":"https://sessionize.com/image/7055-400o400o2-aeGKNNAdBRPbU7XJa8CVih.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/Ben_Kadel"},{"name":"LinkedIn","link":"https://uk.linkedin.com/in/benkadel"},{"name":"Blog","link":"https://kardelio.github.io/"},{"name":"Company Website","link":"https://www.babbel.com/"}]},"449b4215-55cc-444f-8ff4-b0c434a96019":{"id":"449b4215-55cc-444f-8ff4-b0c434a96019","name":"Benoit Quenaudon","photoUrl":"https://sessionize.com/image/2ca9-400o400o2-15-55cc-444f-8ff4-b0c434a96019.0cde7eba-d569-4f65-85b6-7a08c64ed67a.png","socials":[{"name":"Twitter","link":"https://twitter.com/oldergod"},{"name":"Blog","link":"https://benoitquenaudon.com/"},{"name":"Company Website","link":"https://quenaudon.com/"}]},"2bc1e95f-1243-4ad0-8a11-75541fee10e0":{"id":"2bc1e95f-1243-4ad0-8a11-75541fee10e0","name":"Carlos Mota","photoUrl":"https://sessionize.com/image/efb7-400o400o2-LBdmtKWRMREWCH8VNkXXZ2.png","socials":[{"name":"Twitter","link":"https://twitter.com/@cafonsomota"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/cafonsomota/"},{"name":"Blog","link":"https://cafonsomota.xyz/"}]},"a20010e8-b898-465f-84c8-69d93ae46194":{"id":"a20010e8-b898-465f-84c8-69d93ae46194","name":"Cécile Dreyfus","photoUrl":"https://sessionize.com/image/3dcc-400o400o2-U4hjkiqNYa1ADeEdHogkhR.jpg","socials":[{"name":"LinkedIn","link":"https://www.linkedin.com/in/cecile-dreyfus-8b11ba81/"},{"name":"Company Website","link":"https://mwm.io/"}]},"05fa719f-1528-43ef-adf9-eca92f383262":{"id":"05fa719f-1528-43ef-adf9-eca92f383262","name":"Chet Haase","photoUrl":"https://sessionize.com/image/8d80-400o400o2-9f-1528-43ef-adf9-eca92f383262.ad51b0e2-257a-40de-a457-8ba542d27967.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/chethaase"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/chethaase/"},{"name":"Blog","link":"https://chethaase.medium.com/"},{"name":"Company Website","link":"http://d.android.com"}]},"4d3a31b1-61e5-4a26-9ca3-c9f30e3eaa08":{"id":"4d3a31b1-61e5-4a26-9ca3-c9f30e3eaa08","name":"Danny Preussler","photoUrl":"https://sessionize.com/image/e5a4-400o400o2-b1-61e5-4a26-9ca3-c9f30e3eaa08.3e7b5602-cf0d-4f47-b510-f789a00b4cbf.png","socials":[{"name":"Twitter","link":"https://twitter.com/PreusslerBerlin"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/danny-preussler-557a3b79/"},{"name":"Blog","link":"https://medium.com/@dpreussler"},{"name":"Company Website","link":"http://www.sporttotal.tv/"}]},"edfe420a-8175-4064-9f50-b77a64358dd6":{"id":"edfe420a-8175-4064-9f50-b77a64358dd6","name":"David Silvera","photoUrl":"https://sessionize.com/image/e9f9-400o400o2-h5h8r5pFmhyKCMbwJ62USd.png","socials":[{"name":"Twitter","link":"https://twitter.com/dav_silvera"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/david-silvera-87073271/"},{"name":"Blog","link":"https://www.youtube.com/channel/UCHYsJlzg-8MBpskWQd95GxA"},{"name":"Company Website","link":"https://www.wemoms.fr"}]},"944b39a5-752a-40e4-aa2b-dcc8e0f6da38":{"id":"944b39a5-752a-40e4-aa2b-dcc8e0f6da38","name":"Deema AlShamaa","photoUrl":"https://sessionize.com/image/0200-400o400o2-UtCknRGfYqifh2m49Rqb4i.jpg","socials":[{"name":"LinkedIn","link":"https://www.linkedin.com/in/deemaalshamaa/"}]},"b88bee58-a4e3-4a47-be4d-85c9421457cc":{"id":"b88bee58-a4e3-4a47-be4d-85c9421457cc","name":"Edouard Marquez","photoUrl":"https://sessionize.com/image/289e-400o400o2-wRBhQCXUpnYXVPtUgBES5j.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/g123k"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/edouard-marquez-32431514"},{"name":"Company Website","link":"https://www.youtube.com/@devcafe"}]},"7c888e22-f254-4e04-aa56-1853ab18c000":{"id":"7c888e22-f254-4e04-aa56-1853ab18c000","name":"Elaine Dias Batista","photoUrl":"https://sessionize.com/image/ff12-400o400o2-4gLzg9xVX7gjs6MEgxucCk.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/elainedbatista"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/elaine-dias-batista-25517520/"},{"name":"Blog","link":"https://twitter.com/elainedbatista"},{"name":"Company Website","link":"https://sfeir.com/"}]},"2f606e32-997a-4b74-8420-76a47e7d66a3":{"id":"2f606e32-997a-4b74-8420-76a47e7d66a3","name":"Enrique Lopez Manas","photoUrl":"https://sessionize.com/image/77a9-400o400o2-M9BKbgGqa4gZZzTjWuUY45.jpg","socials":[{"name":"Twitter","link":"http://www.twitter.com/eenriquelopez"},{"name":"LinkedIn","link":"https://de.linkedin.com/in/eenriquelopez"},{"name":"Blog","link":"https://medium.com/@enriquelopezmanas"}]},"79823093-1b16-4a2b-b0a9-ea4cd25b92f5":{"id":"79823093-1b16-4a2b-b0a9-ea4cd25b92f5","name":"Erik Hellman","photoUrl":"https://sessionize.com/image/ec6f-400o400o2-93-1b16-4a2b-b0a9-ea4cd25b92f5.4cc61ad2-1d12-4dab-81b4-6c2818bbe6de.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/ErikHellman"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/erikhelllman/"},{"name":"Blog","link":"https://www.hellsoft.se"},{"name":"Company Website","link":"https://hellsoft.se/"}]},"878ec0bb-f4d7-4b83-a9af-ff6e359a35dc":{"id":"878ec0bb-f4d7-4b83-a9af-ff6e359a35dc","name":"Etienne Caron","photoUrl":"https://sessionize.com/image/881d-400o400o2-3XyABod1tzM94rrtZk4Mpg.png","socials":[{"name":"Twitter","link":"https://twitter.com/kanawish"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/etcaron"},{"name":"Blog","link":"https://kanawish.com"},{"name":"Company Website","link":"https://kanastruk.com"}]},"9f35aab3-8baf-4a74-97a0-735dd9a2479f":{"id":"9f35aab3-8baf-4a74-97a0-735dd9a2479f","name":"Eyal Lezmy","photoUrl":"https://sessionize.com/image/21f2-400o400o2-Ry3ZC4o4Tx8xVxCo6DYeuv.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/Eyal_Lezmy"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/eyallezmy/"},{"name":"Blog","link":"http://eyal.fr"},{"name":"Company Website","link":"https://www.tagheuer.com"}]},"0b1323da-2946-49de-be5c-e54d44e12325":{"id":"0b1323da-2946-49de-be5c-e54d44e12325","name":"Fabien Devos","photoUrl":"https://sessionize.com/image/a8e3-400o400o2-Wj69q9oRxA1N3nHxYPFATr.jpeg","socials":[{"name":"Twitter","link":"https://twitter.com/Fabien_Devos"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/fabiendevos/"},{"name":"Blog","link":"https://wolfia.com/blog"},{"name":"Company Website","link":"https://wolfia.com"}]},"5f7faf69-dd61-4ad6-b6d8-0173cae292d8":{"id":"5f7faf69-dd61-4ad6-b6d8-0173cae292d8","name":"Fatih Giriş","photoUrl":"https://sessionize.com/image/0593-400o400o2-M5pgNeuj2M86joAE5FuHRt.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/fatih_grs"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/fgiris/"},{"name":"Blog","link":"https://medium.com/@girisfth"},{"name":"Company Website","link":"https://www.dnb.no/en"}]},"f63fcbea-0846-4b5e-b174-e1e9a5359964":{"id":"f63fcbea-0846-4b5e-b174-e1e9a5359964","name":"Florent Blot","photoUrl":"https://sessionize.com/image/d7d3-400o400o2-9UiDGtq6y9pnpCTJtE7pN8.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/twitdefllo"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/florent-blot-a1b72240/"},{"name":"Blog","link":"https://medium.com/@fllo"},{"name":"Company Website","link":"https://www.geev.com"}]},"8f01dc41-f26d-41d9-a12d-1801e80795cf":{"id":"8f01dc41-f26d-41d9-a12d-1801e80795cf","name":"François Légaré","photoUrl":"https://sessionize.com/image/6ed7-400o400o2-fhFKHZRUbq8jCawt2En39E.jpg","socials":[{"name":"LinkedIn","link":"https://www.linkedin.com/in/flegare/"},{"name":"Company Website","link":"https://www.bell.ca"}]},"23c58f10-a1d1-4c3d-aa8c-caed84503b97":{"id":"23c58f10-a1d1-4c3d-aa8c-caed84503b97","name":"Frédéric Torcheux","photoUrl":"https://sessionize.com/image/f40d-400o400o2-6tA5YAbkoZp2fvfba26fu.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/bowser_f"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-torcheux-411a9b7b/"},{"name":"Blog","link":"https://medium.com/@bowser-f"},{"name":"Company Website","link":"https://mwm.io/"}]},"6520ad1e-8c4e-45c1-b34d-91ca73db27fe":{"id":"6520ad1e-8c4e-45c1-b34d-91ca73db27fe","name":"Gerard Paligot","photoUrl":"https://sessionize.com/image/1edb-400o400o2-EkWYD7sV7VvtFAKoYk7xZz.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/GerardPaligot"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/gpaligot/"},{"name":"Blog","link":"https://gerard.paligot.com/"},{"name":"Company Website","link":"https://technology.decathlon.com/"}]},"3d34325b-8080-415c-9324-b06d036c5cab":{"id":"3d34325b-8080-415c-9324-b06d036c5cab","name":"Guillaume Bernos","photoUrl":"https://sessionize.com/image/4de3-400o400o2-WDnjsp8rpPdT5f7LiJ2Naz.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/BeGuillaume"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/guillaume-bernos/"},{"name":"Blog","link":"https://guillaume.bernos.dev"},{"name":"Company Website","link":"https://invertase.io"}]},"3ff1f933-847b-4e0d-8e01-c2ca21bbab5d":{"id":"3ff1f933-847b-4e0d-8e01-c2ca21bbab5d","name":"Hadi Hariri","photoUrl":"https://sessionize.com/image/6c5f-400o400o2-33-847b-4e0d-8e01-c2ca21bbab5d.52718bff-e891-4158-8ba6-b2fe96ec270f.png","socials":[{"name":"Twitter","link":"https://twitter.com/hhariri"}]},"60549250-148e-46a0-9868-f5d31b5f7499":{"id":"60549250-148e-46a0-9868-f5d31b5f7499","name":"Hugo Gresse","photoUrl":"https://sessionize.com/image/ff69-400o400o2-nZMJ9HVd27zsnoQ7z6mJBX.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/hugoGresse"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/hugogresse/"},{"name":"Company Website","link":"https://plantnet.org"}]},"d74d249a-ce9e-4887-93a0-fa19d73a501d":{"id":"d74d249a-ce9e-4887-93a0-fa19d73a501d","name":"Jean-Baptiste Vincey","photoUrl":"https://sessionize.com/image/aef3-400o400o2-GJBmDHW3w3PmYNUsjrMege.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/JBVincey"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/jbvincey/"},{"name":"Blog","link":"https://medium.com/@jbvincey"},{"name":"Company Website","link":"https://deezer.io/"}]},"b3770b77-c9c8-454d-8b7a-045ca1d66b7b":{"id":"b3770b77-c9c8-454d-8b7a-045ca1d66b7b","name":"Jeroen Mols","photoUrl":"https://sessionize.com/image/ec63-400o400o2-VDZYyXnRs4dHDtatTcPsdF.jpeg","socials":[{"name":"Twitter","link":"https://twitter.com/@molsjeroen"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/jeroenmols/"},{"name":"Blog","link":"https://jeroenmols.com/blog"},{"name":"Company Website","link":"https://plaid.com/"}]},"0392772c-28d4-47f6-bd39-47d743fb4a81":{"id":"0392772c-28d4-47f6-bd39-47d743fb4a81","name":"John O'Reilly","photoUrl":"https://sessionize.com/image/48e7-400o400o2-HkquSQhsfczBGkrABwVTBc.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/joreilly"},{"name":"Blog","link":"https://johnoreilly.dev/"},{"name":"Company Website","link":"http://neat.no"}]},"13e3361f-310d-4d75-a593-bb3acfee08a7":{"id":"13e3361f-310d-4d75-a593-bb3acfee08a7","name":"Jonathan Mercandalli","photoUrl":"https://sessionize.com/image/bb60-400o400o2-a4WDgzpicSuSa2JUaruJBM.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/MercandalliJ"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/jonathan-mercandalli"},{"name":"Blog","link":"https://mercandalli.com"},{"name":"Company Website","link":"https://mwm.io"}]},"05385600-cf94-4333-afb3-0ebb5f9d0269":{"id":"05385600-cf94-4333-afb3-0ebb5f9d0269","name":"Jordan Dahnoun","photoUrl":"https://sessionize.com/image/7687-400o400o2-EkQaohAtu31qVUUNk7rQqo.png","socials":[{"name":"LinkedIn","link":"https://fr.linkedin.com/in/jordan-dahnoun-18a95974"},{"name":"Company Website","link":"https://www.jobteaser.com"}]},"8e90a4dc-33fc-4000-9bcb-802e45b50d87":{"id":"8e90a4dc-33fc-4000-9bcb-802e45b50d87","name":"Julie Gléonnec","photoUrl":"https://sessionize.com/image/3662-400o400o2-39cPwSVhuVuF7bRBtT5uV6.jpg","socials":[]},"462e6b97-01f9-44b1-864c-9d85bedf911b":{"id":"462e6b97-01f9-44b1-864c-9d85bedf911b","name":"Julien Salvi","photoUrl":"https://sessionize.com/image/dd30-400o400o2-4NcyaNMS4awH1Zr87u5Gve.png","socials":[{"name":"Twitter","link":"https://twitter.com/JulienSalvi"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/salvijulien/"},{"name":"Company Website","link":"https://aircall.io/"}]},"7659a5f9-d376-4ddb-aa96-892b34f40c23":{"id":"7659a5f9-d376-4ddb-aa96-892b34f40c23","name":"Kelian Clerc","photoUrl":"https://sessionize.com/image/58c8-400o400o2-Qq4cdoe6C1EL6CLGRPDnNo.png","socials":[{"name":"Twitter","link":"https://twitter.com/clerc_kelian"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/k%C3%A9lian-clerc-854451107/"}]},"c35f2359-2c5c-4b88-a4bc-024a6c025ce4":{"id":"c35f2359-2c5c-4b88-a4bc-024a6c025ce4","name":"Kinnera Priya Putti","photoUrl":"https://sessionize.com/image/c5fc-400o400o2-hgcsScqgaUkpD8DasH6npt.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/kinnerapriyap"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/kinnerapriyap/"},{"name":"Blog","link":"https://www.kinnerapriyap.com/work/"},{"name":"Company Website","link":"https://ioki.com/"}]},"6a7c1f8a-784d-46be-8840-9cf519c4bc78":{"id":"6a7c1f8a-784d-46be-8840-9cf519c4bc78","name":"Lena Stepanova","photoUrl":"https://sessionize.com/image/fc1d-400o400o2-NuhVipEg5WLgPyZL4TzmmE.jpg","socials":[{"name":"Twitter","link":"http://twitter.com/hlnstep"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/lenastepanova/"},{"name":"Blog","link":"http://hlnstepanova.github.io/kmpizza"},{"name":"Company Website","link":"http://hlnstepanova.github.io"}]},"7c1cede6-5f59-46bb-ad1e-22b63758dae7":{"id":"7c1cede6-5f59-46bb-ad1e-22b63758dae7","name":"Louis CAD","photoUrl":"https://sessionize.com/image/9602-400o400o2-8uv1o8mW8uWPvgF1vEKUh.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/Louis_CAD"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/louiscad"},{"name":"Blog","link":"https://blog.louiscad.com/"}]},"bd3e3257-9d05-4f72-9225-50908473778d":{"id":"bd3e3257-9d05-4f72-9225-50908473778d","name":"Lucas Klegen","photoUrl":"https://sessionize.com/image/90c1-400o400o2-hWDvP7Vhkm9NuMGSUEHaFA.jpg","socials":[{"name":"LinkedIn","link":"https://www.linkedin.com/in/lucas-klegen-b9a851104/"},{"name":"Blog","link":"https://wildlifestudios.com/unleash"},{"name":"Company Website","link":"https://wildlifestudios.com/"}]},"4e52cb59-2074-4f77-ad95-1f7c36f3bb28":{"id":"4e52cb59-2074-4f77-ad95-1f7c36f3bb28","name":"Mackenzie Jackson","photoUrl":"https://sessionize.com/image/28f3-400o400o2-TBJDeDf6YJAic3dCfEdDSs.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/advocatemack"},{"name":"LinkedIn","link":"https://linkedin.com/in/advocatemack"},{"name":"Blog","link":"https://blog.gitguardian.com/author/mackenziejackson/"},{"name":"Company Website","link":"https://gitguardian.com "}]},"2313d8eb-7d6e-444d-8e8d-4d223f896ce8":{"id":"2313d8eb-7d6e-444d-8e8d-4d223f896ce8","name":"Maia Grotepass","photoUrl":"https://sessionize.com/image/1d96-400o400o2-KpWLxBbuVa4M4Pg59vMrZj.png","socials":[{"name":"Twitter","link":"https://twitter.com/maiatoday"}]},"424072c4-ac7b-45e0-9d63-34903356b74c":{"id":"424072c4-ac7b-45e0-9d63-34903356b74c","name":"Marc Picone","photoUrl":"https://sessionize.com/image/1ac8-400o400o2-4ZF7ybY7cTPvHpFqvA69cy.png","socials":[{"name":"LinkedIn","link":"https://www.linkedin.com/in/marcpicone"},{"name":"Company Website","link":"https://mwm.io/"}]},"aeddc24f-0e47-4934-ad76-2de7a9dc9fac":{"id":"aeddc24f-0e47-4934-ad76-2de7a9dc9fac","name":"Marco Gomiero","photoUrl":"https://sessionize.com/image/0c60-400o400o2-JVg7XKCfJ2g8Pi1LyNPMPA.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/marcoGomier"},{"name":"LinkedIn","link":"https://linkedin.com/in/marco-gomiero"},{"name":"Blog","link":"https://www.marcogomiero.com"},{"name":"Company Website","link":"https://www.tier.app/"}]},"1fcef224-ed23-4d8d-8e07-4855817796fd":{"id":"1fcef224-ed23-4d8d-8e07-4855817796fd","name":"Mark Villacampa","photoUrl":"https://sessionize.com/image/8be4-400o400o2-d8790599-4aa1-41d5-b4a1-494459caefd5.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/MarkVillacampa"},{"name":"Company Website","link":"https://www.revenuecat.com/"}]},"56fda597-4927-4d25-9a80-4795d15ef080":{"id":"56fda597-4927-4d25-9a80-4795d15ef080","name":"Martin Bonnin","photoUrl":"https://sessionize.com/image/7c96-400o400o2-UiWeCMZDxPejrFsozKmLYr.jpeg","socials":[{"name":"Twitter","link":"https://twitter.com/martinbonnin"},{"name":"Blog","link":"https://blog.mbonnin.net"},{"name":"Company Website","link":"https://www.apollographql.com/"}]},"12052406-2d03-4184-95a1-1098d88b9ce8":{"id":"12052406-2d03-4184-95a1-1098d88b9ce8","name":"Merab Tato Kutalia","photoUrl":"https://sessionize.com/image/0a0c-400o400o2-ssJruY3q6U1zYEnJf1MhZH.png","socials":[{"name":"Twitter","link":"https://twitter.com/TatoKutalia"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/tatocaster"}]},"ca3e1da2-cfce-4823-8e14-a886f2483c2c":{"id":"ca3e1da2-cfce-4823-8e14-a886f2483c2c","name":"Morad Azzouzi","photoUrl":"https://sessionize.com/image/8111-400o400o2-TgxqRZmk9KLRvxwYbYhq1R.png","socials":[{"name":"Twitter","link":"https://twitter.com/MoradiousBig"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/morad-azzouzi-646725133/"},{"name":"Blog","link":"https://medium.com/@morad.azzouzi"},{"name":"Company Website","link":"https://www.leboncoin.fr/"}]},"fa6ac12a-6cbe-4dd0-8ee0-3d05ddbc2262":{"id":"fa6ac12a-6cbe-4dd0-8ee0-3d05ddbc2262","name":"Nicolas Rivière","photoUrl":"https://sessionize.com/image/0026-400o400o2-hroHK41ctLEyMgP89BaN4w.jpeg","socials":[{"name":"LinkedIn","link":"https://www.linkedin.com/in/riviere-nicolas/"},{"name":"Company Website","link":"https://worldline.com/"}]},"3192eb25-047c-4d7e-874a-53206c185074":{"id":"3192eb25-047c-4d7e-874a-53206c185074","name":"Orel Zion","photoUrl":"https://sessionize.com/image/d8a4-400o400o2-rsHjm3QqfryCxxSFfGHx64.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/orelziondev"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/orel-zion-86122665/"},{"name":"Blog","link":"https://www.androidoss.dev/"}]},"62216efe-dd8b-4d8b-9800-1d51b57c4001":{"id":"62216efe-dd8b-4d8b-9800-1d51b57c4001","name":"Pamela Hill","photoUrl":"https://sessionize.com/image/9e38-400o400o2-Dbh3jNbrkDNdSH1q1zAJmr.png","socials":[{"name":"Twitter","link":"https://twitter.com/pamelaahill"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/pamelaahill/"},{"name":"Blog","link":"https://www.pamelaahill.com"},{"name":"Company Website","link":"https://www.jetbrains.com"}]},"97bc557b-01db-4ffc-813c-2c4c1a99500c":{"id":"97bc557b-01db-4ffc-813c-2c4c1a99500c","name":"Pierluigi Rufo","photoUrl":"https://sessionize.com/image/be15-400o400o2-4jBmDzCQrKhUz2nuCUYNNE.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/pierluigirufo"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/pierluigi-rufo-04299040/"},{"name":"Company Website","link":"https://snappautomotive.io/"}]},"b6dc4b56-ca5d-4e55-8a57-e37f6e6d6af0":{"id":"b6dc4b56-ca5d-4e55-8a57-e37f6e6d6af0","name":"Piotr Prus","photoUrl":"https://sessionize.com/image/7cba-400o400o2-ainA1gVSSCHxugeFJdVjM2.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/piotr_prus"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/piotrprus/"},{"name":"Blog","link":"https://piotrprus.medium.com/"}]},"4674e36f-50f8-4ffb-a486-679d730c759e":{"id":"4674e36f-50f8-4ffb-a486-679d730c759e","name":"Renaud Mathieu","photoUrl":"https://sessionize.com/image/f208-400o400o2-2952bcff-8886-47d8-911d-b70321f9b768.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/renaud_mathieu"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/renaudmathieu1/"},{"name":"Blog","link":"https://renaudmathieu.com"},{"name":"Company Website","link":"https://proton.me/"}]},"85dc1d24-7fae-4f37-93f7-051b38f8a74d":{"id":"85dc1d24-7fae-4f37-93f7-051b38f8a74d","name":"Romain Bouchaud","photoUrl":"https://sessionize.com/image/abc0-400o400o2-ULH6yKYZUEJNL6tqaD1rRc.jpg","socials":[{"name":"LinkedIn","link":"https://www.linkedin.com/company/69714156/"},{"name":"Company Website","link":"https://niamor.dev"}]},"152f613f-841b-407d-9a65-3703ec2dfae2":{"id":"152f613f-841b-407d-9a65-3703ec2dfae2","name":"Romain Guy","photoUrl":"https://sessionize.com/image/bfdf-400o400o2-d068ae37-2e0e-49bd-a4be-b376a32367a8.jpg","socials":[{"name":"Twitter","link":"http://twitter.com/romainguy"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/romainguy/"},{"name":"Blog","link":"https://www.curious-creature.com"}]},"22ac76a5-35b4-478c-a2c6-f7b8a4169928":{"id":"22ac76a5-35b4-478c-a2c6-f7b8a4169928","name":"Romain Rivollier","photoUrl":"https://sessionize.com/image/95b1-400o400o2-36442303-ac79-49e0-891e-76668230573c.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/lypiut"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/romain-rivollier-92154a5a/"},{"name":"Blog","link":"https://medium.com/jobteaser-dev-team"},{"name":"Company Website","link":"https://www.jobteaser.com"}]},"9a7f5add-ce7a-49a3-ab3d-f3c4484453e8":{"id":"9a7f5add-ce7a-49a3-ab3d-f3c4484453e8","name":"Sinan Kozak","photoUrl":"https://sessionize.com/image/e07d-400o400o2-SPKGk1Vse2mophBVWYhs2c.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/snnkzk"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/sinankozak/"},{"name":"Blog","link":"https://sinankozak.medium.com/"},{"name":"Company Website","link":"https://www.deliveryhero.com/"}]},"f8c30c09-8132-4ac8-91a5-9e7b293063a4":{"id":"f8c30c09-8132-4ac8-91a5-9e7b293063a4","name":"Thomas Ezan","photoUrl":"https://sessionize.com/image/7453-400o400o2-09-8132-4ac8-91a5-9e7b293063a4.5bfff84a-3ddf-47af-a9ca-06baeb80662b.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/lethargicpanda"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/tezan/"},{"name":"Company Website","link":"https://developer.android.com/ml"}]},"9860a793-5622-47ae-83bc-61d1e9c0fa0e":{"id":"9860a793-5622-47ae-83bc-61d1e9c0fa0e","name":"Valentin Pertuisot","photoUrl":"https://sessionize.com/image/523b-400o400o2-RRdQHT1oDbsJkibp1F7uER.png","socials":[{"name":"LinkedIn","link":"https://www.linkedin.com/in/valentinpertuisot/"},{"name":"Company Website","link":"https://spendesk.com"}]},"bf58d77f-fad3-49b7-a6b3-82b5f46e5549":{"id":"bf58d77f-fad3-49b7-a6b3-82b5f46e5549","name":"Xavier F. Gouchet","photoUrl":"https://sessionize.com/image/e663-400o400o2-LasSKnQhau826ivwXvp86V.png","socials":[{"name":"Twitter","link":"https://twitter.com/xgouchet"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/xgouchet/"}]},"53bb8035-14c0-479a-9c9d-cc7c9b50c6ff":{"id":"53bb8035-14c0-479a-9c9d-cc7c9b50c6ff","name":"Yassine Benabbas","photoUrl":"https://sessionize.com/image/1bc3-400o400o2-35-14c0-479a-9c9d-cc7c9b50c6ff.c78822d9-1723-4c76-bdcb-e03d292c5fc2.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/yostane"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/benabbasyassine/"},{"name":"Blog","link":"https://medium.com/@yostane"}]},"1ee57fa9-790a-4a61-a980-6ef301818aea":{"id":"1ee57fa9-790a-4a61-a980-6ef301818aea","name":"Zhenlei Ji","photoUrl":"https://sessionize.com/image/e2bf-400o400o2-a9-790a-4a61-a980-6ef301818aea.5db3d4a0-ea4a-4268-aef6-771a82f9e73d.jpg","socials":[{"name":"Twitter","link":"https://twitter.com/zhenleiji"},{"name":"LinkedIn","link":"https://www.linkedin.com/in/zhenleiji"}]},"a733fc42-dcb9-4107-9675-70335f2889e9":{"id":"a733fc42-dcb9-4107-9675-70335f2889e9","name":"🍷Pierre-Yves Ricau","photoUrl":"https://sessionize.com/image/c2f7-400o400o2-42-dcb9-4107-9675-70335f2889e9.676d3ed7-f28a-449d-92f7-25b8dffa8196.jpg","socials":[{"name":"Twitter","link":"http://twitter.com/Piwai"},{"name":"Blog","link":"https://hashnode.com/@py"}]}}}
+{
+  "sessions": {
+    "2d8010f1-62cc-4540-82c2-e5e9a0f57804": {
+      "id": "2d8010f1-62cc-4540-82c2-e5e9a0f57804",
+      "title": "Check-In & Registration",
+      "startTime": "2023-04-27T09:00+01:00",
+      "endTime": "2023-04-27T09:30+01:00",
+      "speakers": [
+      ]
+    },
+    "461143": {
+      "id": "461143",
+      "title": "Android Graphics: the Path to [UI] Riches",
+      "startTime": "2023-04-27T09:30+01:00",
+      "endTime": "2023-04-27T10:00+01:00",
+      "speakers": [
+        "05fa719f-1528-43ef-adf9-eca92f383262",
+        "152f613f-841b-407d-9a65-3703ec2dfae2"
+      ]
+    },
+    "cbfbf549-ac89-419a-9c13-506e09bb354a": {
+      "id": "cbfbf549-ac89-419a-9c13-506e09bb354a",
+      "title": "Break",
+      "startTime": "2023-04-27T10:00+01:00",
+      "endTime": "2023-04-27T10:30+01:00",
+      "speakers": [
+      ]
+    },
+    "433220": {
+      "id": "433220",
+      "title": "Using Compose Runtime to create a client library",
+      "startTime": "2023-04-27T10:30+01:00",
+      "endTime": "2023-04-27T11:00+01:00",
+      "speakers": [
+        "5f7faf69-dd61-4ad6-b6d8-0173cae292d8"
+      ]
+    },
+    "457041": {
+      "id": "457041",
+      "title": "En quête de perf: l'art subtil du profiling Android",
+      "startTime": "2023-04-27T11:00+01:00",
+      "endTime": "2023-04-27T11:30+01:00",
+      "speakers": [
+        "a733fc42-dcb9-4107-9675-70335f2889e9"
+      ]
+    },
+    "432816": {
+      "id": "432816",
+      "title": "Demystifying the test pyramid",
+      "startTime": "2023-04-27T11:30+01:00",
+      "endTime": "2023-04-27T12:00+01:00",
+      "speakers": [
+        "bf58d77f-fad3-49b7-a6b3-82b5f46e5549"
+      ]
+    },
+    "454559": {
+      "id": "454559",
+      "title": "State of Bluetooth LE on Android in 2023",
+      "startTime": "2023-04-27T12:00+01:00",
+      "endTime": "2023-04-27T12:30+01:00",
+      "speakers": [
+        "79823093-1b16-4a2b-b0a9-ea4cd25b92f5"
+      ]
+    },
+    "456474": {
+      "id": "456474",
+      "title": "Help! What is my place in the IC vs. EM career path?",
+      "startTime": "2023-04-27T12:30+01:00",
+      "endTime": "2023-04-27T13:00+01:00",
+      "speakers": [
+        "7c888e22-f254-4e04-aa56-1853ab18c000"
+      ]
+    },
+    "455615": {
+      "id": "455615",
+      "title": "Clean Code Base: Harnessing the Power of Android Lint and Custom Rules",
+      "startTime": "2023-04-27T13:00+01:00",
+      "endTime": "2023-04-27T13:30+01:00",
+      "speakers": [
+        "9a7f5add-ce7a-49a3-ab3d-f3c4484453e8"
+      ]
+    },
+    "455769": {
+      "id": "455769",
+      "title": "The joys and challenges of building a paywall with BillingClient 5",
+      "startTime": "2023-04-27T13:30+01:00",
+      "endTime": "2023-04-27T14:00+01:00",
+      "speakers": [
+        "944b39a5-752a-40e4-aa2b-dcc8e0f6da38",
+        "1fcef224-ed23-4d8d-8e07-4855817796fd"
+      ]
+    },
+    "454815": {
+      "id": "454815",
+      "title": "Tauri / Dioxus : ces nouveaux frameworks Rust qui veulent faire du mobile",
+      "startTime": "2023-04-27T14:00+01:00",
+      "endTime": "2023-04-27T14:30+01:00",
+      "speakers": [
+        "b88bee58-a4e3-4a47-be4d-85c9421457cc"
+      ]
+    },
+    "430933": {
+      "id": "430933",
+      "title": "Staying passionate about your craft",
+      "startTime": "2023-04-27T14:30+01:00",
+      "endTime": "2023-04-27T15:00+01:00",
+      "speakers": [
+        "b3770b77-c9c8-454d-8b7a-045ca1d66b7b"
+      ]
+    },
+    "434436": {
+      "id": "434436",
+      "title": "Forging the path from monolith to multi-module app",
+      "startTime": "2023-04-27T15:00+01:00",
+      "endTime": "2023-04-27T15:30+01:00",
+      "speakers": [
+        "aeddc24f-0e47-4934-ad76-2de7a9dc9fac"
+      ]
+    },
+    "464671": {
+      "id": "464671",
+      "title": "How Wildlife Studios maximizes mobile game performance and discoverability",
+      "startTime": "2023-04-27T15:30+01:00",
+      "endTime": "2023-04-27T16:00+01:00",
+      "speakers": [
+        "bd3e3257-9d05-4f72-9225-50908473778d"
+      ]
+    },
+    "429911": {
+      "id": "429911",
+      "title": "Collapsing toolbar avec effet parallaxe et animation en courbe avec Jetpack Compose",
+      "startTime": "2023-04-27T16:00+01:00",
+      "endTime": "2023-04-27T16:30+01:00",
+      "speakers": [
+        "ca3e1da2-cfce-4823-8e14-a886f2483c2c"
+      ]
+    },
+    "480897": {
+      "id": "480897",
+      "title": "Office Hour: KMM/KMP",
+      "startTime": "2023-04-27T16:30+01:00",
+      "endTime": "2023-04-27T17:00+01:00",
+      "speakers": [
+        "62216efe-dd8b-4d8b-9800-1d51b57c4001"
+      ]
+    },
+    "6ef3a0b9-9aa5-464c-aa80-10bd2f12c649": {
+      "id": "6ef3a0b9-9aa5-464c-aa80-10bd2f12c649",
+      "title": "Lunch",
+      "startTime": "2023-04-27T17:00+01:00",
+      "endTime": "2023-04-27T17:30+01:00",
+      "speakers": [
+      ]
+    },
+    "469867": {
+      "id": "469867",
+      "title": "Exposing Data",
+      "startTime": "2023-04-27T17:30+01:00",
+      "endTime": "2023-04-27T18:00+01:00",
+      "speakers": [
+        "3ff1f933-847b-4e0d-8e01-c2ca21bbab5d"
+      ]
+    },
+    "423061": {
+      "id": "423061",
+      "title": "SwiftUI vs Jetpack Compose par un Ingénieur Android",
+      "startTime": "2023-04-27T18:00+01:00",
+      "endTime": "2023-04-27T18:30+01:00",
+      "speakers": [
+        "6520ad1e-8c4e-45c1-b34d-91ca73db27fe"
+      ]
+    },
+    "456540": {
+      "id": "456540",
+      "title": "Designing for foldables in 2023",
+      "startTime": "2023-04-27T18:30+01:00",
+      "endTime": "2023-04-27T19:00+01:00",
+      "speakers": [
+        "2f606e32-997a-4b74-8420-76a47e7d66a3",
+        "97bc557b-01db-4ffc-813c-2c4c1a99500c"
+      ]
+    },
+    "480892": {
+      "id": "480892",
+      "title": "Office hour: Flutter",
+      "startTime": "2023-04-27T19:00+01:00",
+      "endTime": "2023-04-27T19:30+01:00",
+      "speakers": [
+        "7c888e22-f254-4e04-aa56-1853ab18c000"
+      ]
+    },
+    "864c40a7-bbf1-490b-8fab-312911ddbdec": {
+      "id": "864c40a7-bbf1-490b-8fab-312911ddbdec",
+      "title": "Break",
+      "startTime": "2023-04-27T19:30+01:00",
+      "endTime": "2023-04-27T20:00+01:00",
+      "speakers": [
+      ]
+    },
+    "453896": {
+      "id": "453896",
+      "title": "90s Website …  in 2023 on mobile in Compose … for science",
+      "startTime": "2023-04-27T20:00+01:00",
+      "endTime": "2023-04-27T20:30+01:00",
+      "speakers": [
+        "2313d8eb-7d6e-444d-8e8d-4d223f896ce8"
+      ]
+    },
+    "419284": {
+      "id": "419284",
+      "title": "Collaborating with Protobuf & Type-Safe APIs",
+      "startTime": "2023-04-27T20:30+01:00",
+      "endTime": "2023-04-27T21:00+01:00",
+      "speakers": [
+        "e79f9a2d-dd0a-4e40-bd83-57abdcc07147"
+      ]
+    },
+    "422755": {
+      "id": "422755",
+      "title": "AI won't take your job but it sure will help you do it better",
+      "startTime": "2023-04-27T21:00+01:00",
+      "endTime": "2023-04-27T21:30+01:00",
+      "speakers": [
+        "3192eb25-047c-4d7e-874a-53206c185074"
+      ]
+    },
+    "455254": {
+      "id": "455254",
+      "title": "Embarquer votre modèle de machine learning dans votre app ?",
+      "startTime": "2023-04-27T21:30+01:00",
+      "endTime": "2023-04-27T22:00+01:00",
+      "speakers": [
+        "60549250-148e-46a0-9868-f5d31b5f7499"
+      ]
+    },
+    "445351": {
+      "id": "445351",
+      "title": "How to use hardware acceleration for Machine Learning inference on Android",
+      "startTime": "2023-04-27T22:00+01:00",
+      "endTime": "2023-04-27T22:30+01:00",
+      "speakers": [
+        "791d1128-88d2-4f3f-9917-9e4c1f1ea961"
+      ]
+    },
+    "455750": {
+      "id": "455750",
+      "title": "Tests unitaires avec KotlinFlow",
+      "startTime": "2023-04-27T22:30+01:00",
+      "endTime": "2023-04-27T23:00+01:00",
+      "speakers": [
+        "f63fcbea-0846-4b5e-b174-e1e9a5359964"
+      ]
+    },
+    "482667": {
+      "id": "482667",
+      "title": "Office Hour: foldables",
+      "startTime": "2023-04-27T23:00+01:00",
+      "endTime": "2023-04-27T23:30+01:00",
+      "speakers": [
+        "2f606e32-997a-4b74-8420-76a47e7d66a3",
+        "97bc557b-01db-4ffc-813c-2c4c1a99500c"
+      ]
+    },
+    "da60a02c-c5e7-409e-8858-c7e45e9583f4": {
+      "id": "da60a02c-c5e7-409e-8858-c7e45e9583f4",
+      "title": "Break",
+      "startTime": "2023-04-27T23:30+01:00",
+      "endTime": "2023-04-28T00:00+01:00",
+      "speakers": [
+      ]
+    },
+    "454972": {
+      "id": "454972",
+      "title": "Unusable or Undebuggable? Rebelling against \"best practices\"",
+      "startTime": "2023-04-28T00:00+01:00",
+      "endTime": "2023-04-28T00:30+01:00",
+      "speakers": [
+        "7c1cede6-5f59-46bb-ad1e-22b63758dae7"
+      ]
+    },
+    "454421": {
+      "id": "454421",
+      "title": "Going on a road trip with Android Auto",
+      "startTime": "2023-04-28T00:30+01:00",
+      "endTime": "2023-04-28T01:00+01:00",
+      "speakers": [
+        "2bc1e95f-1243-4ad0-8a11-75541fee10e0"
+      ]
+    },
+    "454627": {
+      "id": "454627",
+      "title": "Comment gagner en efficacité avec les file templates ?",
+      "startTime": "2023-04-28T01:00+01:00",
+      "endTime": "2023-04-28T01:30+01:00",
+      "speakers": [
+        "13e3361f-310d-4d75-a593-bb3acfee08a7",
+        "424072c4-ac7b-45e0-9d63-34903356b74c"
+      ]
+    },
+    "441771": {
+      "id": "441771",
+      "title": "I have a Date",
+      "startTime": "2023-04-28T01:30+01:00",
+      "endTime": "2023-04-28T02:00+01:00",
+      "speakers": [
+        "4674e36f-50f8-4ffb-a486-679d730c759e"
+      ]
+    },
+    "481525": {
+      "id": "481525",
+      "title": "Office Hour: Machine Learning",
+      "startTime": "2023-04-28T02:00+01:00",
+      "endTime": "2023-04-28T02:30+01:00",
+      "speakers": [
+        "791d1128-88d2-4f3f-9917-9e4c1f1ea961"
+      ]
+    },
+    "441542": {
+      "id": "441542",
+      "title": "The Rise and Fall of Feature Teams",
+      "startTime": "2023-04-28T02:30+01:00",
+      "endTime": "2023-04-28T03:00+01:00",
+      "speakers": [
+        "4d3a31b1-61e5-4a26-9ca3-c9f30e3eaa08"
+      ]
+    },
+    "442026": {
+      "id": "442026",
+      "title": "Become a Maestro of Mobile Testing in 5 minutes",
+      "startTime": "2023-04-28T03:00+01:00",
+      "endTime": "2023-04-28T03:30+01:00",
+      "speakers": [
+        "05385600-cf94-4333-afb3-0ebb5f9d0269",
+        "22ac76a5-35b4-478c-a2c6-f7b8a4169928"
+      ]
+    },
+    "424855": {
+      "id": "424855",
+      "title": "Réaliser rapidement un jeu cross-platform avec Flutter et Firebase",
+      "startTime": "2023-04-28T03:30+01:00",
+      "endTime": "2023-04-28T04:00+01:00",
+      "speakers": [
+        "3d34325b-8080-415c-9324-b06d036c5cab"
+      ]
+    },
+    "452498": {
+      "id": "452498",
+      "title": "Make Gradle work for you, create your own tasks and plugins",
+      "startTime": "2023-04-28T04:00+01:00",
+      "endTime": "2023-04-28T04:30+01:00",
+      "speakers": [
+        "a20010e8-b898-465f-84c8-69d93ae46194",
+        "23c58f10-a1d1-4c3d-aa8c-caed84503b97"
+      ]
+    },
+    "482370": {
+      "id": "482370",
+      "title": "Office hour: State of Bluetooth LE on Android in 2023",
+      "startTime": "2023-04-28T04:30+01:00",
+      "endTime": "2023-04-28T05:00+01:00",
+      "speakers": [
+        "79823093-1b16-4a2b-b0a9-ea4cd25b92f5"
+      ]
+    },
+    "b08dd7ed-1371-4cf6-96e9-a5f37a54df4e": {
+      "id": "b08dd7ed-1371-4cf6-96e9-a5f37a54df4e",
+      "title": "Break",
+      "startTime": "2023-04-28T05:00+01:00",
+      "endTime": "2023-04-28T05:30+01:00",
+      "speakers": [
+      ]
+    },
+    "442732": {
+      "id": "442732",
+      "title": "Practical ADB usage to enhance your life!",
+      "startTime": "2023-04-28T05:30+01:00",
+      "endTime": "2023-04-28T06:00+01:00",
+      "speakers": [
+        "5f8860b3-e669-4717-91bf-ddceb872fd55"
+      ]
+    },
+    "436372": {
+      "id": "436372",
+      "title": "Go with the Flow",
+      "startTime": "2023-04-28T06:00+01:00",
+      "endTime": "2023-04-28T06:30+01:00",
+      "speakers": [
+        "a82de654-53d7-4c16-989a-5efddf36983e"
+      ]
+    },
+    "418036": {
+      "id": "418036",
+      "title": "Let's shake the Flutter tree",
+      "startTime": "2023-04-28T06:30+01:00",
+      "endTime": "2023-04-28T07:00+01:00",
+      "speakers": [
+        "c73c2377-026f-4b6a-b1f7-91a536c33c67"
+      ]
+    },
+    "6ae29154-bed0-4ddb-8a73-b6135b0e27e1": {
+      "id": "6ae29154-bed0-4ddb-8a73-b6135b0e27e1",
+      "title": "Break",
+      "startTime": "2023-04-28T07:00+01:00",
+      "endTime": "2023-04-28T07:30+01:00",
+      "speakers": [
+      ]
+    },
+    "455494": {
+      "id": "455494",
+      "title": "Un Design System, ça se Compose !",
+      "startTime": "2023-04-28T07:30+01:00",
+      "endTime": "2023-04-28T08:00+01:00",
+      "speakers": [
+        "d74d249a-ce9e-4887-93a0-fa19d73a501d",
+        "8e90a4dc-33fc-4000-9bcb-802e45b50d87"
+      ]
+    },
+    "456538": {
+      "id": "456538",
+      "title": "Journey of the Android white label process",
+      "startTime": "2023-04-28T08:00+01:00",
+      "endTime": "2023-04-28T08:30+01:00",
+      "speakers": [
+        "c35f2359-2c5c-4b88-a4bc-024a6c025ce4"
+      ]
+    },
+    "fd36b22f-dd2a-414c-806f-fdad9d68b14b": {
+      "id": "fd36b22f-dd2a-414c-806f-fdad9d68b14b",
+      "title": "(Cont. from 4:15 session start) Réaliser rapidement un jeu cross-platform avec Flutter et Firebase",
+      "startTime": "2023-04-28T08:30+01:00",
+      "endTime": "2023-04-28T09:00+01:00",
+      "speakers": [
+      ]
+    },
+    "433488": {
+      "id": "433488",
+      "title": "Take a look at Jetpack Glance",
+      "startTime": "2023-04-28T09:00+01:00",
+      "endTime": "2023-04-28T09:30+01:00",
+      "speakers": [
+        "b6dc4b56-ca5d-4e55-8a57-e37f6e6d6af0"
+      ]
+    },
+    "480894": {
+      "id": "480894",
+      "title": "Office Hour: Practical ADB usage to enhance your life!",
+      "startTime": "2023-04-28T09:30+01:00",
+      "endTime": "2023-04-28T10:00+01:00",
+      "speakers": [
+        "5f8860b3-e669-4717-91bf-ddceb872fd55"
+      ]
+    },
+    "dbc9fca5-44e0-4873-914f-4525fad5a0e3": {
+      "id": "dbc9fca5-44e0-4873-914f-4525fad5a0e3",
+      "title": "Party 🎉",
+      "startTime": "2023-04-28T10:00+01:00",
+      "endTime": "2023-04-28T10:30+01:00",
+      "speakers": [
+      ]
+    },
+    "52ca2f2c-31ac-492c-88fe-50f92084a797": {
+      "id": "52ca2f2c-31ac-492c-88fe-50f92084a797",
+      "title": "Check-in & Registration",
+      "startTime": "2023-04-28T10:30+01:00",
+      "endTime": "2023-04-28T11:00+01:00",
+      "speakers": [
+      ]
+    },
+    "6ffcdfcd-4967-40a3-8463-fca33e654d74": {
+      "id": "6ffcdfcd-4967-40a3-8463-fca33e654d74",
+      "title": "Opening",
+      "startTime": "2023-04-28T11:00+01:00",
+      "endTime": "2023-04-28T11:30+01:00",
+      "speakers": [
+      ]
+    },
+    "452238": {
+      "id": "452238",
+      "title": "What a Long Strange Trip it's Been: A Year In Android",
+      "startTime": "2023-04-28T11:30+01:00",
+      "endTime": "2023-04-28T12:00+01:00",
+      "speakers": [
+        "10659767-356c-4cd5-ba9c-12cec7a3ce79"
+      ]
+    },
+    "48935f5b-4e47-4a6d-81cc-74fa7520ce7f": {
+      "id": "48935f5b-4e47-4a6d-81cc-74fa7520ce7f",
+      "title": "Break",
+      "startTime": "2023-04-28T12:00+01:00",
+      "endTime": "2023-04-28T12:30+01:00",
+      "speakers": [
+      ]
+    },
+    "419559": {
+      "id": "419559",
+      "title": "Sweet Architecture",
+      "startTime": "2023-04-28T12:30+01:00",
+      "endTime": "2023-04-28T13:00+01:00",
+      "speakers": [
+        "449b4215-55cc-444f-8ff4-b0c434a96019"
+      ]
+    },
+    "454848": {
+      "id": "454848",
+      "title": "How to ship apps better, faster, stronger",
+      "startTime": "2023-04-28T13:00+01:00",
+      "endTime": "2023-04-28T13:30+01:00",
+      "speakers": [
+        "0b1323da-2946-49de-be5c-e54d44e12325"
+      ]
+    },
+    "446247": {
+      "id": "446247",
+      "title": "Let's discover the possibilities of Kotlin beyond Android",
+      "startTime": "2023-04-28T13:30+01:00",
+      "endTime": "2023-04-28T14:00+01:00",
+      "speakers": [
+        "53bb8035-14c0-479a-9c9d-cc7c9b50c6ff",
+        "fa6ac12a-6cbe-4dd0-8ee0-3d05ddbc2262"
+      ]
+    },
+    "455676": {
+      "id": "455676",
+      "title": "App Clinic",
+      "startTime": "2023-04-28T14:00+01:00",
+      "endTime": "2023-04-28T14:30+01:00",
+      "speakers": [
+        "9f35aab3-8baf-4a74-97a0-735dd9a2479f"
+      ]
+    },
+    "481523": {
+      "id": "481523",
+      "title": "Office Hour: AI won't take your job but it sure will help you do it better",
+      "startTime": "2023-04-28T14:30+01:00",
+      "endTime": "2023-04-28T15:00+01:00",
+      "speakers": [
+        "3192eb25-047c-4d7e-874a-53206c185074"
+      ]
+    },
+    "483135": {
+      "id": "483135",
+      "title": "Office Hour: Tests",
+      "startTime": "2023-04-28T15:00+01:00",
+      "endTime": "2023-04-28T15:30+01:00",
+      "speakers": [
+        "05385600-cf94-4333-afb3-0ebb5f9d0269",
+        "22ac76a5-35b4-478c-a2c6-f7b8a4169928"
+      ]
+    },
+    "0fa7e624-76c5-44e0-8579-dbb2329f3385": {
+      "id": "0fa7e624-76c5-44e0-8579-dbb2329f3385",
+      "title": "Break",
+      "startTime": "2023-04-28T15:30+01:00",
+      "endTime": "2023-04-28T16:00+01:00",
+      "speakers": [
+      ]
+    },
+    "456499": {
+      "id": "456499",
+      "title": "Off to the Races with Android",
+      "startTime": "2023-04-28T16:00+01:00",
+      "endTime": "2023-04-28T16:30+01:00",
+      "speakers": [
+        "878ec0bb-f4d7-4b83-a9af-ff6e359a35dc",
+        "8f01dc41-f26d-41d9-a12d-1801e80795cf"
+      ]
+    },
+    "417890": {
+      "id": "417890",
+      "title": "Exploring the Kotlin Multiplatform Ecosystem",
+      "startTime": "2023-04-28T16:30+01:00",
+      "endTime": "2023-04-28T17:00+01:00",
+      "speakers": [
+        "62216efe-dd8b-4d8b-9800-1d51b57c4001"
+      ]
+    },
+    "9cfd7417-4060-49cc-9eed-8bad800ee158": {
+      "id": "9cfd7417-4060-49cc-9eed-8bad800ee158",
+      "title": "Lunch",
+      "startTime": "2023-04-28T17:00+01:00",
+      "endTime": "2023-04-28T17:30+01:00",
+      "speakers": [
+      ]
+    },
+    "450710": {
+      "id": "450710",
+      "title": "Confetti: building a Kotlin conference app in 40min 🎊",
+      "startTime": "2023-04-28T17:30+01:00",
+      "endTime": "2023-04-28T18:00+01:00",
+      "speakers": [
+        "0392772c-28d4-47f6-bd39-47d743fb4a81",
+        "56fda597-4927-4d25-9a80-4795d15ef080"
+      ]
+    },
+    "439280": {
+      "id": "439280",
+      "title": "Are your secrets secure - How mobile apps are leaking millions of credentials",
+      "startTime": "2023-04-28T18:00+01:00",
+      "endTime": "2023-04-28T18:30+01:00",
+      "speakers": [
+        "4e52cb59-2074-4f77-ad95-1f7c36f3bb28"
+      ]
+    },
+    "454563": {
+      "id": "454563",
+      "title": "Developing system apps without AOSP",
+      "startTime": "2023-04-28T18:30+01:00",
+      "endTime": "2023-04-28T19:00+01:00",
+      "speakers": [
+        "79823093-1b16-4a2b-b0a9-ea4cd25b92f5"
+      ]
+    },
+    "455173": {
+      "id": "455173",
+      "title": "~/git --help",
+      "startTime": "2023-04-28T19:00+01:00",
+      "endTime": "2023-04-28T19:30+01:00",
+      "speakers": [
+        "1ee57fa9-790a-4a61-a980-6ef301818aea"
+      ]
+    },
+    "480893": {
+      "id": "480893",
+      "title": "Office Hour: Compose",
+      "startTime": "2023-04-28T19:30+01:00",
+      "endTime": "2023-04-28T20:00+01:00",
+      "speakers": [
+        "2313d8eb-7d6e-444d-8e8d-4d223f896ce8",
+        "5f7faf69-dd61-4ad6-b6d8-0173cae292d8"
+      ]
+    },
+    "a53f543c-f61e-46d5-8982-e86d4c1c2bf0": {
+      "id": "a53f543c-f61e-46d5-8982-e86d4c1c2bf0",
+      "title": "Break",
+      "startTime": "2023-04-28T20:00+01:00",
+      "endTime": "2023-04-28T20:30+01:00",
+      "speakers": [
+      ]
+    },
+    "435622": {
+      "id": "435622",
+      "title": "The Art of KMP: how I learned backend development with Kotlin and why you should too",
+      "startTime": "2023-04-28T20:30+01:00",
+      "endTime": "2023-04-28T21:00+01:00",
+      "speakers": [
+        "6a7c1f8a-784d-46be-8840-9cf519c4bc78"
+      ]
+    },
+    "417951": {
+      "id": "417951",
+      "title": "Migrate to Gradle version catalog and convention plugins",
+      "startTime": "2023-04-28T21:00+01:00",
+      "endTime": "2023-04-28T21:30+01:00",
+      "speakers": [
+        "12052406-2d03-4184-95a1-1098d88b9ce8"
+      ]
+    },
+    "454354": {
+      "id": "454354",
+      "title": "Boostez votre application mobile grâce à ChatGPT",
+      "startTime": "2023-04-28T21:30+01:00",
+      "endTime": "2023-04-28T22:00+01:00",
+      "speakers": [
+        "edfe420a-8175-4064-9f50-b77a64358dd6"
+      ]
+    },
+    "441204": {
+      "id": "441204",
+      "title": "Introduction à l'observabilité sur mobile",
+      "startTime": "2023-04-28T22:00+01:00",
+      "endTime": "2023-04-28T22:30+01:00",
+      "speakers": [
+        "7659a5f9-d376-4ddb-aa96-892b34f40c23",
+        "9860a793-5622-47ae-83bc-61d1e9c0fa0e"
+      ]
+    },
+    "482369": {
+      "id": "482369",
+      "title": "Office Hour: Design System",
+      "startTime": "2023-04-28T22:30+01:00",
+      "endTime": "2023-04-28T23:00+01:00",
+      "speakers": [
+        "8e90a4dc-33fc-4000-9bcb-802e45b50d87",
+        "d74d249a-ce9e-4887-93a0-fa19d73a501d"
+      ]
+    },
+    "755c57b9-28f1-4fdc-97ff-af9743df578c": {
+      "id": "755c57b9-28f1-4fdc-97ff-af9743df578c",
+      "title": "Break",
+      "startTime": "2023-04-28T23:00+01:00",
+      "endTime": "2023-04-28T23:30+01:00",
+      "speakers": [
+      ]
+    },
+    "417949": {
+      "id": "417949",
+      "title": "10 years of Android Development: The Retrospective",
+      "startTime": "2023-04-28T23:30+01:00",
+      "endTime": "2023-04-29T00:00+01:00",
+      "speakers": [
+        "462e6b97-01f9-44b1-864c-9d85bedf911b"
+      ]
+    },
+    "431337": {
+      "id": "431337",
+      "title": "Les différentes stratégies de monétisation d'une application mobile",
+      "startTime": "2023-04-29T00:00+01:00",
+      "endTime": "2023-04-29T00:30+01:00",
+      "speakers": [
+        "ae702dc9-e083-4643-b977-77b1f10cd26f",
+        "85dc1d24-7fae-4f37-93f7-051b38f8a74d"
+      ]
+    },
+    "453147": {
+      "id": "453147",
+      "title": "Animations avec Compose : rendez vos apps chat-oyantes",
+      "startTime": "2023-04-29T00:30+01:00",
+      "endTime": "2023-04-29T01:00+01:00",
+      "speakers": [
+        "33443e15-f66d-4f8a-848e-31da9db7ef68",
+        "2e99f60c-b3db-48d0-a155-e50064d67d36"
+      ]
+    },
+    "480888": {
+      "id": "480888",
+      "title": "Office hour: Boostez votre application mobile grâce à ChatGPT",
+      "startTime": "2023-04-29T01:00+01:00",
+      "endTime": "2023-04-29T01:30+01:00",
+      "speakers": [
+        "edfe420a-8175-4064-9f50-b77a64358dd6"
+      ]
+    },
+    "29093d9e-5c35-4ade-8c77-26f43f84487e": {
+      "id": "29093d9e-5c35-4ade-8c77-26f43f84487e",
+      "title": "Break",
+      "startTime": "2023-04-29T01:30+01:00",
+      "endTime": "2023-04-29T02:00+01:00",
+      "speakers": [
+      ]
+    },
+    "461149": {
+      "id": "461149",
+      "title": "Defensive Programming: The Best Software Development Methodology Ever Invented",
+      "startTime": "2023-04-29T02:00+01:00",
+      "endTime": "2023-04-29T02:30+01:00",
+      "speakers": [
+        "05fa719f-1528-43ef-adf9-eca92f383262",
+        "152f613f-841b-407d-9a65-3703ec2dfae2"
+      ]
+    },
+    "9161e94d-fbac-44a7-826b-03b3ffea7a15": {
+      "id": "9161e94d-fbac-44a7-826b-03b3ffea7a15",
+      "title": "Closing",
+      "startTime": "2023-04-29T02:30+01:00",
+      "endTime": "2023-04-29T03:00+01:00",
+      "speakers": [
+      ]
+    }
+  },
+  "speakers": {
+    "791d1128-88d2-4f3f-9917-9e4c1f1ea961": {
+      "id": "791d1128-88d2-4f3f-9917-9e4c1f1ea961",
+      "name": "Adrien Couque",
+      "photoUrl": "https://sessionize.com/image/3c70-400o400o2-QTFm7PWFZM4NUUVNjpPVeu.png",
+      "socials": [
+      ]
+    },
+    "a82de654-53d7-4c16-989a-5efddf36983e": {
+      "id": "a82de654-53d7-4c16-989a-5efddf36983e",
+      "name": "Akshay Chordiya",
+      "photoUrl": "https://sessionize.com/image/3f47-400o400o2-54-53d7-4c16-989a-5efddf36983e.80e8c68a-14d0-4ee8-8aa6-bb6b1f39936b.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/Akshay_Chordiya"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/akshaychordiya/"
+        }
+      ]
+    },
+    "e79f9a2d-dd0a-4e40-bd83-57abdcc07147": {
+      "id": "e79f9a2d-dd0a-4e40-bd83-57abdcc07147",
+      "name": "Alan Chiu",
+      "photoUrl": "https://sessionize.com/image/fb9b-400o400o2-XYLzKPk6LbhzuBwLPbcxiy.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/awlchiu"
+        },
+        {
+          "name": "Blog",
+          "link": "https://github.com/buildbreaker/"
+        }
+      ]
+    },
+    "c73c2377-026f-4b6a-b1f7-91a536c33c67": {
+      "id": "c73c2377-026f-4b6a-b1f7-91a536c33c67",
+      "name": "Aleksandr Denisov",
+      "photoUrl": "https://sessionize.com/image/d3f1-400o400o2-77-026f-4b6a-b1f7-91a536c33c67.b048a543-27ec-463d-9935-2536de713d68.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/ShuregDenisov"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/aleks-denisov/"
+        }
+      ]
+    },
+    "ae702dc9-e083-4643-b977-77b1f10cd26f": {
+      "id": "ae702dc9-e083-4643-b977-77b1f10cd26f",
+      "name": "Anthony Stéphan Guilloteau",
+      "photoUrl": "https://sessionize.com/image/db95-400o400o2-BySvXDg2WbvDNQX1jPGtYL.jpg",
+      "socials": [
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/stephananthony/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://asmobile.dev/blog/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://asmobile.dev/"
+        }
+      ]
+    },
+    "33443e15-f66d-4f8a-848e-31da9db7ef68": {
+      "id": "33443e15-f66d-4f8a-848e-31da9db7ef68",
+      "name": "Antoine Robiez",
+      "photoUrl": "https://sessionize.com/image/b93f-400o400o2-e4471913-8a5b-4275-8b0c-95f8946794ff.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/enthuan"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/arobiez/"
+        }
+      ]
+    },
+    "10659767-356c-4cd5-ba9c-12cec7a3ce79": {
+      "id": "10659767-356c-4cd5-ba9c-12cec7a3ce79",
+      "name": "Ash Davies",
+      "photoUrl": "https://sessionize.com/image/7162-400o400o2-3sSDTUEzJHmdfEFfg8AvLq.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/askashdavies"
+        },
+        {
+          "name": "Blog",
+          "link": "https://ashdavies.dev/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://snappmobile.io/"
+        }
+      ]
+    },
+    "2e99f60c-b3db-48d0-a155-e50064d67d36": {
+      "id": "2e99f60c-b3db-48d0-a155-e50064d67d36",
+      "name": "Baptiste Carlier",
+      "photoUrl": "https://sessionize.com/image/bd08-400o400o2-UjhjPEcN6qHJwFGA5a83mV.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://www.twitter.com/@bapness"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/baptiste-carlier-a3b9a91b"
+        },
+        {
+          "name": "Blog",
+          "link": "https://medium.com/@BapNesS"
+        }
+      ]
+    },
+    "5f8860b3-e669-4717-91bf-ddceb872fd55": {
+      "id": "5f8860b3-e669-4717-91bf-ddceb872fd55",
+      "name": "Benjamin Kadel",
+      "photoUrl": "https://sessionize.com/image/7055-400o400o2-aeGKNNAdBRPbU7XJa8CVih.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/Ben_Kadel"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://uk.linkedin.com/in/benkadel"
+        },
+        {
+          "name": "Blog",
+          "link": "https://kardelio.github.io/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.babbel.com/"
+        }
+      ]
+    },
+    "449b4215-55cc-444f-8ff4-b0c434a96019": {
+      "id": "449b4215-55cc-444f-8ff4-b0c434a96019",
+      "name": "Benoit Quenaudon",
+      "photoUrl": "https://sessionize.com/image/2ca9-400o400o2-15-55cc-444f-8ff4-b0c434a96019.0cde7eba-d569-4f65-85b6-7a08c64ed67a.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/oldergod"
+        },
+        {
+          "name": "Blog",
+          "link": "https://benoitquenaudon.com/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://quenaudon.com/"
+        }
+      ]
+    },
+    "2bc1e95f-1243-4ad0-8a11-75541fee10e0": {
+      "id": "2bc1e95f-1243-4ad0-8a11-75541fee10e0",
+      "name": "Carlos Mota",
+      "photoUrl": "https://sessionize.com/image/efb7-400o400o2-LBdmtKWRMREWCH8VNkXXZ2.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/@cafonsomota"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/cafonsomota/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://cafonsomota.xyz/"
+        }
+      ]
+    },
+    "a20010e8-b898-465f-84c8-69d93ae46194": {
+      "id": "a20010e8-b898-465f-84c8-69d93ae46194",
+      "name": "Cécile Dreyfus",
+      "photoUrl": "https://sessionize.com/image/3dcc-400o400o2-U4hjkiqNYa1ADeEdHogkhR.jpg",
+      "socials": [
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/cecile-dreyfus-8b11ba81/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://mwm.io/"
+        }
+      ]
+    },
+    "05fa719f-1528-43ef-adf9-eca92f383262": {
+      "id": "05fa719f-1528-43ef-adf9-eca92f383262",
+      "name": "Chet Haase",
+      "photoUrl": "https://sessionize.com/image/8d80-400o400o2-9f-1528-43ef-adf9-eca92f383262.ad51b0e2-257a-40de-a457-8ba542d27967.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/chethaase"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/chethaase/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://chethaase.medium.com/"
+        },
+        {
+          "name": "Company Website",
+          "link": "http://d.android.com"
+        }
+      ]
+    },
+    "4d3a31b1-61e5-4a26-9ca3-c9f30e3eaa08": {
+      "id": "4d3a31b1-61e5-4a26-9ca3-c9f30e3eaa08",
+      "name": "Danny Preussler",
+      "photoUrl": "https://sessionize.com/image/e5a4-400o400o2-b1-61e5-4a26-9ca3-c9f30e3eaa08.3e7b5602-cf0d-4f47-b510-f789a00b4cbf.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/PreusslerBerlin"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/danny-preussler-557a3b79/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://medium.com/@dpreussler"
+        },
+        {
+          "name": "Company Website",
+          "link": "http://www.sporttotal.tv/"
+        }
+      ]
+    },
+    "edfe420a-8175-4064-9f50-b77a64358dd6": {
+      "id": "edfe420a-8175-4064-9f50-b77a64358dd6",
+      "name": "David Silvera",
+      "photoUrl": "https://sessionize.com/image/e9f9-400o400o2-h5h8r5pFmhyKCMbwJ62USd.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/dav_silvera"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/david-silvera-87073271/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://www.youtube.com/channel/UCHYsJlzg-8MBpskWQd95GxA"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.wemoms.fr"
+        }
+      ]
+    },
+    "944b39a5-752a-40e4-aa2b-dcc8e0f6da38": {
+      "id": "944b39a5-752a-40e4-aa2b-dcc8e0f6da38",
+      "name": "Deema AlShamaa",
+      "photoUrl": "https://sessionize.com/image/0200-400o400o2-UtCknRGfYqifh2m49Rqb4i.jpg",
+      "socials": [
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/deemaalshamaa/"
+        }
+      ]
+    },
+    "b88bee58-a4e3-4a47-be4d-85c9421457cc": {
+      "id": "b88bee58-a4e3-4a47-be4d-85c9421457cc",
+      "name": "Edouard Marquez",
+      "photoUrl": "https://sessionize.com/image/289e-400o400o2-wRBhQCXUpnYXVPtUgBES5j.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/g123k"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/edouard-marquez-32431514"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.youtube.com/@devcafe"
+        }
+      ]
+    },
+    "7c888e22-f254-4e04-aa56-1853ab18c000": {
+      "id": "7c888e22-f254-4e04-aa56-1853ab18c000",
+      "name": "Elaine Dias Batista",
+      "photoUrl": "https://sessionize.com/image/ff12-400o400o2-4gLzg9xVX7gjs6MEgxucCk.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/elainedbatista"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/elaine-dias-batista-25517520/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://twitter.com/elainedbatista"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://sfeir.com/"
+        }
+      ]
+    },
+    "2f606e32-997a-4b74-8420-76a47e7d66a3": {
+      "id": "2f606e32-997a-4b74-8420-76a47e7d66a3",
+      "name": "Enrique Lopez Manas",
+      "photoUrl": "https://sessionize.com/image/77a9-400o400o2-M9BKbgGqa4gZZzTjWuUY45.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "http://www.twitter.com/eenriquelopez"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://de.linkedin.com/in/eenriquelopez"
+        },
+        {
+          "name": "Blog",
+          "link": "https://medium.com/@enriquelopezmanas"
+        }
+      ]
+    },
+    "79823093-1b16-4a2b-b0a9-ea4cd25b92f5": {
+      "id": "79823093-1b16-4a2b-b0a9-ea4cd25b92f5",
+      "name": "Erik Hellman",
+      "photoUrl": "https://sessionize.com/image/ec6f-400o400o2-93-1b16-4a2b-b0a9-ea4cd25b92f5.4cc61ad2-1d12-4dab-81b4-6c2818bbe6de.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/ErikHellman"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/erikhelllman/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://www.hellsoft.se"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://hellsoft.se/"
+        }
+      ]
+    },
+    "878ec0bb-f4d7-4b83-a9af-ff6e359a35dc": {
+      "id": "878ec0bb-f4d7-4b83-a9af-ff6e359a35dc",
+      "name": "Etienne Caron",
+      "photoUrl": "https://sessionize.com/image/881d-400o400o2-3XyABod1tzM94rrtZk4Mpg.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/kanawish"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/etcaron"
+        },
+        {
+          "name": "Blog",
+          "link": "https://kanawish.com"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://kanastruk.com"
+        }
+      ]
+    },
+    "9f35aab3-8baf-4a74-97a0-735dd9a2479f": {
+      "id": "9f35aab3-8baf-4a74-97a0-735dd9a2479f",
+      "name": "Eyal Lezmy",
+      "photoUrl": "https://sessionize.com/image/21f2-400o400o2-Ry3ZC4o4Tx8xVxCo6DYeuv.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/Eyal_Lezmy"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/eyallezmy/"
+        },
+        {
+          "name": "Blog",
+          "link": "http://eyal.fr"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.tagheuer.com"
+        }
+      ]
+    },
+    "0b1323da-2946-49de-be5c-e54d44e12325": {
+      "id": "0b1323da-2946-49de-be5c-e54d44e12325",
+      "name": "Fabien Devos",
+      "photoUrl": "https://sessionize.com/image/a8e3-400o400o2-Wj69q9oRxA1N3nHxYPFATr.jpeg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/Fabien_Devos"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/fabiendevos/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://wolfia.com/blog"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://wolfia.com"
+        }
+      ]
+    },
+    "5f7faf69-dd61-4ad6-b6d8-0173cae292d8": {
+      "id": "5f7faf69-dd61-4ad6-b6d8-0173cae292d8",
+      "name": "Fatih Giriş",
+      "photoUrl": "https://sessionize.com/image/0593-400o400o2-M5pgNeuj2M86joAE5FuHRt.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/fatih_grs"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/fgiris/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://medium.com/@girisfth"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.dnb.no/en"
+        }
+      ]
+    },
+    "f63fcbea-0846-4b5e-b174-e1e9a5359964": {
+      "id": "f63fcbea-0846-4b5e-b174-e1e9a5359964",
+      "name": "Florent Blot",
+      "photoUrl": "https://sessionize.com/image/d7d3-400o400o2-9UiDGtq6y9pnpCTJtE7pN8.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/twitdefllo"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/florent-blot-a1b72240/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://medium.com/@fllo"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.geev.com"
+        }
+      ]
+    },
+    "8f01dc41-f26d-41d9-a12d-1801e80795cf": {
+      "id": "8f01dc41-f26d-41d9-a12d-1801e80795cf",
+      "name": "François Légaré",
+      "photoUrl": "https://sessionize.com/image/6ed7-400o400o2-fhFKHZRUbq8jCawt2En39E.jpg",
+      "socials": [
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/flegare/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.bell.ca"
+        }
+      ]
+    },
+    "23c58f10-a1d1-4c3d-aa8c-caed84503b97": {
+      "id": "23c58f10-a1d1-4c3d-aa8c-caed84503b97",
+      "name": "Frédéric Torcheux",
+      "photoUrl": "https://sessionize.com/image/f40d-400o400o2-6tA5YAbkoZp2fvfba26fu.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/bowser_f"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-torcheux-411a9b7b/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://medium.com/@bowser-f"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://mwm.io/"
+        }
+      ]
+    },
+    "6520ad1e-8c4e-45c1-b34d-91ca73db27fe": {
+      "id": "6520ad1e-8c4e-45c1-b34d-91ca73db27fe",
+      "name": "Gerard Paligot",
+      "photoUrl": "https://sessionize.com/image/1edb-400o400o2-EkWYD7sV7VvtFAKoYk7xZz.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/GerardPaligot"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/gpaligot/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://gerard.paligot.com/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://technology.decathlon.com/"
+        }
+      ]
+    },
+    "3d34325b-8080-415c-9324-b06d036c5cab": {
+      "id": "3d34325b-8080-415c-9324-b06d036c5cab",
+      "name": "Guillaume Bernos",
+      "photoUrl": "https://sessionize.com/image/4de3-400o400o2-WDnjsp8rpPdT5f7LiJ2Naz.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/BeGuillaume"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/guillaume-bernos/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://guillaume.bernos.dev"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://invertase.io"
+        }
+      ]
+    },
+    "3ff1f933-847b-4e0d-8e01-c2ca21bbab5d": {
+      "id": "3ff1f933-847b-4e0d-8e01-c2ca21bbab5d",
+      "name": "Hadi Hariri",
+      "photoUrl": "https://sessionize.com/image/6c5f-400o400o2-33-847b-4e0d-8e01-c2ca21bbab5d.52718bff-e891-4158-8ba6-b2fe96ec270f.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/hhariri"
+        }
+      ]
+    },
+    "60549250-148e-46a0-9868-f5d31b5f7499": {
+      "id": "60549250-148e-46a0-9868-f5d31b5f7499",
+      "name": "Hugo Gresse",
+      "photoUrl": "https://sessionize.com/image/ff69-400o400o2-nZMJ9HVd27zsnoQ7z6mJBX.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/hugoGresse"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/hugogresse/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://plantnet.org"
+        }
+      ]
+    },
+    "d74d249a-ce9e-4887-93a0-fa19d73a501d": {
+      "id": "d74d249a-ce9e-4887-93a0-fa19d73a501d",
+      "name": "Jean-Baptiste Vincey",
+      "photoUrl": "https://sessionize.com/image/aef3-400o400o2-GJBmDHW3w3PmYNUsjrMege.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/JBVincey"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/jbvincey/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://medium.com/@jbvincey"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://deezer.io/"
+        }
+      ]
+    },
+    "b3770b77-c9c8-454d-8b7a-045ca1d66b7b": {
+      "id": "b3770b77-c9c8-454d-8b7a-045ca1d66b7b",
+      "name": "Jeroen Mols",
+      "photoUrl": "https://sessionize.com/image/ec63-400o400o2-VDZYyXnRs4dHDtatTcPsdF.jpeg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/@molsjeroen"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/jeroenmols/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://jeroenmols.com/blog"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://plaid.com/"
+        }
+      ]
+    },
+    "0392772c-28d4-47f6-bd39-47d743fb4a81": {
+      "id": "0392772c-28d4-47f6-bd39-47d743fb4a81",
+      "name": "John O'Reilly",
+      "photoUrl": "https://sessionize.com/image/48e7-400o400o2-HkquSQhsfczBGkrABwVTBc.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/joreilly"
+        },
+        {
+          "name": "Blog",
+          "link": "https://johnoreilly.dev/"
+        },
+        {
+          "name": "Company Website",
+          "link": "http://neat.no"
+        }
+      ]
+    },
+    "13e3361f-310d-4d75-a593-bb3acfee08a7": {
+      "id": "13e3361f-310d-4d75-a593-bb3acfee08a7",
+      "name": "Jonathan Mercandalli",
+      "photoUrl": "https://sessionize.com/image/bb60-400o400o2-a4WDgzpicSuSa2JUaruJBM.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/MercandalliJ"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/jonathan-mercandalli"
+        },
+        {
+          "name": "Blog",
+          "link": "https://mercandalli.com"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://mwm.io"
+        }
+      ]
+    },
+    "05385600-cf94-4333-afb3-0ebb5f9d0269": {
+      "id": "05385600-cf94-4333-afb3-0ebb5f9d0269",
+      "name": "Jordan Dahnoun",
+      "photoUrl": "https://sessionize.com/image/7687-400o400o2-EkQaohAtu31qVUUNk7rQqo.png",
+      "socials": [
+        {
+          "name": "LinkedIn",
+          "link": "https://fr.linkedin.com/in/jordan-dahnoun-18a95974"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.jobteaser.com"
+        }
+      ]
+    },
+    "8e90a4dc-33fc-4000-9bcb-802e45b50d87": {
+      "id": "8e90a4dc-33fc-4000-9bcb-802e45b50d87",
+      "name": "Julie Gléonnec",
+      "photoUrl": "https://sessionize.com/image/3662-400o400o2-39cPwSVhuVuF7bRBtT5uV6.jpg",
+      "socials": [
+      ]
+    },
+    "462e6b97-01f9-44b1-864c-9d85bedf911b": {
+      "id": "462e6b97-01f9-44b1-864c-9d85bedf911b",
+      "name": "Julien Salvi",
+      "photoUrl": "https://sessionize.com/image/dd30-400o400o2-4NcyaNMS4awH1Zr87u5Gve.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/JulienSalvi"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/salvijulien/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://aircall.io/"
+        }
+      ]
+    },
+    "7659a5f9-d376-4ddb-aa96-892b34f40c23": {
+      "id": "7659a5f9-d376-4ddb-aa96-892b34f40c23",
+      "name": "Kelian Clerc",
+      "photoUrl": "https://sessionize.com/image/58c8-400o400o2-Qq4cdoe6C1EL6CLGRPDnNo.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/clerc_kelian"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/k%C3%A9lian-clerc-854451107/"
+        }
+      ]
+    },
+    "c35f2359-2c5c-4b88-a4bc-024a6c025ce4": {
+      "id": "c35f2359-2c5c-4b88-a4bc-024a6c025ce4",
+      "name": "Kinnera Priya Putti",
+      "photoUrl": "https://sessionize.com/image/c5fc-400o400o2-hgcsScqgaUkpD8DasH6npt.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/kinnerapriyap"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/kinnerapriyap/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://www.kinnerapriyap.com/work/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://ioki.com/"
+        }
+      ]
+    },
+    "6a7c1f8a-784d-46be-8840-9cf519c4bc78": {
+      "id": "6a7c1f8a-784d-46be-8840-9cf519c4bc78",
+      "name": "Lena Stepanova",
+      "photoUrl": "https://sessionize.com/image/fc1d-400o400o2-NuhVipEg5WLgPyZL4TzmmE.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "http://twitter.com/hlnstep"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/lenastepanova/"
+        },
+        {
+          "name": "Blog",
+          "link": "http://hlnstepanova.github.io/kmpizza"
+        },
+        {
+          "name": "Company Website",
+          "link": "http://hlnstepanova.github.io"
+        }
+      ]
+    },
+    "7c1cede6-5f59-46bb-ad1e-22b63758dae7": {
+      "id": "7c1cede6-5f59-46bb-ad1e-22b63758dae7",
+      "name": "Louis CAD",
+      "photoUrl": "https://sessionize.com/image/9602-400o400o2-8uv1o8mW8uWPvgF1vEKUh.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/Louis_CAD"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/louiscad"
+        },
+        {
+          "name": "Blog",
+          "link": "https://blog.louiscad.com/"
+        }
+      ]
+    },
+    "bd3e3257-9d05-4f72-9225-50908473778d": {
+      "id": "bd3e3257-9d05-4f72-9225-50908473778d",
+      "name": "Lucas Klegen",
+      "photoUrl": "https://sessionize.com/image/90c1-400o400o2-hWDvP7Vhkm9NuMGSUEHaFA.jpg",
+      "socials": [
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/lucas-klegen-b9a851104/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://wildlifestudios.com/unleash"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://wildlifestudios.com/"
+        }
+      ]
+    },
+    "4e52cb59-2074-4f77-ad95-1f7c36f3bb28": {
+      "id": "4e52cb59-2074-4f77-ad95-1f7c36f3bb28",
+      "name": "Mackenzie Jackson",
+      "photoUrl": "https://sessionize.com/image/28f3-400o400o2-TBJDeDf6YJAic3dCfEdDSs.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/advocatemack"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://linkedin.com/in/advocatemack"
+        },
+        {
+          "name": "Blog",
+          "link": "https://blog.gitguardian.com/author/mackenziejackson/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://gitguardian.com "
+        }
+      ]
+    },
+    "2313d8eb-7d6e-444d-8e8d-4d223f896ce8": {
+      "id": "2313d8eb-7d6e-444d-8e8d-4d223f896ce8",
+      "name": "Maia Grotepass",
+      "photoUrl": "https://sessionize.com/image/1d96-400o400o2-KpWLxBbuVa4M4Pg59vMrZj.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/maiatoday"
+        }
+      ]
+    },
+    "424072c4-ac7b-45e0-9d63-34903356b74c": {
+      "id": "424072c4-ac7b-45e0-9d63-34903356b74c",
+      "name": "Marc Picone",
+      "photoUrl": "https://sessionize.com/image/1ac8-400o400o2-4ZF7ybY7cTPvHpFqvA69cy.png",
+      "socials": [
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/marcpicone"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://mwm.io/"
+        }
+      ]
+    },
+    "aeddc24f-0e47-4934-ad76-2de7a9dc9fac": {
+      "id": "aeddc24f-0e47-4934-ad76-2de7a9dc9fac",
+      "name": "Marco Gomiero",
+      "photoUrl": "https://sessionize.com/image/0c60-400o400o2-JVg7XKCfJ2g8Pi1LyNPMPA.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/marcoGomier"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://linkedin.com/in/marco-gomiero"
+        },
+        {
+          "name": "Blog",
+          "link": "https://www.marcogomiero.com"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.tier.app/"
+        }
+      ]
+    },
+    "1fcef224-ed23-4d8d-8e07-4855817796fd": {
+      "id": "1fcef224-ed23-4d8d-8e07-4855817796fd",
+      "name": "Mark Villacampa",
+      "photoUrl": "https://sessionize.com/image/8be4-400o400o2-d8790599-4aa1-41d5-b4a1-494459caefd5.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/MarkVillacampa"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.revenuecat.com/"
+        }
+      ]
+    },
+    "56fda597-4927-4d25-9a80-4795d15ef080": {
+      "id": "56fda597-4927-4d25-9a80-4795d15ef080",
+      "name": "Martin Bonnin",
+      "photoUrl": "https://sessionize.com/image/7c96-400o400o2-UiWeCMZDxPejrFsozKmLYr.jpeg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/martinbonnin"
+        },
+        {
+          "name": "Blog",
+          "link": "https://blog.mbonnin.net"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.apollographql.com/"
+        }
+      ]
+    },
+    "12052406-2d03-4184-95a1-1098d88b9ce8": {
+      "id": "12052406-2d03-4184-95a1-1098d88b9ce8",
+      "name": "Merab Tato Kutalia",
+      "photoUrl": "https://sessionize.com/image/0a0c-400o400o2-ssJruY3q6U1zYEnJf1MhZH.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/TatoKutalia"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/tatocaster"
+        }
+      ]
+    },
+    "ca3e1da2-cfce-4823-8e14-a886f2483c2c": {
+      "id": "ca3e1da2-cfce-4823-8e14-a886f2483c2c",
+      "name": "Morad Azzouzi",
+      "photoUrl": "https://sessionize.com/image/8111-400o400o2-TgxqRZmk9KLRvxwYbYhq1R.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/MoradiousBig"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/morad-azzouzi-646725133/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://medium.com/@morad.azzouzi"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.leboncoin.fr/"
+        }
+      ]
+    },
+    "fa6ac12a-6cbe-4dd0-8ee0-3d05ddbc2262": {
+      "id": "fa6ac12a-6cbe-4dd0-8ee0-3d05ddbc2262",
+      "name": "Nicolas Rivière",
+      "photoUrl": "https://sessionize.com/image/0026-400o400o2-hroHK41ctLEyMgP89BaN4w.jpeg",
+      "socials": [
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/riviere-nicolas/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://worldline.com/"
+        }
+      ]
+    },
+    "3192eb25-047c-4d7e-874a-53206c185074": {
+      "id": "3192eb25-047c-4d7e-874a-53206c185074",
+      "name": "Orel Zion",
+      "photoUrl": "https://sessionize.com/image/d8a4-400o400o2-rsHjm3QqfryCxxSFfGHx64.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/orelziondev"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/orel-zion-86122665/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://www.androidoss.dev/"
+        }
+      ]
+    },
+    "62216efe-dd8b-4d8b-9800-1d51b57c4001": {
+      "id": "62216efe-dd8b-4d8b-9800-1d51b57c4001",
+      "name": "Pamela Hill",
+      "photoUrl": "https://sessionize.com/image/9e38-400o400o2-Dbh3jNbrkDNdSH1q1zAJmr.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/pamelaahill"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/pamelaahill/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://www.pamelaahill.com"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.jetbrains.com"
+        }
+      ]
+    },
+    "97bc557b-01db-4ffc-813c-2c4c1a99500c": {
+      "id": "97bc557b-01db-4ffc-813c-2c4c1a99500c",
+      "name": "Pierluigi Rufo",
+      "photoUrl": "https://sessionize.com/image/be15-400o400o2-4jBmDzCQrKhUz2nuCUYNNE.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/pierluigirufo"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/pierluigi-rufo-04299040/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://snappautomotive.io/"
+        }
+      ]
+    },
+    "b6dc4b56-ca5d-4e55-8a57-e37f6e6d6af0": {
+      "id": "b6dc4b56-ca5d-4e55-8a57-e37f6e6d6af0",
+      "name": "Piotr Prus",
+      "photoUrl": "https://sessionize.com/image/7cba-400o400o2-ainA1gVSSCHxugeFJdVjM2.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/piotr_prus"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/piotrprus/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://piotrprus.medium.com/"
+        }
+      ]
+    },
+    "4674e36f-50f8-4ffb-a486-679d730c759e": {
+      "id": "4674e36f-50f8-4ffb-a486-679d730c759e",
+      "name": "Renaud Mathieu",
+      "photoUrl": "https://sessionize.com/image/f208-400o400o2-2952bcff-8886-47d8-911d-b70321f9b768.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/renaud_mathieu"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/renaudmathieu1/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://renaudmathieu.com"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://proton.me/"
+        }
+      ]
+    },
+    "85dc1d24-7fae-4f37-93f7-051b38f8a74d": {
+      "id": "85dc1d24-7fae-4f37-93f7-051b38f8a74d",
+      "name": "Romain Bouchaud",
+      "photoUrl": "https://sessionize.com/image/abc0-400o400o2-ULH6yKYZUEJNL6tqaD1rRc.jpg",
+      "socials": [
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/company/69714156/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://niamor.dev"
+        }
+      ]
+    },
+    "152f613f-841b-407d-9a65-3703ec2dfae2": {
+      "id": "152f613f-841b-407d-9a65-3703ec2dfae2",
+      "name": "Romain Guy",
+      "photoUrl": "https://sessionize.com/image/bfdf-400o400o2-d068ae37-2e0e-49bd-a4be-b376a32367a8.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "http://twitter.com/romainguy"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/romainguy/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://www.curious-creature.com"
+        }
+      ]
+    },
+    "22ac76a5-35b4-478c-a2c6-f7b8a4169928": {
+      "id": "22ac76a5-35b4-478c-a2c6-f7b8a4169928",
+      "name": "Romain Rivollier",
+      "photoUrl": "https://sessionize.com/image/95b1-400o400o2-36442303-ac79-49e0-891e-76668230573c.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/lypiut"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/romain-rivollier-92154a5a/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://medium.com/jobteaser-dev-team"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.jobteaser.com"
+        }
+      ]
+    },
+    "9a7f5add-ce7a-49a3-ab3d-f3c4484453e8": {
+      "id": "9a7f5add-ce7a-49a3-ab3d-f3c4484453e8",
+      "name": "Sinan Kozak",
+      "photoUrl": "https://sessionize.com/image/e07d-400o400o2-SPKGk1Vse2mophBVWYhs2c.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/snnkzk"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/sinankozak/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://sinankozak.medium.com/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://www.deliveryhero.com/"
+        }
+      ]
+    },
+    "9860a793-5622-47ae-83bc-61d1e9c0fa0e": {
+      "id": "9860a793-5622-47ae-83bc-61d1e9c0fa0e",
+      "name": "Valentin Pertuisot",
+      "photoUrl": "https://sessionize.com/image/523b-400o400o2-RRdQHT1oDbsJkibp1F7uER.png",
+      "socials": [
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/valentinpertuisot/"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://spendesk.com"
+        }
+      ]
+    },
+    "bf58d77f-fad3-49b7-a6b3-82b5f46e5549": {
+      "id": "bf58d77f-fad3-49b7-a6b3-82b5f46e5549",
+      "name": "Xavier F. Gouchet",
+      "photoUrl": "https://sessionize.com/image/e663-400o400o2-LasSKnQhau826ivwXvp86V.png",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/xgouchet"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/xgouchet/"
+        }
+      ]
+    },
+    "53bb8035-14c0-479a-9c9d-cc7c9b50c6ff": {
+      "id": "53bb8035-14c0-479a-9c9d-cc7c9b50c6ff",
+      "name": "Yassine Benabbas",
+      "photoUrl": "https://sessionize.com/image/1bc3-400o400o2-35-14c0-479a-9c9d-cc7c9b50c6ff.c78822d9-1723-4c76-bdcb-e03d292c5fc2.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/yostane"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/benabbasyassine/"
+        },
+        {
+          "name": "Blog",
+          "link": "https://medium.com/@yostane"
+        }
+      ]
+    },
+    "1ee57fa9-790a-4a61-a980-6ef301818aea": {
+      "id": "1ee57fa9-790a-4a61-a980-6ef301818aea",
+      "name": "Zhenlei Ji",
+      "photoUrl": "https://sessionize.com/image/e2bf-400o400o2-a9-790a-4a61-a980-6ef301818aea.5db3d4a0-ea4a-4268-aef6-771a82f9e73d.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/zhenleiji"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/zhenleiji"
+        }
+      ]
+    },
+    "a733fc42-dcb9-4107-9675-70335f2889e9": {
+      "id": "a733fc42-dcb9-4107-9675-70335f2889e9",
+      "name": "🍷Pierre-Yves Ricau",
+      "photoUrl": "https://sessionize.com/image/c2f7-400o400o2-42-dcb9-4107-9675-70335f2889e9.676d3ed7-f28a-449d-92f7-25b8dffa8196.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "http://twitter.com/Piwai"
+        },
+        {
+          "name": "Blog",
+          "link": "https://hashnode.com/@py"
+        }
+      ]
+    }
+  }
+}
