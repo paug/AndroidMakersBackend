@@ -66,7 +66,7 @@
     },
     {
       "id": "457041",
-      "title": "En quête de perf: l'art subtile du profiling Android",
+      "title": "En quête de perf: l'art subtil du profiling Android",
       "description": "Comment enquêter sur un problème de performance? Google a publié de nombreux outils d'investigation très puissants, mais aussi très intimidant. La première fois que j'ai ouvert Perfetto, j'ai  rigolé puis refermé la page immédiatement.\r\n\r\n Par ou commencer? Quel signaux faut t'il regarder, quand, et quelle conclusion en tirer? Comment choisir le bon outil de profiling adapté à une situation?\r\n\r\nCette session vous présente une approche systématique et concrète pour analyzer des problèmes de performance d'applications Android, en utilisant les bons outils de profiling dans le bon ordre.",
       "startsAt": "2023-04-27T10:30:00",
       "endsAt": "2023-04-27T11:15:00",
