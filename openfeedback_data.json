@@ -3,16 +3,16 @@
     "2d8010f1-62cc-4540-82c2-e5e9a0f57804": {
       "id": "2d8010f1-62cc-4540-82c2-e5e9a0f57804",
       "title": "Check-In & Registration",
-      "startTime": "2023-04-27T09:00+01:00",
-      "endTime": "2023-04-27T09:30+01:00",
+      "startTime": "2023-04-27T08:00:00",
+      "endTime": "2023-04-27T09:15:00",
       "speakers": [
       ]
     },
     "461143": {
       "id": "461143",
       "title": "Android Graphics: the Path to [UI] Riches",
-      "startTime": "2023-04-27T09:30+01:00",
-      "endTime": "2023-04-27T10:00+01:00",
+      "startTime": "2023-04-27T09:15:00",
+      "endTime": "2023-04-27T10:00:00",
       "speakers": [
         "05fa719f-1528-43ef-adf9-eca92f383262",
         "152f613f-841b-407d-9a65-3703ec2dfae2"
@@ -21,16 +21,16 @@
     "cbfbf549-ac89-419a-9c13-506e09bb354a": {
       "id": "cbfbf549-ac89-419a-9c13-506e09bb354a",
       "title": "Break",
-      "startTime": "2023-04-27T10:00+01:00",
-      "endTime": "2023-04-27T10:30+01:00",
+      "startTime": "2023-04-27T10:00:00",
+      "endTime": "2023-04-27T10:30:00",
       "speakers": [
       ]
     },
     "433220": {
       "id": "433220",
       "title": "Using Compose Runtime to create a client library",
-      "startTime": "2023-04-27T10:30+01:00",
-      "endTime": "2023-04-27T11:00+01:00",
+      "startTime": "2023-04-27T10:30:00",
+      "endTime": "2023-04-27T11:15:00",
       "speakers": [
         "5f7faf69-dd61-4ad6-b6d8-0173cae292d8"
       ]
@@ -38,8 +38,8 @@
     "457041": {
       "id": "457041",
       "title": "En quête de perf: l'art subtil du profiling Android",
-      "startTime": "2023-04-27T11:00+01:00",
-      "endTime": "2023-04-27T11:30+01:00",
+      "startTime": "2023-04-27T10:30:00",
+      "endTime": "2023-04-27T11:15:00",
       "speakers": [
         "a733fc42-dcb9-4107-9675-70335f2889e9"
       ]
@@ -47,8 +47,8 @@
     "432816": {
       "id": "432816",
       "title": "Demystifying the test pyramid",
-      "startTime": "2023-04-27T11:30+01:00",
-      "endTime": "2023-04-27T12:00+01:00",
+      "startTime": "2023-04-27T10:30:00",
+      "endTime": "2023-04-27T11:15:00",
       "speakers": [
         "bf58d77f-fad3-49b7-a6b3-82b5f46e5549"
       ]
@@ -56,8 +56,8 @@
     "454559": {
       "id": "454559",
       "title": "State of Bluetooth LE on Android in 2023",
-      "startTime": "2023-04-27T12:00+01:00",
-      "endTime": "2023-04-27T12:30+01:00",
+      "startTime": "2023-04-27T10:30:00",
+      "endTime": "2023-04-27T11:15:00",
       "speakers": [
         "79823093-1b16-4a2b-b0a9-ea4cd25b92f5"
       ]
@@ -65,8 +65,8 @@
     "456474": {
       "id": "456474",
       "title": "Help! What is my place in the IC vs. EM career path?",
-      "startTime": "2023-04-27T12:30+01:00",
-      "endTime": "2023-04-27T13:00+01:00",
+      "startTime": "2023-04-27T11:25:00",
+      "endTime": "2023-04-27T11:45:00",
       "speakers": [
         "7c888e22-f254-4e04-aa56-1853ab18c000"
       ]
@@ -74,8 +74,8 @@
     "455615": {
       "id": "455615",
       "title": "Clean Code Base: Harnessing the Power of Android Lint and Custom Rules",
-      "startTime": "2023-04-27T13:00+01:00",
-      "endTime": "2023-04-27T13:30+01:00",
+      "startTime": "2023-04-27T11:25:00",
+      "endTime": "2023-04-27T11:45:00",
       "speakers": [
         "9a7f5add-ce7a-49a3-ab3d-f3c4484453e8"
       ]
@@ -83,8 +83,8 @@
     "455769": {
       "id": "455769",
       "title": "The joys and challenges of building a paywall with BillingClient 5",
-      "startTime": "2023-04-27T13:30+01:00",
-      "endTime": "2023-04-27T14:00+01:00",
+      "startTime": "2023-04-27T11:25:00",
+      "endTime": "2023-04-27T11:45:00",
       "speakers": [
         "944b39a5-752a-40e4-aa2b-dcc8e0f6da38",
         "1fcef224-ed23-4d8d-8e07-4855817796fd"
@@ -93,8 +93,8 @@
     "454815": {
       "id": "454815",
       "title": "Tauri / Dioxus : ces nouveaux frameworks Rust qui veulent faire du mobile",
-      "startTime": "2023-04-27T14:00+01:00",
-      "endTime": "2023-04-27T14:30+01:00",
+      "startTime": "2023-04-27T11:25:00",
+      "endTime": "2023-04-27T11:45:00",
       "speakers": [
         "b88bee58-a4e3-4a47-be4d-85c9421457cc"
       ]
@@ -102,8 +102,8 @@
     "430933": {
       "id": "430933",
       "title": "Staying passionate about your craft",
-      "startTime": "2023-04-27T14:30+01:00",
-      "endTime": "2023-04-27T15:00+01:00",
+      "startTime": "2023-04-27T11:50:00",
+      "endTime": "2023-04-27T12:35:00",
       "speakers": [
         "b3770b77-c9c8-454d-8b7a-045ca1d66b7b"
       ]
@@ -111,8 +111,8 @@
     "434436": {
       "id": "434436",
       "title": "Forging the path from monolith to multi-module app",
-      "startTime": "2023-04-27T15:00+01:00",
-      "endTime": "2023-04-27T15:30+01:00",
+      "startTime": "2023-04-27T11:50:00",
+      "endTime": "2023-04-27T12:35:00",
       "speakers": [
         "aeddc24f-0e47-4934-ad76-2de7a9dc9fac"
       ]
@@ -120,8 +120,8 @@
     "464671": {
       "id": "464671",
       "title": "How Wildlife Studios maximizes mobile game performance and discoverability",
-      "startTime": "2023-04-27T15:30+01:00",
-      "endTime": "2023-04-27T16:00+01:00",
+      "startTime": "2023-04-27T11:50:00",
+      "endTime": "2023-04-27T12:35:00",
       "speakers": [
         "bd3e3257-9d05-4f72-9225-50908473778d"
       ]
@@ -129,8 +129,8 @@
     "429911": {
       "id": "429911",
       "title": "Collapsing toolbar avec effet parallaxe et animation en courbe avec Jetpack Compose",
-      "startTime": "2023-04-27T16:00+01:00",
-      "endTime": "2023-04-27T16:30+01:00",
+      "startTime": "2023-04-27T11:50:00",
+      "endTime": "2023-04-27T12:15:00",
       "speakers": [
         "ca3e1da2-cfce-4823-8e14-a886f2483c2c"
       ]
@@ -138,8 +138,8 @@
     "480897": {
       "id": "480897",
       "title": "Office Hour: KMM/KMP",
-      "startTime": "2023-04-27T16:30+01:00",
-      "endTime": "2023-04-27T17:00+01:00",
+      "startTime": "2023-04-27T11:50:00",
+      "endTime": "2023-04-27T12:10:00",
       "speakers": [
         "62216efe-dd8b-4d8b-9800-1d51b57c4001"
       ]
@@ -147,16 +147,16 @@
     "6ef3a0b9-9aa5-464c-aa80-10bd2f12c649": {
       "id": "6ef3a0b9-9aa5-464c-aa80-10bd2f12c649",
       "title": "Lunch",
-      "startTime": "2023-04-27T17:00+01:00",
-      "endTime": "2023-04-27T17:30+01:00",
+      "startTime": "2023-04-27T12:35:00",
+      "endTime": "2023-04-27T13:50:00",
       "speakers": [
       ]
     },
     "469867": {
       "id": "469867",
       "title": "Exposing Data",
-      "startTime": "2023-04-27T17:30+01:00",
-      "endTime": "2023-04-27T18:00+01:00",
+      "startTime": "2023-04-27T13:50:00",
+      "endTime": "2023-04-27T14:35:00",
       "speakers": [
         "3ff1f933-847b-4e0d-8e01-c2ca21bbab5d"
       ]
@@ -164,8 +164,8 @@
     "423061": {
       "id": "423061",
       "title": "SwiftUI vs Jetpack Compose par un Ingénieur Android",
-      "startTime": "2023-04-27T18:00+01:00",
-      "endTime": "2023-04-27T18:30+01:00",
+      "startTime": "2023-04-27T13:50:00",
+      "endTime": "2023-04-27T14:35:00",
       "speakers": [
         "6520ad1e-8c4e-45c1-b34d-91ca73db27fe"
       ]
@@ -173,8 +173,8 @@
     "456540": {
       "id": "456540",
       "title": "Designing for foldables in 2023",
-      "startTime": "2023-04-27T18:30+01:00",
-      "endTime": "2023-04-27T19:00+01:00",
+      "startTime": "2023-04-27T13:50:00",
+      "endTime": "2023-04-27T14:35:00",
       "speakers": [
         "2f606e32-997a-4b74-8420-76a47e7d66a3",
         "97bc557b-01db-4ffc-813c-2c4c1a99500c"
@@ -183,8 +183,8 @@
     "480892": {
       "id": "480892",
       "title": "Office hour: Flutter",
-      "startTime": "2023-04-27T19:00+01:00",
-      "endTime": "2023-04-27T19:30+01:00",
+      "startTime": "2023-04-27T14:15:00",
+      "endTime": "2023-04-27T14:35:00",
       "speakers": [
         "7c888e22-f254-4e04-aa56-1853ab18c000"
       ]
@@ -192,16 +192,16 @@
     "864c40a7-bbf1-490b-8fab-312911ddbdec": {
       "id": "864c40a7-bbf1-490b-8fab-312911ddbdec",
       "title": "Break",
-      "startTime": "2023-04-27T19:30+01:00",
-      "endTime": "2023-04-27T20:00+01:00",
+      "startTime": "2023-04-27T14:35:00",
+      "endTime": "2023-04-27T14:50:00",
       "speakers": [
       ]
     },
     "453896": {
       "id": "453896",
       "title": "90s Website …  in 2023 on mobile in Compose … for science",
-      "startTime": "2023-04-27T20:00+01:00",
-      "endTime": "2023-04-27T20:30+01:00",
+      "startTime": "2023-04-27T14:50:00",
+      "endTime": "2023-04-27T15:35:00",
       "speakers": [
         "2313d8eb-7d6e-444d-8e8d-4d223f896ce8"
       ]
@@ -209,8 +209,8 @@
     "419284": {
       "id": "419284",
       "title": "Collaborating with Protobuf & Type-Safe APIs",
-      "startTime": "2023-04-27T20:30+01:00",
-      "endTime": "2023-04-27T21:00+01:00",
+      "startTime": "2023-04-27T14:50:00",
+      "endTime": "2023-04-27T15:10:00",
       "speakers": [
         "e79f9a2d-dd0a-4e40-bd83-57abdcc07147"
       ]
@@ -218,8 +218,8 @@
     "422755": {
       "id": "422755",
       "title": "AI won't take your job but it sure will help you do it better",
-      "startTime": "2023-04-27T21:00+01:00",
-      "endTime": "2023-04-27T21:30+01:00",
+      "startTime": "2023-04-27T14:50:00",
+      "endTime": "2023-04-27T15:35:00",
       "speakers": [
         "3192eb25-047c-4d7e-874a-53206c185074"
       ]
@@ -227,8 +227,8 @@
     "455254": {
       "id": "455254",
       "title": "Embarquer votre modèle de machine learning dans votre app ?",
-      "startTime": "2023-04-27T21:30+01:00",
-      "endTime": "2023-04-27T22:00+01:00",
+      "startTime": "2023-04-27T14:50:00",
+      "endTime": "2023-04-27T15:10:00",
       "speakers": [
         "60549250-148e-46a0-9868-f5d31b5f7499"
       ]
@@ -236,8 +236,8 @@
     "445351": {
       "id": "445351",
       "title": "How to use hardware acceleration for Machine Learning inference on Android",
-      "startTime": "2023-04-27T22:00+01:00",
-      "endTime": "2023-04-27T22:30+01:00",
+      "startTime": "2023-04-27T15:15:00",
+      "endTime": "2023-04-27T15:35:00",
       "speakers": [
         "791d1128-88d2-4f3f-9917-9e4c1f1ea961"
       ]
@@ -245,8 +245,8 @@
     "455750": {
       "id": "455750",
       "title": "Tests unitaires avec KotlinFlow",
-      "startTime": "2023-04-27T22:30+01:00",
-      "endTime": "2023-04-27T23:00+01:00",
+      "startTime": "2023-04-27T15:15:00",
+      "endTime": "2023-04-27T15:35:00",
       "speakers": [
         "f63fcbea-0846-4b5e-b174-e1e9a5359964"
       ]
@@ -254,8 +254,8 @@
     "482667": {
       "id": "482667",
       "title": "Office Hour: foldables",
-      "startTime": "2023-04-27T23:00+01:00",
-      "endTime": "2023-04-27T23:30+01:00",
+      "startTime": "2023-04-27T15:15:00",
+      "endTime": "2023-04-27T15:35:00",
       "speakers": [
         "2f606e32-997a-4b74-8420-76a47e7d66a3",
         "97bc557b-01db-4ffc-813c-2c4c1a99500c"
@@ -264,16 +264,16 @@
     "da60a02c-c5e7-409e-8858-c7e45e9583f4": {
       "id": "da60a02c-c5e7-409e-8858-c7e45e9583f4",
       "title": "Break",
-      "startTime": "2023-04-27T23:30+01:00",
-      "endTime": "2023-04-28T00:00+01:00",
+      "startTime": "2023-04-27T15:35:00",
+      "endTime": "2023-04-27T15:50:00",
       "speakers": [
       ]
     },
     "454972": {
       "id": "454972",
       "title": "Unusable or Undebuggable? Rebelling against \"best practices\"",
-      "startTime": "2023-04-28T00:00+01:00",
-      "endTime": "2023-04-28T00:30+01:00",
+      "startTime": "2023-04-27T15:50:00",
+      "endTime": "2023-04-27T16:10:00",
       "speakers": [
         "7c1cede6-5f59-46bb-ad1e-22b63758dae7"
       ]
@@ -281,8 +281,8 @@
     "454421": {
       "id": "454421",
       "title": "Going on a road trip with Android Auto",
-      "startTime": "2023-04-28T00:30+01:00",
-      "endTime": "2023-04-28T01:00+01:00",
+      "startTime": "2023-04-27T15:50:00",
+      "endTime": "2023-04-27T16:10:00",
       "speakers": [
         "2bc1e95f-1243-4ad0-8a11-75541fee10e0"
       ]
@@ -290,8 +290,8 @@
     "454627": {
       "id": "454627",
       "title": "Comment gagner en efficacité avec les file templates ?",
-      "startTime": "2023-04-28T01:00+01:00",
-      "endTime": "2023-04-28T01:30+01:00",
+      "startTime": "2023-04-27T15:50:00",
+      "endTime": "2023-04-27T16:10:00",
       "speakers": [
         "13e3361f-310d-4d75-a593-bb3acfee08a7",
         "424072c4-ac7b-45e0-9d63-34903356b74c"
@@ -300,8 +300,8 @@
     "441771": {
       "id": "441771",
       "title": "I have a Date",
-      "startTime": "2023-04-28T01:30+01:00",
-      "endTime": "2023-04-28T02:00+01:00",
+      "startTime": "2023-04-27T15:50:00",
+      "endTime": "2023-04-27T16:10:00",
       "speakers": [
         "4674e36f-50f8-4ffb-a486-679d730c759e"
       ]
@@ -309,8 +309,8 @@
     "481525": {
       "id": "481525",
       "title": "Office Hour: Machine Learning",
-      "startTime": "2023-04-28T02:00+01:00",
-      "endTime": "2023-04-28T02:30+01:00",
+      "startTime": "2023-04-27T15:50:00",
+      "endTime": "2023-04-27T16:10:00",
       "speakers": [
         "791d1128-88d2-4f3f-9917-9e4c1f1ea961"
       ]
@@ -318,8 +318,8 @@
     "441542": {
       "id": "441542",
       "title": "The Rise and Fall of Feature Teams",
-      "startTime": "2023-04-28T02:30+01:00",
-      "endTime": "2023-04-28T03:00+01:00",
+      "startTime": "2023-04-27T16:15:00",
+      "endTime": "2023-04-27T16:35:00",
       "speakers": [
         "4d3a31b1-61e5-4a26-9ca3-c9f30e3eaa08"
       ]
@@ -327,8 +327,8 @@
     "442026": {
       "id": "442026",
       "title": "Become a Maestro of Mobile Testing in 5 minutes",
-      "startTime": "2023-04-28T03:00+01:00",
-      "endTime": "2023-04-28T03:30+01:00",
+      "startTime": "2023-04-27T16:15:00",
+      "endTime": "2023-04-27T16:35:00",
       "speakers": [
         "05385600-cf94-4333-afb3-0ebb5f9d0269",
         "22ac76a5-35b4-478c-a2c6-f7b8a4169928"
@@ -337,8 +337,8 @@
     "424855": {
       "id": "424855",
       "title": "Réaliser rapidement un jeu cross-platform avec Flutter et Firebase",
-      "startTime": "2023-04-28T03:30+01:00",
-      "endTime": "2023-04-28T04:00+01:00",
+      "startTime": "2023-04-27T16:15:00",
+      "endTime": "2023-04-27T17:35:00",
       "speakers": [
         "3d34325b-8080-415c-9324-b06d036c5cab"
       ]
@@ -346,8 +346,8 @@
     "452498": {
       "id": "452498",
       "title": "Make Gradle work for you, create your own tasks and plugins",
-      "startTime": "2023-04-28T04:00+01:00",
-      "endTime": "2023-04-28T04:30+01:00",
+      "startTime": "2023-04-27T16:15:00",
+      "endTime": "2023-04-27T16:35:00",
       "speakers": [
         "a20010e8-b898-465f-84c8-69d93ae46194",
         "23c58f10-a1d1-4c3d-aa8c-caed84503b97"
@@ -356,8 +356,8 @@
     "482370": {
       "id": "482370",
       "title": "Office hour: State of Bluetooth LE on Android in 2023",
-      "startTime": "2023-04-28T04:30+01:00",
-      "endTime": "2023-04-28T05:00+01:00",
+      "startTime": "2023-04-27T16:15:00",
+      "endTime": "2023-04-27T16:35:00",
       "speakers": [
         "79823093-1b16-4a2b-b0a9-ea4cd25b92f5"
       ]
@@ -365,16 +365,16 @@
     "b08dd7ed-1371-4cf6-96e9-a5f37a54df4e": {
       "id": "b08dd7ed-1371-4cf6-96e9-a5f37a54df4e",
       "title": "Break",
-      "startTime": "2023-04-28T05:00+01:00",
-      "endTime": "2023-04-28T05:30+01:00",
+      "startTime": "2023-04-27T16:35:00",
+      "endTime": "2023-04-27T16:50:00",
       "speakers": [
       ]
     },
     "442732": {
       "id": "442732",
       "title": "Practical ADB usage to enhance your life!",
-      "startTime": "2023-04-28T05:30+01:00",
-      "endTime": "2023-04-28T06:00+01:00",
+      "startTime": "2023-04-27T16:50:00",
+      "endTime": "2023-04-27T17:35:00",
       "speakers": [
         "5f8860b3-e669-4717-91bf-ddceb872fd55"
       ]
@@ -382,8 +382,8 @@
     "436372": {
       "id": "436372",
       "title": "Go with the Flow",
-      "startTime": "2023-04-28T06:00+01:00",
-      "endTime": "2023-04-28T06:30+01:00",
+      "startTime": "2023-04-27T16:50:00",
+      "endTime": "2023-04-27T17:35:00",
       "speakers": [
         "a82de654-53d7-4c16-989a-5efddf36983e"
       ]
@@ -391,8 +391,8 @@
     "418036": {
       "id": "418036",
       "title": "Let's shake the Flutter tree",
-      "startTime": "2023-04-28T06:30+01:00",
-      "endTime": "2023-04-28T07:00+01:00",
+      "startTime": "2023-04-27T16:50:00",
+      "endTime": "2023-04-27T17:35:00",
       "speakers": [
         "c73c2377-026f-4b6a-b1f7-91a536c33c67"
       ]
@@ -400,16 +400,16 @@
     "6ae29154-bed0-4ddb-8a73-b6135b0e27e1": {
       "id": "6ae29154-bed0-4ddb-8a73-b6135b0e27e1",
       "title": "Break",
-      "startTime": "2023-04-28T07:00+01:00",
-      "endTime": "2023-04-28T07:30+01:00",
+      "startTime": "2023-04-27T17:35:00",
+      "endTime": "2023-04-27T17:50:00",
       "speakers": [
       ]
     },
     "455494": {
       "id": "455494",
       "title": "Un Design System, ça se Compose !",
-      "startTime": "2023-04-28T07:30+01:00",
-      "endTime": "2023-04-28T08:00+01:00",
+      "startTime": "2023-04-27T17:50:00",
+      "endTime": "2023-04-27T18:35:00",
       "speakers": [
         "d74d249a-ce9e-4887-93a0-fa19d73a501d",
         "8e90a4dc-33fc-4000-9bcb-802e45b50d87"
@@ -418,8 +418,8 @@
     "456538": {
       "id": "456538",
       "title": "Journey of the Android white label process",
-      "startTime": "2023-04-28T08:00+01:00",
-      "endTime": "2023-04-28T08:30+01:00",
+      "startTime": "2023-04-27T17:50:00",
+      "endTime": "2023-04-27T18:35:00",
       "speakers": [
         "c35f2359-2c5c-4b88-a4bc-024a6c025ce4"
       ]
@@ -427,16 +427,16 @@
     "fd36b22f-dd2a-414c-806f-fdad9d68b14b": {
       "id": "fd36b22f-dd2a-414c-806f-fdad9d68b14b",
       "title": "(Cont. from 4:15 session start) Réaliser rapidement un jeu cross-platform avec Flutter et Firebase",
-      "startTime": "2023-04-28T08:30+01:00",
-      "endTime": "2023-04-28T09:00+01:00",
+      "startTime": "2023-04-27T17:50:00",
+      "endTime": "2023-04-27T18:35:00",
       "speakers": [
       ]
     },
     "433488": {
       "id": "433488",
       "title": "Take a look at Jetpack Glance",
-      "startTime": "2023-04-28T09:00+01:00",
-      "endTime": "2023-04-28T09:30+01:00",
+      "startTime": "2023-04-27T17:50:00",
+      "endTime": "2023-04-27T18:35:00",
       "speakers": [
         "b6dc4b56-ca5d-4e55-8a57-e37f6e6d6af0"
       ]
@@ -444,8 +444,8 @@
     "480894": {
       "id": "480894",
       "title": "Office Hour: Practical ADB usage to enhance your life!",
-      "startTime": "2023-04-28T09:30+01:00",
-      "endTime": "2023-04-28T10:00+01:00",
+      "startTime": "2023-04-27T17:50:00",
+      "endTime": "2023-04-27T18:10:00",
       "speakers": [
         "5f8860b3-e669-4717-91bf-ddceb872fd55"
       ]
@@ -453,32 +453,32 @@
     "dbc9fca5-44e0-4873-914f-4525fad5a0e3": {
       "id": "dbc9fca5-44e0-4873-914f-4525fad5a0e3",
       "title": "Party 🎉",
-      "startTime": "2023-04-28T10:00+01:00",
-      "endTime": "2023-04-28T10:30+01:00",
+      "startTime": "2023-04-27T19:00:00",
+      "endTime": "2023-04-27T20:00:00",
       "speakers": [
       ]
     },
     "52ca2f2c-31ac-492c-88fe-50f92084a797": {
       "id": "52ca2f2c-31ac-492c-88fe-50f92084a797",
       "title": "Check-in & Registration",
-      "startTime": "2023-04-28T10:30+01:00",
-      "endTime": "2023-04-28T11:00+01:00",
+      "startTime": "2023-04-28T08:30:00",
+      "endTime": "2023-04-28T09:20:00",
       "speakers": [
       ]
     },
     "6ffcdfcd-4967-40a3-8463-fca33e654d74": {
       "id": "6ffcdfcd-4967-40a3-8463-fca33e654d74",
       "title": "Opening",
-      "startTime": "2023-04-28T11:00+01:00",
-      "endTime": "2023-04-28T11:30+01:00",
+      "startTime": "2023-04-28T09:20:00",
+      "endTime": "2023-04-28T09:30:00",
       "speakers": [
       ]
     },
     "452238": {
       "id": "452238",
       "title": "What a Long Strange Trip it's Been: A Year In Android",
-      "startTime": "2023-04-28T11:30+01:00",
-      "endTime": "2023-04-28T12:00+01:00",
+      "startTime": "2023-04-28T09:30:00",
+      "endTime": "2023-04-28T10:15:00",
       "speakers": [
         "10659767-356c-4cd5-ba9c-12cec7a3ce79"
       ]
@@ -486,16 +486,16 @@
     "48935f5b-4e47-4a6d-81cc-74fa7520ce7f": {
       "id": "48935f5b-4e47-4a6d-81cc-74fa7520ce7f",
       "title": "Break",
-      "startTime": "2023-04-28T12:00+01:00",
-      "endTime": "2023-04-28T12:30+01:00",
+      "startTime": "2023-04-28T10:15:00",
+      "endTime": "2023-04-28T10:40:00",
       "speakers": [
       ]
     },
     "419559": {
       "id": "419559",
       "title": "Sweet Architecture",
-      "startTime": "2023-04-28T12:30+01:00",
-      "endTime": "2023-04-28T13:00+01:00",
+      "startTime": "2023-04-28T10:40:00",
+      "endTime": "2023-04-28T11:25:00",
       "speakers": [
         "449b4215-55cc-444f-8ff4-b0c434a96019"
       ]
@@ -503,8 +503,8 @@
     "454848": {
       "id": "454848",
       "title": "How to ship apps better, faster, stronger",
-      "startTime": "2023-04-28T13:00+01:00",
-      "endTime": "2023-04-28T13:30+01:00",
+      "startTime": "2023-04-28T10:40:00",
+      "endTime": "2023-04-28T11:25:00",
       "speakers": [
         "0b1323da-2946-49de-be5c-e54d44e12325"
       ]
@@ -512,8 +512,8 @@
     "446247": {
       "id": "446247",
       "title": "Let's discover the possibilities of Kotlin beyond Android",
-      "startTime": "2023-04-28T13:30+01:00",
-      "endTime": "2023-04-28T14:00+01:00",
+      "startTime": "2023-04-28T10:40:00",
+      "endTime": "2023-04-28T12:25:00",
       "speakers": [
         "53bb8035-14c0-479a-9c9d-cc7c9b50c6ff",
         "fa6ac12a-6cbe-4dd0-8ee0-3d05ddbc2262"
@@ -522,8 +522,8 @@
     "455676": {
       "id": "455676",
       "title": "App Clinic",
-      "startTime": "2023-04-28T14:00+01:00",
-      "endTime": "2023-04-28T14:30+01:00",
+      "startTime": "2023-04-28T10:40:00",
+      "endTime": "2023-04-28T12:25:00",
       "speakers": [
         "9f35aab3-8baf-4a74-97a0-735dd9a2479f"
       ]
@@ -531,8 +531,8 @@
     "481523": {
       "id": "481523",
       "title": "Office Hour: AI won't take your job but it sure will help you do it better",
-      "startTime": "2023-04-28T14:30+01:00",
-      "endTime": "2023-04-28T15:00+01:00",
+      "startTime": "2023-04-28T10:40:00",
+      "endTime": "2023-04-28T11:00:00",
       "speakers": [
         "3192eb25-047c-4d7e-874a-53206c185074"
       ]
@@ -540,8 +540,8 @@
     "483135": {
       "id": "483135",
       "title": "Office Hour: Tests",
-      "startTime": "2023-04-28T15:00+01:00",
-      "endTime": "2023-04-28T15:30+01:00",
+      "startTime": "2023-04-28T11:00:00",
+      "endTime": "2023-04-28T11:25:00",
       "speakers": [
         "05385600-cf94-4333-afb3-0ebb5f9d0269",
         "22ac76a5-35b4-478c-a2c6-f7b8a4169928"
@@ -550,16 +550,16 @@
     "0fa7e624-76c5-44e0-8579-dbb2329f3385": {
       "id": "0fa7e624-76c5-44e0-8579-dbb2329f3385",
       "title": "Break",
-      "startTime": "2023-04-28T15:30+01:00",
-      "endTime": "2023-04-28T16:00+01:00",
+      "startTime": "2023-04-28T11:25:00",
+      "endTime": "2023-04-28T11:40:00",
       "speakers": [
       ]
     },
     "456499": {
       "id": "456499",
       "title": "Off to the Races with Android",
-      "startTime": "2023-04-28T16:00+01:00",
-      "endTime": "2023-04-28T16:30+01:00",
+      "startTime": "2023-04-28T11:40:00",
+      "endTime": "2023-04-28T12:25:00",
       "speakers": [
         "878ec0bb-f4d7-4b83-a9af-ff6e359a35dc",
         "8f01dc41-f26d-41d9-a12d-1801e80795cf"
@@ -568,8 +568,8 @@
     "417890": {
       "id": "417890",
       "title": "Exploring the Kotlin Multiplatform Ecosystem",
-      "startTime": "2023-04-28T16:30+01:00",
-      "endTime": "2023-04-28T17:00+01:00",
+      "startTime": "2023-04-28T11:40:00",
+      "endTime": "2023-04-28T12:25:00",
       "speakers": [
         "62216efe-dd8b-4d8b-9800-1d51b57c4001"
       ]
@@ -577,16 +577,16 @@
     "9cfd7417-4060-49cc-9eed-8bad800ee158": {
       "id": "9cfd7417-4060-49cc-9eed-8bad800ee158",
       "title": "Lunch",
-      "startTime": "2023-04-28T17:00+01:00",
-      "endTime": "2023-04-28T17:30+01:00",
+      "startTime": "2023-04-28T12:25:00",
+      "endTime": "2023-04-28T14:00:00",
       "speakers": [
       ]
     },
     "450710": {
       "id": "450710",
       "title": "Confetti: building a Kotlin conference app in 40min 🎊",
-      "startTime": "2023-04-28T17:30+01:00",
-      "endTime": "2023-04-28T18:00+01:00",
+      "startTime": "2023-04-28T14:00:00",
+      "endTime": "2023-04-28T14:45:00",
       "speakers": [
         "0392772c-28d4-47f6-bd39-47d743fb4a81",
         "56fda597-4927-4d25-9a80-4795d15ef080"
@@ -595,8 +595,8 @@
     "439280": {
       "id": "439280",
       "title": "Are your secrets secure - How mobile apps are leaking millions of credentials",
-      "startTime": "2023-04-28T18:00+01:00",
-      "endTime": "2023-04-28T18:30+01:00",
+      "startTime": "2023-04-28T14:00:00",
+      "endTime": "2023-04-28T14:45:00",
       "speakers": [
         "4e52cb59-2074-4f77-ad95-1f7c36f3bb28"
       ]
@@ -604,8 +604,8 @@
     "454563": {
       "id": "454563",
       "title": "Developing system apps without AOSP",
-      "startTime": "2023-04-28T18:30+01:00",
-      "endTime": "2023-04-28T19:00+01:00",
+      "startTime": "2023-04-28T14:00:00",
+      "endTime": "2023-04-28T14:45:00",
       "speakers": [
         "79823093-1b16-4a2b-b0a9-ea4cd25b92f5"
       ]
@@ -613,8 +613,8 @@
     "455173": {
       "id": "455173",
       "title": "~/git --help",
-      "startTime": "2023-04-28T19:00+01:00",
-      "endTime": "2023-04-28T19:30+01:00",
+      "startTime": "2023-04-28T14:00:00",
+      "endTime": "2023-04-28T14:45:00",
       "speakers": [
         "1ee57fa9-790a-4a61-a980-6ef301818aea"
       ]
@@ -622,8 +622,8 @@
     "480893": {
       "id": "480893",
       "title": "Office Hour: Compose",
-      "startTime": "2023-04-28T19:30+01:00",
-      "endTime": "2023-04-28T20:00+01:00",
+      "startTime": "2023-04-28T14:00:00",
+      "endTime": "2023-04-28T14:45:00",
       "speakers": [
         "2313d8eb-7d6e-444d-8e8d-4d223f896ce8",
         "5f7faf69-dd61-4ad6-b6d8-0173cae292d8"
@@ -632,16 +632,16 @@
     "a53f543c-f61e-46d5-8982-e86d4c1c2bf0": {
       "id": "a53f543c-f61e-46d5-8982-e86d4c1c2bf0",
       "title": "Break",
-      "startTime": "2023-04-28T20:00+01:00",
-      "endTime": "2023-04-28T20:30+01:00",
+      "startTime": "2023-04-28T14:45:00",
+      "endTime": "2023-04-28T15:00:00",
       "speakers": [
       ]
     },
     "435622": {
       "id": "435622",
       "title": "The Art of KMP: how I learned backend development with Kotlin and why you should too",
-      "startTime": "2023-04-28T20:30+01:00",
-      "endTime": "2023-04-28T21:00+01:00",
+      "startTime": "2023-04-28T15:00:00",
+      "endTime": "2023-04-28T15:25:00",
       "speakers": [
         "6a7c1f8a-784d-46be-8840-9cf519c4bc78"
       ]
@@ -649,8 +649,8 @@
     "417951": {
       "id": "417951",
       "title": "Migrate to Gradle version catalog and convention plugins",
-      "startTime": "2023-04-28T21:00+01:00",
-      "endTime": "2023-04-28T21:30+01:00",
+      "startTime": "2023-04-28T15:00:00",
+      "endTime": "2023-04-28T15:25:00",
       "speakers": [
         "12052406-2d03-4184-95a1-1098d88b9ce8"
       ]
@@ -658,8 +658,8 @@
     "454354": {
       "id": "454354",
       "title": "Boostez votre application mobile grâce à ChatGPT",
-      "startTime": "2023-04-28T21:30+01:00",
-      "endTime": "2023-04-28T22:00+01:00",
+      "startTime": "2023-04-28T15:00:00",
+      "endTime": "2023-04-28T15:25:00",
       "speakers": [
         "edfe420a-8175-4064-9f50-b77a64358dd6"
       ]
@@ -667,8 +667,8 @@
     "441204": {
       "id": "441204",
       "title": "Introduction à l'observabilité sur mobile",
-      "startTime": "2023-04-28T22:00+01:00",
-      "endTime": "2023-04-28T22:30+01:00",
+      "startTime": "2023-04-28T15:00:00",
+      "endTime": "2023-04-28T15:25:00",
       "speakers": [
         "7659a5f9-d376-4ddb-aa96-892b34f40c23",
         "9860a793-5622-47ae-83bc-61d1e9c0fa0e"
@@ -677,8 +677,8 @@
     "482369": {
       "id": "482369",
       "title": "Office Hour: Design System",
-      "startTime": "2023-04-28T22:30+01:00",
-      "endTime": "2023-04-28T23:00+01:00",
+      "startTime": "2023-04-28T15:00:00",
+      "endTime": "2023-04-28T15:20:00",
       "speakers": [
         "8e90a4dc-33fc-4000-9bcb-802e45b50d87",
         "d74d249a-ce9e-4887-93a0-fa19d73a501d"
@@ -687,16 +687,16 @@
     "755c57b9-28f1-4fdc-97ff-af9743df578c": {
       "id": "755c57b9-28f1-4fdc-97ff-af9743df578c",
       "title": "Break",
-      "startTime": "2023-04-28T23:00+01:00",
-      "endTime": "2023-04-28T23:30+01:00",
+      "startTime": "2023-04-28T15:25:00",
+      "endTime": "2023-04-28T15:40:00",
       "speakers": [
       ]
     },
     "417949": {
       "id": "417949",
       "title": "10 years of Android Development: The Retrospective",
-      "startTime": "2023-04-28T23:30+01:00",
-      "endTime": "2023-04-29T00:00+01:00",
+      "startTime": "2023-04-28T15:40:00",
+      "endTime": "2023-04-28T16:25:00",
       "speakers": [
         "462e6b97-01f9-44b1-864c-9d85bedf911b"
       ]
@@ -704,8 +704,8 @@
     "431337": {
       "id": "431337",
       "title": "Les différentes stratégies de monétisation d'une application mobile",
-      "startTime": "2023-04-29T00:00+01:00",
-      "endTime": "2023-04-29T00:30+01:00",
+      "startTime": "2023-04-28T15:40:00",
+      "endTime": "2023-04-28T16:25:00",
       "speakers": [
         "ae702dc9-e083-4643-b977-77b1f10cd26f",
         "85dc1d24-7fae-4f37-93f7-051b38f8a74d"
@@ -714,8 +714,8 @@
     "453147": {
       "id": "453147",
       "title": "Animations avec Compose : rendez vos apps chat-oyantes",
-      "startTime": "2023-04-29T00:30+01:00",
-      "endTime": "2023-04-29T01:00+01:00",
+      "startTime": "2023-04-28T15:40:00",
+      "endTime": "2023-04-28T16:25:00",
       "speakers": [
         "33443e15-f66d-4f8a-848e-31da9db7ef68",
         "2e99f60c-b3db-48d0-a155-e50064d67d36"
@@ -724,8 +724,8 @@
     "480888": {
       "id": "480888",
       "title": "Office hour: Boostez votre application mobile grâce à ChatGPT",
-      "startTime": "2023-04-29T01:00+01:00",
-      "endTime": "2023-04-29T01:30+01:00",
+      "startTime": "2023-04-28T15:40:00",
+      "endTime": "2023-04-28T16:00:00",
       "speakers": [
         "edfe420a-8175-4064-9f50-b77a64358dd6"
       ]
@@ -733,16 +733,16 @@
     "29093d9e-5c35-4ade-8c77-26f43f84487e": {
       "id": "29093d9e-5c35-4ade-8c77-26f43f84487e",
       "title": "Break",
-      "startTime": "2023-04-29T01:30+01:00",
-      "endTime": "2023-04-29T02:00+01:00",
+      "startTime": "2023-04-28T16:25:00",
+      "endTime": "2023-04-28T16:40:00",
       "speakers": [
       ]
     },
     "461149": {
       "id": "461149",
       "title": "Defensive Programming: The Best Software Development Methodology Ever Invented",
-      "startTime": "2023-04-29T02:00+01:00",
-      "endTime": "2023-04-29T02:30+01:00",
+      "startTime": "2023-04-28T16:40:00",
+      "endTime": "2023-04-28T17:15:00",
       "speakers": [
         "05fa719f-1528-43ef-adf9-eca92f383262",
         "152f613f-841b-407d-9a65-3703ec2dfae2"
@@ -751,8 +751,8 @@
     "9161e94d-fbac-44a7-826b-03b3ffea7a15": {
       "id": "9161e94d-fbac-44a7-826b-03b3ffea7a15",
       "title": "Closing",
-      "startTime": "2023-04-29T02:30+01:00",
-      "endTime": "2023-04-29T03:00+01:00",
+      "startTime": "2023-04-28T17:15:00",
+      "endTime": "2023-04-28T17:25:00",
       "speakers": [
       ]
     }
