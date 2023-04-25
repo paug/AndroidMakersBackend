@@ -66,7 +66,7 @@
     },
     {
       "id": "457041",
-      "title": "En quête de perf: l'art subtile du profiling Android",
+      "title": "En quête de perf: l'art subtil du profiling Android",
       "description": "Comment enquêter sur un problème de performance? Google a publié de nombreux outils d'investigation très puissants, mais aussi très intimidant. La première fois que j'ai ouvert Perfetto, j'ai  rigolé puis refermé la page immédiatement.\r\n\r\n Par ou commencer? Quel signaux faut t'il regarder, quand, et quelle conclusion en tirer? Comment choisir le bon outil de profiling adapté à une situation?\r\n\r\nCette session vous présente une approche systématique et concrète pour analyzer des problèmes de performance d'applications Android, en utilisant les bons outils de profiling dans le bon ordre.",
       "startsAt": "2023-04-27T10:30:00",
       "endsAt": "2023-04-27T11:15:00",
@@ -1216,7 +1216,7 @@
     {
       "id": "441204",
       "title": "Introduction à l'observabilité sur mobile",
-      "description": "Avec la croissance de votre companie, de votre équipe, beaucoup de changements se produisent :\r\nPlus de développeurs, une plus grosse codebase, plus de chance d'avoir des bugs, plus d'utilisateurs, des attentes plus fortes, plus de cas de bords, plus de configurations possible, etc.\r\n\r\nVoici la stratégie et les outils que nous avons mis en place chez Spendesk pour garder un oeil sur ce qu'il se passe réellement en production dans nos apps mobiles:\r\n- Détecter un bug ou des erreurs avant que l'utilisateur ne nous contacte.\r\n- Surveiller le comportement des features\r\n- Performances des app et des différentes fonctionnalités\r\n",
+      "description": "Avec la croissance de votre compagnie, de votre équipe, beaucoup de changements se produisent :\r\nPlus de développeurs, une plus grosse codebase, plus de chance d'avoir des bugs, plus d'utilisateurs, des attentes plus fortes, plus de cas de bords, plus de configurations possibles, etc.\r\n\r\nVoici la stratégie et les outils que nous avons mis en place chez Spendesk pour garder un oeil sur ce qu'il se passe réellement en production dans nos apps mobiles :\r\n- Détecter un bug ou des erreurs avant que l'utilisateur ne nous contacte\r\n- Surveiller le comportement des features\r\n- Performances des apps et des différentes fonctionnalités\r\n",
       "startsAt": "2023-04-28T15:00:00",
       "endsAt": "2023-04-28T15:25:00",
       "speakers": [
