@@ -12,14 +12,14 @@ import java.time.ZoneOffset
 fun main() {
     val seData = sessionizeData()
     val ofData = OfData(
-        trackTitle = "",
         sessions = seData.sessions.filter { !it.isServiceSession }.map {
             OfSession(
                 id = it.id,
                 title = it.title,
                 startTime = it.startsAt.toString(),
                 endTime = it.endsAt.toString(),
-                speakers = it.speakers
+                speakers = it.speakers,
+                trackTitle = "",
             )
         }.associateBy { it.id },
         speakers = seData.speakers.map {
@@ -41,7 +41,6 @@ fun main() {
 
 @Serializable
 class OfData(
-    val trackTitle: String,
     val sessions: Map<String, OfSession>,
     val speakers: Map<String, OfSpeaker>
 )
@@ -52,7 +51,8 @@ class OfSession(
     val title: String,
     val startTime: String,
     val endTime: String,
-    val speakers: List<String>
+    val speakers: List<String>,
+    val trackTitle: String
 )
 
 @Serializable
