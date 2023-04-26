@@ -632,21 +632,20 @@
       "isServiceSession": false
     },
     {
-      "id": "424855",
-      "title": "Réaliser rapidement un jeu cross-platform avec Flutter et Firebase",
-      "description": "Dans ce workshop nous allons voir les bases de Flutter et de Firebase à l'aide d'un petit jeu.\r\n- Création d'un projet Flutter\r\n- Création d'un petit jeu simple à l'aide de Widgets de base afin de découvrir Flutter\r\n- Connexion à un projet Firebase\r\n- Ajout des résultats des parties dans une collection Firestore\r\n- Utilisation de Firestore pour voir les résultats de la partie en direct\r\nA la fin de cette workshop, vous aurez un aperçu des composants de base de Flutter ainsi que les possibilités qu'offre Firebase et Firestore pour facilement ajouter des fonctionnalités à une application Flutter.\r\n",
+      "id": "441204",
+      "title": "Introduction à l'observabilité sur mobile",
+      "description": "Avec la croissance de votre compagnie, de votre équipe, beaucoup de changements se produisent :\r\nPlus de développeurs, une plus grosse codebase, plus de chance d'avoir des bugs, plus d'utilisateurs, des attentes plus fortes, plus de cas de bords, plus de configurations possibles, etc.\r\n\r\nVoici la stratégie et les outils que nous avons mis en place chez Spendesk pour garder un oeil sur ce qu'il se passe réellement en production dans nos apps mobiles :\r\n- Détecter un bug ou des erreurs avant que l'utilisateur ne nous contacte\r\n- Surveiller le comportement des features\r\n- Performances des apps et des différentes fonctionnalités\r\n",
       "startsAt": "2023-04-27T16:15:00",
-      "endsAt": "2023-04-27T17:35:00",
+      "endsAt": "2023-04-27T16:35:00",
       "speakers": [
-        "3d34325b-8080-415c-9324-b06d036c5cab"
+        "7659a5f9-d376-4ddb-aa96-892b34f40c23",
+        "9860a793-5622-47ae-83bc-61d1e9c0fa0e"
       ],
       "roomId": 31081,
       "categoryItems": [
-        158839,
+        158837,
         158841,
-        158846,
-        158848,
-        158850
+        158846
       ],
       "isServiceSession": false
     },
@@ -740,7 +739,7 @@
       "speakers": [
         "c73c2377-026f-4b6a-b1f7-91a536c33c67"
       ],
-      "roomId": 33634,
+      "roomId": 31081,
       "categoryItems": [
         158838,
         158842,
@@ -799,19 +798,6 @@
       "isServiceSession": false
     },
     {
-      "id": "fd36b22f-dd2a-414c-806f-fdad9d68b14b",
-      "title": "(Cont. from 4:15 session start) Réaliser rapidement un jeu cross-platform avec Flutter et Firebase",
-      "description": "Workshop session continued.",
-      "startsAt": "2023-04-27T17:50:00",
-      "endsAt": "2023-04-27T18:35:00",
-      "speakers": [
-      ],
-      "roomId": 31081,
-      "categoryItems": [
-      ],
-      "isServiceSession": true
-    },
-    {
       "id": "433488",
       "title": "Take a look at Jetpack Glance",
       "description": "Jetpack Glance is the new shiny library in the Jetpack family for creating widgets. At first glance, it resembles a Jetpack Compose, but in many cases, it is really different. Learn those differences and create beautiful widgets easily.\r\nDuring this talk, I will describe how the Jetpack Glance works, what are the differences between it and RemoteViews widgets. You will also learn why we still need some XMLs, how to manage the state, and periodic updates.",
@@ -820,7 +806,7 @@
       "speakers": [
         "b6dc4b56-ca5d-4e55-8a57-e37f6e6d6af0"
       ],
-      "roomId": 33634,
+      "roomId": 31081,
       "categoryItems": [
         158838,
         158841,
@@ -1229,24 +1215,6 @@
         158841,
         158846,
         158847
-      ],
-      "isServiceSession": false
-    },
-    {
-      "id": "441204",
-      "title": "Introduction à l'observabilité sur mobile",
-      "description": "Avec la croissance de votre compagnie, de votre équipe, beaucoup de changements se produisent :\r\nPlus de développeurs, une plus grosse codebase, plus de chance d'avoir des bugs, plus d'utilisateurs, des attentes plus fortes, plus de cas de bords, plus de configurations possibles, etc.\r\n\r\nVoici la stratégie et les outils que nous avons mis en place chez Spendesk pour garder un oeil sur ce qu'il se passe réellement en production dans nos apps mobiles :\r\n- Détecter un bug ou des erreurs avant que l'utilisateur ne nous contacte\r\n- Surveiller le comportement des features\r\n- Performances des apps et des différentes fonctionnalités\r\n",
-      "startsAt": "2023-04-28T15:00:00",
-      "endsAt": "2023-04-28T15:25:00",
-      "speakers": [
-        "7659a5f9-d376-4ddb-aa96-892b34f40c23",
-        "9860a793-5622-47ae-83bc-61d1e9c0fa0e"
-      ],
-      "roomId": 33634,
-      "categoryItems": [
-        158837,
-        158841,
-        158846
       ],
       "isServiceSession": false
     },
@@ -1990,31 +1958,6 @@
         }
       ],
       "tagLine": "Decathlon, Mobile Staff Engineer"
-    },
-    {
-      "id": "3d34325b-8080-415c-9324-b06d036c5cab",
-      "bio": "I'm a Flutter enthusiast for personal and professional projects and the author of the Flutter Favorite's `location` library. Currently working at Invertase on the FlutterFire project.",
-      "fullName": "Guillaume Bernos",
-      "profilePicture": "https://sessionize.com/image/4de3-400o400o2-WDnjsp8rpPdT5f7LiJ2Naz.jpg",
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/BeGuillaume"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/guillaume-bernos/"
-        },
-        {
-          "title": "Blog",
-          "url": "https://guillaume.bernos.dev"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://invertase.io"
-        }
-      ],
-      "tagLine": "Lead Developer FlutterFire"
     },
     {
       "id": "3ff1f933-847b-4e0d-8e01-c2ca21bbab5d",
