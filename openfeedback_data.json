@@ -336,13 +336,14 @@
       ],
       "trackTitle": ""
     },
-    "424855": {
-      "id": "424855",
-      "title": "Réaliser rapidement un jeu cross-platform avec Flutter et Firebase",
+    "441204": {
+      "id": "441204",
+      "title": "Introduction à l'observabilité sur mobile",
       "startTime": "2023-04-27T16:15:00",
-      "endTime": "2023-04-27T17:35:00",
+      "endTime": "2023-04-27T16:35:00",
       "speakers": [
-        "3d34325b-8080-415c-9324-b06d036c5cab"
+        "7659a5f9-d376-4ddb-aa96-892b34f40c23",
+        "9860a793-5622-47ae-83bc-61d1e9c0fa0e"
       ],
       "trackTitle": ""
     },
@@ -615,17 +616,6 @@
       "endTime": "2023-04-28T15:25:00",
       "speakers": [
         "edfe420a-8175-4064-9f50-b77a64358dd6"
-      ],
-      "trackTitle": ""
-    },
-    "441204": {
-      "id": "441204",
-      "title": "Introduction à l'observabilité sur mobile",
-      "startTime": "2023-04-28T15:00:00",
-      "endTime": "2023-04-28T15:25:00",
-      "speakers": [
-        "7659a5f9-d376-4ddb-aa96-892b34f40c23",
-        "9860a793-5622-47ae-83bc-61d1e9c0fa0e"
       ],
       "trackTitle": ""
     },
@@ -1232,29 +1222,6 @@
         {
           "name": "Company Website",
           "link": "https://technology.decathlon.com/"
-        }
-      ]
-    },
-    "3d34325b-8080-415c-9324-b06d036c5cab": {
-      "id": "3d34325b-8080-415c-9324-b06d036c5cab",
-      "name": "Guillaume Bernos",
-      "photoUrl": "https://sessionize.com/image/4de3-400o400o2-WDnjsp8rpPdT5f7LiJ2Naz.jpg",
-      "socials": [
-        {
-          "name": "Twitter",
-          "link": "https://twitter.com/BeGuillaume"
-        },
-        {
-          "name": "LinkedIn",
-          "link": "https://www.linkedin.com/in/guillaume-bernos/"
-        },
-        {
-          "name": "Blog",
-          "link": "https://guillaume.bernos.dev"
-        },
-        {
-          "name": "Company Website",
-          "link": "https://invertase.io"
         }
       ]
     },
