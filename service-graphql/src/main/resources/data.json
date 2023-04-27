@@ -1219,6 +1219,25 @@
       "isServiceSession": false
     },
     {
+      "id": "483808",
+      "title": "Get a performance score for your app",
+      "description": "How do you know that the performance of your app is good? This question is complex for multiple reasons that we’ll explore together.\r\nIn the web world, you can use Lighthouse to help answer that question: it can universally compare the performance of any website, attributing a performance score. In the mobile world though, it feels like having such a universal standard is somewhat lacking.\r\nBut this might be about to change...",
+      "startsAt": "2023-04-28T15:00:00",
+      "endsAt": "2023-04-28T15:25:00",
+      "speakers": [
+        "ae4dc258-34a6-462c-b778-807da7d25de4"
+      ],
+      "roomId": 33634,
+      "categoryItems": [
+        158837,
+        158841,
+        158845,
+        158848,
+        158849
+      ],
+      "isServiceSession": false
+    },
+    {
       "id": "482369",
       "title": "Office Hour: Design System",
       "description": "Come discuss Design System and more with: Julie Gléonnec, Android developer @Deezer and Jean-Baptiste Vincey ,Android developer & tech expert @Deezer",
@@ -1422,6 +1441,27 @@
         }
       ],
       "tagLine": "EPAM Systems, Chief Software Engineer, Flutter and Dart GDE"
+    },
+    {
+      "id": "ae4dc258-34a6-462c-b778-807da7d25de4",
+      "bio": "Alex is a tech lead at BAM where he’s been developing mobile apps for 7 years. Currently his obsession is with performance and discovering how to make his apps are the fastest.",
+      "fullName": "Alexandre Moureaux",
+      "profilePicture": "https://sessionize.com/image/4881-400o400o2-58-34a6-462c-b778-807da7d25de4.c4417a84-7a42-487e-846b-9fdb6542db5d.jpeg",
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/almouro"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/alexandremoureaux"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://flashlight.dev"
+        }
+      ],
+      "tagLine": "Tech Lead at BAM"
     },
     {
       "id": "ae702dc9-e083-4643-b977-77b1f10cd26f",
