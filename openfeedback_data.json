@@ -619,6 +619,16 @@
       ],
       "trackTitle": ""
     },
+    "483808": {
+      "id": "483808",
+      "title": "Get a performance score for your app",
+      "startTime": "2023-04-28T15:00:00",
+      "endTime": "2023-04-28T15:25:00",
+      "speakers": [
+        "ae4dc258-34a6-462c-b778-807da7d25de4"
+      ],
+      "trackTitle": ""
+    },
     "482369": {
       "id": "482369",
       "title": "Office Hour: Design System",
@@ -734,6 +744,25 @@
         {
           "name": "LinkedIn",
           "link": "https://www.linkedin.com/in/aleks-denisov/"
+        }
+      ]
+    },
+    "ae4dc258-34a6-462c-b778-807da7d25de4": {
+      "id": "ae4dc258-34a6-462c-b778-807da7d25de4",
+      "name": "Alexandre Moureaux",
+      "photoUrl": "https://sessionize.com/image/4881-400o400o2-58-34a6-462c-b778-807da7d25de4.c4417a84-7a42-487e-846b-9fdb6542db5d.jpeg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/almouro"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/alexandremoureaux"
+        },
+        {
+          "name": "Company Website",
+          "link": "https://flashlight.dev"
         }
       ]
     },
