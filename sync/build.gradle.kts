@@ -11,16 +11,18 @@ dependencies {
     implementation(libs.okhttp)
     implementation(project(":sessionize"))
     implementation(project(":data"))
+    implementation("com.opencsv:opencsv:5.7.1")
 }
 
-tasks.register("updateGraphQLData", JavaExec::class.java) {
-    mainClass.set("sync.GraphQLMainKt")
-    classpath(configurations.getByName("runtimeClasspath"))
-    classpath(tasks.named("jar").map { it.outputs.files.singleFile })
+
+fun registerMainTask(name: String) {
+    tasks.register(name, JavaExec::class.java) {
+        mainClass.set("sync.$name")
+        classpath(configurations.getByName("runtimeClasspath"))
+        classpath(tasks.named("jar").map { it.outputs.files.singleFile })
+    }
 }
 
-tasks.register("updateOpenfeedbackData", JavaExec::class.java) {
-    mainClass.set("sync.OpenFeedbackMainKt")
-    classpath(configurations.getByName("runtimeClasspath"))
-    classpath(tasks.named("jar").map { it.outputs.files.singleFile })
-}
+registerMainTask("GraphQLMainKt")
+registerMainTask("OpenFeedbackMainKt")
+registerMainTask("OpenFeedbackMainKtCSVMainKt")
