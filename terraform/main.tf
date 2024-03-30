@@ -5,9 +5,11 @@
  * - create var.project in GCP
  * - enable billing
  * - create service account and grant "Editor" + "Cloud Run Admin" role. This might be fine tuned in the future
+ * - export the service account key in GOOGLE_APPLICATION_CREDENTIALS_CONTENT
  * - create "androidmakers-tfstate" bucket
  * - create var.domain in Gandi
- * -
+ * - create Gandi access token
+ * - export the access token in TF_VAR_gandi_access_token
  */
 // These resources must be created manually before the first terraform apply
 variable "project" {
@@ -16,6 +18,11 @@ variable "project" {
 variable "domain" {
   default = "androidmakers.fr"
 }
+//
+variable "gandi_access_token" {
+  type = string
+}
+
 # Also create "androidmakers-tfstate" as it can sadly not be a variable
 # Typically use the same resource as for tfstate-bucket above (but doest have to)
 variable "region" {
@@ -28,6 +35,76 @@ terraform {
     prefix = "terraform/state"
   }
 }
+
+terraform {
+  required_providers {
+    gandi = {
+      version = "2.3.0"
+      source   = "go-gandi/gandi"
+    }
+  }
+}
+
+provider "gandi" {
+  personal_access_token = var.gandi_access_token
+}
+
+import {
+  id = "androidmakers.fr"
+  to = gandi_domain.androidmakers_fr
+}
+
+resource "gandi_domain" "androidmakers_fr" {
+  name = "androidmakers.fr"
+
+  # The owner block is required even though sadly it's not supported by the current provider
+  owner {
+    email = "placeholder"
+    type = "placeholder"
+    street_addr = "placeholder"
+    zip = "placeholder"
+    phone = "placeholder"
+    given_name = "placeholder"
+    family_name = "placeholder"
+    country = "placeholder"
+    city = "placeholder"
+    state = "placeholder"
+    mail_obfuscated = true
+    organisation = "placeholder"
+    data_obfuscated = true
+  }
+  lifecycle {
+    ignore_changes = [
+      # "Error: domain owner contact update is currently not supported"
+      owner,
+    ]
+  }
+}
+
+import {
+  id = "androidmakers.fr"
+  to = gandi_livedns_domain.androidmakers_fr
+}
+
+resource "gandi_livedns_domain" "androidmakers_fr" {
+  name = "androidmakers.fr"
+}
+
+import {
+  id = "androidmakers.fr/@/A"
+  to = gandi_livedns_record.androidmakers_fr
+}
+
+resource "gandi_livedns_record" "androidmakers_fr" {
+  zone = gandi_livedns_domain.androidmakers_fr.id
+  name = "@"
+  type = "A"
+  ttl = 3600
+  values = [
+    google_compute_global_address.default.address
+  ]
+}
+
 
 provider google-beta {
   project = var.project
