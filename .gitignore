@@ -26,3 +26,5 @@ apollo.key.unused
 keystore.properties
 api-*.json
 *.db
+.terraform
+.terraform.lock.hcl
