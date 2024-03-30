@@ -60,13 +60,13 @@ resource "gandi_domain" "androidmakers_fr" {
   # The owner block is required even though sadly it's not supported by the current provider
   owner {
     email = "placeholder"
-    type = "placeholder"
+    type = "company"
     street_addr = "placeholder"
     zip = "placeholder"
     phone = "placeholder"
     given_name = "placeholder"
     family_name = "placeholder"
-    country = "placeholder"
+    country = "FR"
     city = "placeholder"
     state = "placeholder"
     mail_obfuscated = true
