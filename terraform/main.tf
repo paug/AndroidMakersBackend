@@ -138,7 +138,13 @@ resource "google_compute_url_map" "default" {
 
   path_matcher {
     name            = "default"
-    default_service = google_compute_backend_bucket.static_content.id
+    default_url_redirect {
+      https_redirect = true
+      host_redirect = "androidmakers.droidcon.com"
+      path_redirect = "/"
+      strip_query = false
+      redirectResponseCode = MOVED_PERMANENTLY_DEFAULT
+    }
 
     path_rule {
       paths = [
