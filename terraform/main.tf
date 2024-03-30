@@ -143,7 +143,7 @@ resource "google_compute_url_map" "default" {
       host_redirect = "androidmakers.droidcon.com"
       path_redirect = "/"
       strip_query = false
-      redirectResponseCode = MOVED_PERMANENTLY_DEFAULT
+      redirect_response_code = "MOVED_PERMANENTLY_DEFAULT"
     }
 
     path_rule {
