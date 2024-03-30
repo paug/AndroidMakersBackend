@@ -7,10 +7,6 @@ terraform {
   }
 }
 
-provider "gandi" {
-  personal_access_token = "79f3b900dfbc3e55a195060f56bb2747d82d54ba"
-}
-
 resource "gandi_domain" "androidmakers_fr" {
   name = "androidmakers.fr"
 

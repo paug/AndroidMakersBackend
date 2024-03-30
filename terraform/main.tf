@@ -22,12 +22,41 @@ variable "gandi_access_token" {
   type = string
 }
 
+terraform {
+  required_providers {
+    gandi = {
+      version = "2.3.0"
+      source   = "go-gandi/gandi"
+    }
+  }
+}
+
+provider "gandi" {
+  personal_access_token = var.gandi_access_token
+}
+
 module "gandi" {
   source = "./modules/gandi"
 
-  access_token = var.gandi_access_token
   loadbalancer_ip = google_compute_global_address.default.address
 }
+
+moved {
+  from = gandi_domain.androidmakers_fr
+  to   = module.gandi.gandi_domain.androidmakers_fr
+}
+
+moved {
+  from = gandi_livedns_domain.androidmakers_fr
+  to = module.gandi.gandi_livedns_domain.androidmakers_fr
+}
+
+moved {
+  from = gandi_livedns_record.androidmakers_fr
+  to = module.gandi.gandi_livedns_record.androidmakers_fr
+}
+
+
 
 # Also create "androidmakers-tfstate" as it can sadly not be a variable
 # Typically use the same resource as for tfstate-bucket above (but doest have to)
