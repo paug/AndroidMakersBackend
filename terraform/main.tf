@@ -18,22 +18,8 @@ variable "project" {
 variable "domain" {
   default = "androidmakers.fr"
 }
-//
 variable "gandi_access_token" {
   type = string
-}
-
-# Also create "androidmakers-tfstate" as it can sadly not be a variable
-# Typically use the same resource as for tfstate-bucket above (but doest have to)
-variable "region" {
-  default = "europe-west9"
-}
-
-terraform {
-  backend "gcs" {
-    bucket = "androidmakers-tfstate"
-    prefix = "terraform/state"
-  }
 }
 
 terraform {
@@ -49,62 +35,24 @@ provider "gandi" {
   personal_access_token = var.gandi_access_token
 }
 
-import {
-  id = "androidmakers.fr"
-  to = gandi_domain.androidmakers_fr
+module "gandi" {
+  source = "./modules/gandi"
+
+  loadbalancer_ip = google_compute_global_address.default.address
 }
 
-resource "gandi_domain" "androidmakers_fr" {
-  name = "androidmakers.fr"
+# Also create "androidmakers-tfstate" as it can sadly not be a variable
+# Typically use the same resource as for tfstate-bucket above (but doest have to)
+variable "region" {
+  default = "europe-west9"
+}
 
-  # The owner block is required even though sadly it's not supported by the current provider
-  owner {
-    email = "placeholder"
-    type = "company"
-    street_addr = "placeholder"
-    zip = "placeholder"
-    phone = "placeholder"
-    given_name = "placeholder"
-    family_name = "placeholder"
-    country = "FR"
-    city = "placeholder"
-    state = "placeholder"
-    mail_obfuscated = true
-    organisation = "placeholder"
-    data_obfuscated = true
-  }
-  lifecycle {
-    ignore_changes = [
-      # "Error: domain owner contact update is currently not supported"
-      owner,
-    ]
+terraform {
+  backend "gcs" {
+    bucket = "androidmakers-tfstate"
+    prefix = "terraform/state"
   }
 }
-
-import {
-  id = "androidmakers.fr"
-  to = gandi_livedns_domain.androidmakers_fr
-}
-
-resource "gandi_livedns_domain" "androidmakers_fr" {
-  name = "androidmakers.fr"
-}
-
-import {
-  id = "androidmakers.fr/@/A"
-  to = gandi_livedns_record.androidmakers_fr
-}
-
-resource "gandi_livedns_record" "androidmakers_fr" {
-  zone = gandi_livedns_domain.androidmakers_fr.id
-  name = "@"
-  type = "A"
-  ttl = 3600
-  values = [
-    google_compute_global_address.default.address
-  ]
-}
-
 
 provider google-beta {
   project = var.project
