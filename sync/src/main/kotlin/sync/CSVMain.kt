@@ -1,6 +1,5 @@
 package sync
 
-import com.opencsv.CSVReader
 import com.opencsv.CSVWriter
 import sessionize.sessionizeData
 import java.io.File
