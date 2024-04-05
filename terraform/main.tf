@@ -94,19 +94,12 @@ resource "google_compute_url_map" "default" {
       redirect_response_code = "MOVED_PERMANENTLY_DEFAULT"
     }
 
+
     path_rule {
       paths = [
-        "/graphiql",
-        "/graphql",
-        "/images/*"
+        "/api/*",
       ]
-      service = google_compute_backend_service.graphql.id
-    }
-    path_rule {
-      paths = [
-        "/update/*"
-      ]
-      service = google_compute_backend_service.import.id
+      service = google_compute_backend_service.service.id
     }
   }
 }
@@ -118,9 +111,9 @@ resource "google_compute_backend_bucket" "static_content" {
   enable_cdn  = true
 }
 
-resource "google_compute_backend_service" "graphql" {
+resource "google_compute_backend_service" "service" {
   provider   = google-beta
-  name       = "graphql"
+  name       = "service"
   enable_cdn = true
 
   custom_response_headers = ["X-Cache-Hit: {cdn_cache_status}"]
@@ -131,7 +124,7 @@ resource "google_compute_backend_service" "graphql" {
   }
 
   backend {
-    group = google_compute_region_network_endpoint_group.cloudrungraphql.id
+    group = google_compute_region_network_endpoint_group.cloudrunservice.id
   }
 
   cdn_policy {
@@ -147,54 +140,15 @@ resource "google_compute_backend_service" "graphql" {
   compression_mode = "DISABLED"
 }
 
-resource "google_compute_backend_service" "import" {
-  provider   = google-beta
-  name       = "import"
-  enable_cdn = true
 
-  custom_response_headers = ["X-Cache-Hit: {cdn_cache_status}"]
-
-  log_config {
-    enable      = true
-    sample_rate = 1
-  }
-
-  backend {
-    group = google_compute_region_network_endpoint_group.cloudrunimport.id
-  }
-
-  cdn_policy {
-    cache_mode = "USE_ORIGIN_HEADERS"
-
-    cache_key_policy {
-      include_protocol     = true
-      include_host         = true
-      include_query_string = true
-      include_http_headers = ["conference"]
-    }
-  }
-  compression_mode = "DISABLED"
-}
-
-resource "google_compute_region_network_endpoint_group" "cloudrungraphql" {
+resource "google_compute_region_network_endpoint_group" "cloudrunservice" {
   provider              = google-beta
-  name                  = "cloudrungraphql"
+  name                  = "cloudrunservice"
   region                = var.region
   network_endpoint_type = "SERVERLESS"
 
   cloud_run {
-    service = "graphql"
-  }
-}
-
-resource "google_compute_region_network_endpoint_group" "cloudrunimport" {
-  provider              = google-beta
-  name                  = "cloudrunimport"
-  region                = var.region
-  network_endpoint_type = "SERVERLESS"
-
-  cloud_run {
-    service = "import"
+    service = "service"
   }
 }
 
@@ -245,10 +199,10 @@ resource "google_compute_global_forwarding_rule" "http" {
   ip_address            = google_compute_global_address.default.id
 }
 
-resource "google_artifact_registry_repository" "graphql-images" {
-  repository_id = "graphql-images"
+resource "google_artifact_registry_repository" "service-images" {
+  repository_id = "service-images"
   provider      = google-beta
-  description   = "images for the GraphQL API"
+  description   = "images for the AndroidMakers API"
   format        = "DOCKER"
   cleanup_policies {
     id     = "keep-minimum-versions"
@@ -260,8 +214,8 @@ resource "google_artifact_registry_repository" "graphql-images" {
   }
 }
 
-resource "google_cloud_run_v2_service" "graphql" {
-  name     = "graphql"
+resource "google_cloud_run_v2_service" "service" {
+  name     = "service"
   provider = google-beta
   ingress  = "INGRESS_TRAFFIC_ALL"
   location = var.region
@@ -269,7 +223,7 @@ resource "google_cloud_run_v2_service" "graphql" {
 
   template {
     containers {
-      image = "us-docker.pkg.dev/cloudrun/container/placeholder"
+      image = "europe-west9-docker.pkg.dev/androidmakers-a6883/service-images/service"
       resources {
         cpu_idle = true
         startup_cpu_boost = true
@@ -280,50 +234,8 @@ resource "google_cloud_run_v2_service" "graphql" {
 
 resource "google_cloud_run_service_iam_binding" "graphql" {
   provider = google-beta
-  location = google_cloud_run_v2_service.graphql.location
-  service  = google_cloud_run_v2_service.graphql.name
-  role     = "roles/run.invoker"
-  members  = [
-    "allUsers"
-  ]
-}
-
-resource "google_artifact_registry_repository" "import-images" {
-  repository_id = "import-images"
-  provider      = google-beta
-  description   = "images for the Import API"
-  format        = "DOCKER"
-  cleanup_policies {
-    id     = "keep-minimum-versions"
-    action = "KEEP"
-    most_recent_versions {
-      # Delete old images automatically
-      keep_count = 5
-    }
-  }
-}
-
-resource "google_cloud_run_v2_service" "import" {
-  name     = "import"
-  provider = google-beta
-  ingress  = "INGRESS_TRAFFIC_ALL"
-  location = var.region
-
-  template {
-    containers {
-      image = "us-docker.pkg.dev/cloudrun/container/placeholder"
-      resources {
-        cpu_idle = true
-        startup_cpu_boost = true
-      }
-    }
-  }
-}
-
-resource "google_cloud_run_service_iam_binding" "import" {
-  provider = google-beta
-  location = google_cloud_run_v2_service.import.location
-  service  = google_cloud_run_v2_service.import.name
+  location = google_cloud_run_v2_service.service.location
+  service  = google_cloud_run_v2_service.service.name
   role     = "roles/run.invoker"
   members  = [
     "allUsers"

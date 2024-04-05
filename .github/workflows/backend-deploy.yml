@@ -22,7 +22,10 @@ jobs:
         distribution: 'zulu'
         java-version: 17
 
-    - run: ./gradlew :terraform:apply
+    - run: |
+        ./gradlew :terraform:apply
+        ./gradlew :service:bumpCloudRunRevision
+
       env:
         GOOGLE_APPLICATION_CREDENTIALS_CONTENT: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_CONTENT }}
         TF_VAR_gandi_access_token: ${{ secrets.TF_VAR_gandi_access_token }}

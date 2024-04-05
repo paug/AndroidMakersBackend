@@ -1,15 +1,46 @@
-package sync
+package androidmakers.openfeedback
 
-import kotlinx.serialization.Serializable
-import kotlinx.serialization.encodeToString
+import io.ktor.http.*
+import io.ktor.server.application.*
+import io.ktor.server.response.*
+import io.ktor.server.routing.*
+import kotlinx.atomicfu.locks.withLock
+import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import sessionize.sessionizeData
-import java.io.File
-import java.time.Duration
-import java.time.LocalDateTime
-import java.time.ZoneOffset
+import kotlinx.serialization.*
+import java.time.Clock
+import java.util.concurrent.locks.ReentrantLock
 
-fun main() {
+@OptIn(ExperimentalSerializationApi::class)
+private val json = Json {
+    ignoreUnknownKeys = true
+    prettyPrint = true
+    prettyPrintIndent = "  "
+    encodeDefaults = true
+}
+
+fun Application.openfeedbackModule(path: String) {
+    routing {
+        get(path) {
+            call.respondText(
+                contentType = ContentType.parse("application/json"),
+                text = openfeedbackData()
+            )
+        }
+    }
+}
+
+
+private val lock = ReentrantLock()
+
+private var lastMillis: Long = 0
+private var lastValue: String? = null
+private fun openfeedbackData(): String = lock.withLock {
+    if (lastValue != null && (Clock.systemUTC().millis()  - lastMillis) < 60_000) {
+        // Make sure we're not calling sessionize too often
+        return@withLock lastValue!!
+    }
     val seData = sessionizeData()
     val ofData = OfData(
         sessions = seData.sessions.filter { !it.isServiceSession }.map {
@@ -34,9 +65,10 @@ fun main() {
         }.associateBy { it.id }
     )
 
-    val result = json.encodeToString(ofData)
-
-    File("..").resolve("openfeedback_data.json").writeText(result)
+    val value = json.encodeToString(ofData)
+    lastValue = value
+    lastMillis = Clock.systemUTC().millis()
+    return value
 }
 
 @Serializable

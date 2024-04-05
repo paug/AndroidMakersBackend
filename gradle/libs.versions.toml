@@ -102,8 +102,14 @@ kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-cor
 kotlinx-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "kotlin-coroutines" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
 kotlinx-serialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0"
-ktor-cio = "io.ktor:ktor-server-cio:2.2.4"
-ktor-status-pages = "io.ktor:ktor-server-status-pages:2.2.4"
+ktor-cio = "io.ktor:ktor-server-cio:2.3.9"
+ktor-server-core = "io.ktor:ktor-server-core:2.3.9"
+ktor-server-netty  = "io.ktor:ktor-server-netty:2.3.9"
+ktor-status-pages = "io.ktor:ktor-server-status-pages:2.3.9"
+ktor-server-cors = "io.ktor:ktor-server-cors:2.3.9"
+slf4j-simple = "org.slf4j:slf4j-simple:2.0.9"
+jib-core = "com.google.cloud.tools:jib-core:0.25.0"
+google-cloud-run = "com.google.cloud:google-cloud-run:0.35.0"
 lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
 material3-core = { module = "androidx.compose.material3:material3", version.ref = "compose-material-3" }
 material3-window-size = { module = "androidx.compose.material3:material3-window-size-class", version.ref = "compose-material-3" }
@@ -127,7 +133,7 @@ plugin-kotlin-spring = { module = "org.jetbrains.kotlin:kotlin-allopen", version
 plugin-ksp = { module = "com.google.devtools.ksp:symbol-processing-gradle-plugin", version = "1.8.20-1.0.10" }
 plugin-spring-boot = { module = "org.springframework.boot:spring-boot-gradle-plugin", version = "3.0.5" }
 plugin-wire = { module = "com.squareup.wire:wire-gradle-plugin", version = "4.5.3" }
-
+gax-grpc = "com.google.api:gax-grpc:2.38.0"
 okio = { module = "com.squareup.okio:okio", version.ref = "okio" }
 reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
 robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
