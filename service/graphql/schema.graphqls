@@ -1,0 +1,258 @@
+"""
+ A type representing a formatted kotlinx.datetime.Instant
+"""
+scalar GraphQLInstant
+
+scalar GraphQLLocalDate
+
+scalar GraphQLLocalDateTime
+
+type RootQuery {
+  rooms: [Room!]!
+
+  sessions(first: Int! = 10, after: String = null, orderBy: SessionOrderBy! = {
+    field: STARTS_AT
+    direction: ASCENDING
+  }
+  ): SessionConnection!
+
+  speakers: [Speaker!]!
+
+  speakersPage(first: Int! = 10, after: String = null): SpeakerConnection!
+
+  speaker(id: String!): Speaker!
+
+  venue(id: String!): Venue!
+
+  venues: [Venue!]!
+
+  partnerGroups: [PartnerGroup!]!
+
+  session(id: String!): Session!
+
+  config: Conference!
+
+  bookmarkConnection: BookmarkConnection!
+
+  conferences(orderBy: ConferenceOrderBy = null): [Conference!]!
+}
+
+type RootMutation {
+  addBookmark(sessionId: String!): BookmarkConnection!
+
+  removeBookmark(sessionId: String!): BookmarkConnection!
+
+  """
+   Deletes the current user account, requires authentication
+  """
+  deleteAccount: Boolean!
+}
+
+type Room {
+  id: String!
+
+  name: String!
+
+  capacity: Int
+}
+
+type SessionConnection {
+  nodes: [Session!]!
+
+  pageInfo: PageInfo!
+}
+
+input SessionOrderBy {
+  field: SessionField!
+
+  direction: OrderByDirection!
+}
+
+type Speaker implements Node {
+  id: String!
+
+  name: String!
+
+  bio: String
+
+  tagline: String
+
+  company: String
+
+  companyLogoUrl: String
+
+  city: String
+
+  socials: [Social!]!
+
+  photoUrl: String
+
+  photoUrlThumbnail: String
+
+  sessions: [Session!]!
+}
+
+type SpeakerConnection {
+  nodes: [Speaker!]!
+
+  pageInfo: PageInfo!
+}
+
+"""
+ @property floorPlanUrl the url to an image containing the floor plan
+"""
+type Venue {
+  id: String!
+
+  name: String!
+
+  latitude: Float
+
+  longitude: Float
+
+  address: String
+
+  imageUrl: String
+
+  floorPlanUrl: String
+
+  coordinates: String
+
+  descriptionFr: String!
+
+  description(language: String = "en"): String!
+}
+
+type PartnerGroup {
+  title: String!
+
+  partners: [Partner!]!
+}
+
+type Session implements Node {
+  id: String!
+
+  title: String!
+
+  description: String
+
+  """
+   A shorter version of description for use when real estate is scarce like watches for an example.
+   This field might have the same value as description if a shortDescription is not available
+  """
+  shortDescription: String
+
+  """
+   An [IETF language code](https://en.wikipedia.org/wiki/IETF_language_tag) like en-US
+  """
+  language: String
+
+  tags: [String!]!
+
+  startsAt: GraphQLLocalDateTime!
+
+  endsAt: GraphQLLocalDateTime!
+
+  complexity: String
+
+  feedbackId: String
+
+  """
+   One of "break", "lunch", "party", "keynote", "talk" or any other conference-specific format
+  """
+  type: String!
+
+  links: [Link!]!
+
+  speakers: [Speaker!]!
+
+  room: Room
+
+  rooms: [Room!]!
+}
+
+type Conference {
+  id: String!
+
+  name: String!
+
+  timezone: String!
+
+  days: [GraphQLLocalDate!]!
+
+  themeColor: String
+}
+
+type BookmarkConnection {
+  nodes: [Session!]!
+}
+
+input ConferenceOrderBy {
+  field: ConferenceField!
+
+  direction: OrderByDirection!
+}
+
+type PageInfo {
+  endCursor: String
+}
+
+enum SessionField {
+  STARTS_AT
+}
+
+enum OrderByDirection {
+  ASCENDING
+
+  DESCENDING
+}
+
+type Social {
+  icon: String
+
+  link: String!
+
+  name: String!
+
+  url: String!
+}
+
+interface Node {
+  id: String!
+}
+
+type Partner {
+  name: String!
+
+  url: String!
+
+  """
+   @param dark returns the logo for use on a dark background or fallbacks to the light mode if none exist
+  """
+  logoUrl(dark: Boolean = false): String!
+}
+
+type Link {
+  type: LinkType!
+
+  url: String!
+}
+
+enum ConferenceField {
+  DAYS
+}
+
+enum LinkType {
+  YouTube
+
+  Audio
+
+  AudioUncompressed
+
+  Other
+}
+
+schema {
+  query: RootQuery
+  mutation: RootMutation
+}

@@ -4,7 +4,11 @@
  *
  * - create var.project in GCP
  * - enable billing
- * - create service account and grant "Editor" + "Cloud Run Admin" role. This might be fine tuned in the future
+ * - create service account and grant:
+ *    - "Editor"
+ *    - "Cloud Run Admin" role
+ *    - "App Engine Admin" + "App Engine Creator" role (for DataStore)
+ *    (This might be fine tuned in the future)
  * - export the service account key in GOOGLE_APPLICATION_CREDENTIALS_CONTENT
  * - create "androidmakers-tfstate" bucket
  * - create var.domain in Gandi
@@ -97,7 +101,9 @@ resource "google_compute_url_map" "default" {
 
     path_rule {
       paths = [
-        "/api/*",
+        "/graphql",
+        "/sandbox/*",
+        "/openfeedback.json",
       ]
       service = google_compute_backend_service.service.id
     }
@@ -270,6 +276,13 @@ resource "google_storage_bucket" "static_content" {
     main_page_suffix = "index.html"
     not_found_page   = "404.html"
   }
+}
+
+# It's an appending app but we're only using datastore
+resource "google_app_engine_application" "datastore" {
+  project = var.project
+  location_id = "europe-west"
+  database_type = "CLOUD_DATASTORE_COMPATIBILITY"
 }
 
 output "ip_addr" {
