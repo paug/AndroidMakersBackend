@@ -1,5 +1,0 @@
-graphql:
-  packages: "am.backend"
-
-  playground:
-    enabled: true

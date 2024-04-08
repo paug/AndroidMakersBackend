@@ -3,7 +3,7 @@ accompanist = "0.30.0"
 activity-compose = "1.7.0"
 androidx-lifecycle = "2.6.1"
 androidx-datastore = "1.1.0-alpha01"
-apollo = "4.0.0-SNAPSHOT"
+apollo = "4.0.0-fork.0"
 compose = "1.4.0"
 compose-compiler = "1.4.4-dev-k1.8.20-f6ae19e64ff"
 compose-material-3 = "1.0.1"
@@ -150,7 +150,8 @@ wear-compose-navigation = "androidx.wear.compose:compose-navigation:1.2.0-alpha0
 wire-runtime = "com.squareup.wire:wire-runtime:4.5.3"
 xoxo = "net.mbonnin.xoxo:xoxo:0.3"
 napier = "io.github.aakira:napier:2.6.1"
-
+apollo-execution-ktor = {module = "com.apollographql.apollo3:apollo-execution-ktor", version.ref = "apollo"}
+apollo-ksp-incubating = {module = "com.apollographql.apollo3:apollo-ksp-incubating", version.ref = "apollo"}
 [bundles]
 multiplatform-settings = ["multiplatform-settings", "multiplatform-settings-coroutines"]
 apollo = ["apollo-normalized-cache-in-memory", "apollo-normalized-cache-sqlite", "apollo-adapters"]

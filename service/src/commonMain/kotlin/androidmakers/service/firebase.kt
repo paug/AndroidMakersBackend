@@ -1,9 +1,9 @@
-package am.backend
+package androidmakers.service
 
 import com.google.firebase.FirebaseApp
 import com.google.firebase.FirebaseOptions
 import com.google.firebase.auth.FirebaseAuth
-import am.backend.graphql.googleCredentials
+import com.google.auth.oauth2.GoogleCredentials
 
 
 private val lock = Object()
@@ -16,7 +16,7 @@ fun String.firebaseUid(): String? {
 
     synchronized(lock) {
         if (!_isInitialized) {
-            val options = FirebaseOptions.builder().setCredentials(googleCredentials("firebase_service_account_key.json")).build()
+            val options = FirebaseOptions.builder().setCredentials(GoogleCredentials.getApplicationDefault()).build()
             FirebaseApp.initializeApp(options)
             _isInitialized = true
         }
