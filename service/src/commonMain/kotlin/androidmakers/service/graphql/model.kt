@@ -3,21 +3,17 @@
 package androidmakers.service.graphql
 
 import androidmakers.service.Sessionize
+import androidmakers.service.context.bookmarksKeyFactory
 import androidmakers.service.context.datastore
 import androidmakers.service.context.uid
 import androidmakers.service.context.updateMaxAge
 import com.apollographql.apollo3.annotations.*
 import com.apollographql.apollo3.api.ExecutionContext
-import com.apollographql.apollo3.ast.GQLStringValue
-import com.apollographql.apollo3.ast.GQLValue
-import com.apollographql.apollo3.execution.Coercing
-import com.apollographql.apollo3.execution.internal.ExternalValue
 import com.google.cloud.datastore.BooleanValue
 import com.google.cloud.datastore.Entity
-import kotlinx.datetime.Instant
-import kotlinx.datetime.LocalDate
 import kotlinx.datetime.LocalDateTime
 
+const val KIND_BOOKMARKS = "Bookmarks"
 
 @GraphQLMutationRoot
 class RootMutation {
@@ -27,10 +23,13 @@ class RootMutation {
             "bookmarks require authentication"
         }
 
-        val datastore = executionContext.datastore()
-        val keyFactory = datastore.newKeyFactory()
+        if (Sessionize.data.get().sessions.none { it.id == sessionId }) {
+            throw Error("Cannot add bookmark for inexisting session '$sessionId'")
+        }
 
-        val key = keyFactory.newKey(uid)
+        val datastore = executionContext.datastore()
+
+        val key = executionContext.bookmarksKeyFactory().newKey(uid)
         val entity = datastore.get(key)
         val entityBuilder = if (entity == null) {
             Entity.newBuilder(key)!!
@@ -60,9 +59,8 @@ class RootMutation {
         }
 
         val datastore = executionContext.datastore()
-        val keyFactory = datastore.newKeyFactory()
 
-        val key = keyFactory.newKey(uid)
+        val key = executionContext.bookmarksKeyFactory().newKey(uid)
         val entity = datastore.get(key)
         if (entity == null) {
             return BookmarkConnection(emptyList())
@@ -90,9 +88,8 @@ class RootMutation {
         }
 
         val datastore = executionContext.datastore()
-        val keyFactory = datastore.newKeyFactory()
 
-        val key = keyFactory.newKey(uid)
+        val key = executionContext.bookmarksKeyFactory().newKey(uid)
         datastore.delete(key)
 
         return true
@@ -158,7 +155,7 @@ class RootQuery {
     }
 
     @Deprecated("Use speakersPage instead")
-    fun speakers(dfe: ExecutionContext): List<Speaker> {
+    fun speakers(): List<Speaker> {
         return Sessionize.data.get().speakers
     }
 
@@ -202,9 +199,8 @@ class RootQuery {
         }
 
         val datastore = executionContext.datastore()
-        val keyFactory = datastore.newKeyFactory()
 
-        val key = keyFactory.newKey(uid)
+        val key = executionContext.bookmarksKeyFactory().newKey(uid)
         val entity = datastore.get(key)
         if (entity == null) {
             return BookmarkConnection(emptyList())
@@ -318,11 +314,11 @@ data class Session(
     val type: String,
     val links: List<Link>
 ): Node {
-    fun speakers(dfe: ExecutionContext): List<Speaker> {
+    fun speakers(): List<Speaker> {
         return Sessionize.data.get().speakers.filter { speakerIds.contains(it.id) }
     }
 
-    fun room(dfe: ExecutionContext): Room? {
+    fun room(): Room? {
         val roomId = roomIds.firstOrNull()
         if (roomId == null) {
             return null
@@ -332,7 +328,7 @@ data class Session(
         }
     }
 
-    fun rooms(dfe: ExecutionContext): List<Room> {
+    fun rooms(): List<Room> {
         return Sessionize.data.get().rooms.filter {
             roomIds.contains(it.id)
         }
@@ -357,9 +353,7 @@ data class Speaker(
     val photoUrlThumbnail: String?,
     private val sessionIds: List<String>,
 ): Node {
-    fun sessions(
-        dfe: ExecutionContext,
-    ): List<Session> {
+    fun sessions(): List<Session> {
         return Sessionize.data.get().sessions.filter {
             sessionIds.contains(it.id)
         }

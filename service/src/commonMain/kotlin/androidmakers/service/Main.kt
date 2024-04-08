@@ -10,6 +10,8 @@ import androidmakers.service.context.maxAge
 import com.apollographql.apollo3.api.ExecutionContext
 import com.apollographql.apollo3.execution.ExecutableSchema
 import com.apollographql.apollo3.execution.ktor.respondGraphQL
+import com.google.auth.oauth2.GoogleCredentials
+import com.google.cloud.datastore.DatastoreOptions
 import com.google.firebase.auth.FirebaseAuthException
 import io.ktor.http.*
 import io.ktor.server.application.*
@@ -42,10 +44,12 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
             Sessionize.importAndroidMakers2024()
         }
     }
+
     embeddedServer(Netty, port = System.getenv("POST")?.toIntOrNull() ?: 8080) {
         install(CORS) {
             anyHost()
             allowNonSimpleContentTypes = true
+            allowHeader("Authorization")
         }
 
         routing {
@@ -63,6 +67,9 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
         openfeedbackModule("/openfeedback.json")
     }.start(wait = true)
 }
+
+val datastore = DatastoreOptions.newBuilder()
+    .setCredentials(GoogleCredentials.getApplicationDefault()).build().service
 
 private suspend fun PipelineContext<Unit, ApplicationCall>.apolloCall(executableSchema: ExecutableSchema) {
     val context = call.context()
@@ -89,11 +96,12 @@ private fun ApplicationCall.firebaseUid(): String? {
         request.headers.get("authorization")
             ?.substring("Bearer ".length)
             ?.firebaseUid()
-    } catch (e: FirebaseAuthException) {
+    } catch (e: Exception) {
+        e.printStackTrace()
         throw e
     }
 }
 
 private fun ApplicationCall.context(): ExecutionContext {
-    return AuthenticationContext(firebaseUid()) + DatastoreContext() + CacheControlContext()
+    return AuthenticationContext(firebaseUid()) + DatastoreContext(datastore) + CacheControlContext()
 }
