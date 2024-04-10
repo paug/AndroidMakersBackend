@@ -291,6 +291,11 @@ sealed interface Node {
 data class Session(
     override val id: String,
     val title: String,
+    /**
+     * The description of the event. [description] may contain emojis and '\n' Chars but no markdown or HTML.
+     *
+     * May be null if no description is available.
+     */
     val description: String?,
     /**
      * A shorter version of description for use when real estate is scarce like watches for an example.
@@ -424,6 +429,11 @@ data class Venue(
             return descriptions.get("\"fr\"") ?: descriptions.get("en") ?: ""
         }
 
+    /**
+     * The description of the venue. [description] may contain emojis and '\n' Chars but no markdown or HTML.
+     *
+     * May be null if no description is available.
+     */
     fun description(@GraphQLDefault("\"en\"") language: String?): String {
         return descriptions.get(language) ?: descriptions.get("en") ?: ""
     }

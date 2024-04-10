@@ -120,6 +120,11 @@ type Venue {
 
   descriptionFr: String!
 
+  """
+   The description of the venue. [description] may contain emojis and '\n' Chars but no markdown or HTML.
+
+   May be null if no description is available.
+  """
   description(language: String = "en"): String!
 }
 
@@ -134,6 +139,11 @@ type Session implements Node {
 
   title: String!
 
+  """
+   The description of the event. [description] may contain emojis and '\n' Chars but no markdown or HTML.
+
+   May be null if no description is available.
+  """
   description: String
 
   """
