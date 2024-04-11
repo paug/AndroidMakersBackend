@@ -68,6 +68,11 @@ resource "google_project_service" "api_compute" {
   service = "compute.googleapis.com"
 }
 
+resource "google_project_service" "api_iam" {
+  provider = google-beta
+  service = "iam.googleapis.com"
+}
+
 resource "google_project_service" "api_artifact_registry" {
   provider = google-beta
   service = "artifactregistry.googleapis.com"
@@ -220,6 +225,11 @@ resource "google_artifact_registry_repository" "service-images" {
   }
 }
 
+resource "google_service_account" "cloudrun_service_identity" {
+  provider = google-beta
+  account_id = "my-service-account"
+}
+
 resource "google_cloud_run_v2_service" "service" {
   name     = "service"
   provider = google-beta
@@ -234,7 +244,12 @@ resource "google_cloud_run_v2_service" "service" {
         cpu_idle = true
         startup_cpu_boost = true
       }
+      env {
+        name = "GOOGLE_CLOUD_PROJECT"
+        value = var.project
+      }
     }
+    service_account = google_service_account.cloudrun_service_identity.email
   }
 }
 
