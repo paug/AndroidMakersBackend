@@ -20,11 +20,13 @@ import io.ktor.server.netty.*
 import io.ktor.server.plugins.cors.routing.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
+import io.ktor.server.util.*
 import io.ktor.util.pipeline.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import kotlinx.serialization.json.*
 import kotlin.time.Duration.Companion.minutes
 
 fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
@@ -60,6 +62,9 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
             get("/graphql") {
                 apolloCall(executableSchema)
             }
+            get(Regex("/sandbox/?")) {
+                call.respondRedirect(call.url { path("/sandbox/index.html") })
+            }
             get("/sandbox/index.html") {
                 call.respondText(sandboxIndex, ContentType.parse("text/html"))
             }
@@ -71,8 +76,44 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
 val datastore = DatastoreOptions.newBuilder()
     .setCredentials(GoogleCredentials.getApplicationDefault()).build().service
 
+private fun Any?.toJsonString(): String {
+    return this.toJsonElement().toString()
+}
+
+private fun Any?.toJsonElement(): JsonElement {
+    return when (this) {
+        null -> JsonNull
+        is String -> JsonPrimitive(this)
+        is Number -> JsonPrimitive(this)
+        is Boolean -> JsonPrimitive(this)
+        is List<*> -> JsonArray(map { it.toJsonElement() })
+        is Map<*, *> -> JsonObject(map { it.key as String to it.value.toJsonElement() }.toMap())
+        else -> error("Cannot serialize '$this' to JSON")
+    }
+}
+
 private suspend fun PipelineContext<Unit, ApplicationCall>.apolloCall(executableSchema: ExecutableSchema) {
-    val context = call.context()
+    val authResult = call.firebaseUid()
+    var uid: String? =null
+    when (authResult) {
+        is FirebaseUidResult.Error -> {
+            call.respondText(ContentType.parse("application/json"), HttpStatusCode.Unauthorized) {
+                mapOf("type" to "signout", "firebaseError" to authResult.code).toJsonString()
+            }
+        }
+        FirebaseUidResult.Expired -> {
+            call.respondText(ContentType.parse("application/json"), HttpStatusCode.Unauthorized) {
+                mapOf("type" to "refresh").toJsonString()
+            }
+        }
+        is FirebaseUidResult.SignedIn -> {
+            uid = authResult.uid
+        }
+        FirebaseUidResult.SignedOut -> {
+            uid = null
+        }
+    }
+    val context = call.context(uid)
     call.respondGraphQL(executableSchema, context) {
         var maxAge = context.maxAge()
 
@@ -91,17 +132,17 @@ private suspend fun PipelineContext<Unit, ApplicationCall>.apolloCall(executable
 
 }
 
-private fun ApplicationCall.firebaseUid(): String? {
-    return try {
-        request.headers.get("authorization")
-            ?.substring("Bearer ".length)
-            ?.firebaseUid()
-    } catch (e: Exception) {
-        e.printStackTrace()
-        throw e
+private fun ApplicationCall.firebaseUid(): FirebaseUidResult {
+    val idToken = request.headers.get("authorization")
+        ?.substring("Bearer ".length)
+
+    if (idToken == null) {
+        return FirebaseUidResult.SignedOut
     }
+
+    return idToken.firebaseUid()
 }
 
-private fun ApplicationCall.context(): ExecutionContext {
-    return AuthenticationContext(firebaseUid()) + DatastoreContext(datastore) + CacheControlContext()
+private fun ApplicationCall.context(uid: String?): ExecutionContext {
+    return AuthenticationContext(uid) + DatastoreContext(datastore) + CacheControlContext()
 }
