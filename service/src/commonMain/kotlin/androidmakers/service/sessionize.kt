@@ -349,9 +349,18 @@ object Sessionize {
                 val tags = it.get("categoryItems")?.asList.orEmpty().mapNotNull { categoryId ->
                     categories.get(categoryId)?.asString
                 }
+                val id = it.get("id").asString
+                val type = when {
+                    /**
+                     * Those are the welcome & closing sessions.
+                     */
+                    setOf("2d800312-ba14-4230-86f2-7307d4d250e3", "b5b772ca-cf1f-4405-8729-e3486b0f2ff3", "525651b1-fa59-4228-bdfe-e9655b342544").contains(id) -> "plenary"
+                    it.get("isServiceSession").cast<Boolean>() -> "service"
+                    else -> "talk"
+                }
                 Session(
-                    id = it.get("id").asString,
-                    type = if (it.get("isServiceSession").cast()) "service" else "talk",
+                    id = id,
+                    type = type,
                     title = it.get("title").asString,
                     description = it.get("description")?.asString,
                     language = tags.toLanguage(),
