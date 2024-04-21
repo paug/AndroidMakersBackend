@@ -52,6 +52,7 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
             anyHost()
             allowNonSimpleContentTypes = true
             allowHeader("Authorization")
+            allowHeader("conference")
         }
 
         routing {
