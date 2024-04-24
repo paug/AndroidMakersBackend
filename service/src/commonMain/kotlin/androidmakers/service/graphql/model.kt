@@ -23,7 +23,7 @@ class RootMutation {
             "bookmarks require authentication"
         }
 
-        if (Sessionize.data.get().sessions.none { it.id == sessionId }) {
+        if (Sessionize.data().sessions.none { it.id == sessionId }) {
             throw Error("Cannot add bookmark for inexisting session '$sessionId'")
         }
 
@@ -49,7 +49,7 @@ class RootMutation {
     }
 
     private fun Set<String>.toBookmarkConnection(): BookmarkConnection {
-        return BookmarkConnection(Sessionize.data.get().sessions.filter { this.contains(it.id) })
+        return BookmarkConnection(Sessionize.data().sessions.filter { this.contains(it.id) })
     }
 
     fun removeBookmark(executionContext: ExecutionContext, sessionId: String): BookmarkConnection {
@@ -100,7 +100,7 @@ class RootMutation {
 @GraphQLQueryRoot
 class RootQuery {
     fun rooms(): List<Room> {
-        return Sessionize.data.get().rooms
+        return Sessionize.data().rooms
     }
 
     fun sessions(
@@ -108,7 +108,7 @@ class RootQuery {
         @GraphQLDefault("null") after: String?,
         @GraphQLDefault("{field: STARTS_AT, direction: ASCENDING}") orderBy: SessionOrderBy
     ): SessionConnection {
-        var sessions =  Sessionize.data.get().sessions
+        var sessions =  Sessionize.data().sessions
 
         when (orderBy.direction) {
                 OrderByDirection.ASCENDING -> {
@@ -156,40 +156,40 @@ class RootQuery {
 
     @Deprecated("Use speakersPage instead")
     fun speakers(): List<Speaker> {
-        return Sessionize.data.get().speakers
+        return Sessionize.data().speakers
     }
 
     fun speakersPage(
         @GraphQLDefault("10") first: Int,
         @GraphQLDefault("null") after: String?,
     ): SpeakerConnection {
-        return Sessionize.data.get().speakers.splice(first, after) { nodes, pageInfo ->
+        return Sessionize.data().speakers.splice(first, after) { nodes, pageInfo ->
             SpeakerConnection(nodes, pageInfo)
         }
     }
 
     fun speaker(id: String): Speaker {
-        return Sessionize.data.get().speakers.first { it.id == id }
+        return Sessionize.data().speakers.first { it.id == id }
     }
 
     fun venue(id: String): Venue {
-        return Sessionize.data.get().venues.first { it.id == id}
+        return Sessionize.data().venues.first { it.id == id}
     }
 
     fun venues(): List<Venue> {
-        return Sessionize.data.get().venues
+        return Sessionize.data().venues
     }
 
     fun partnerGroups(): List<PartnerGroup> {
-        return Sessionize.data.get().partnerGroups
+        return Sessionize.data().partnerGroups
     }
 
     fun session(id: String): Session {
-        return Sessionize.data.get().sessions.first { it.id == id }
+        return Sessionize.data().sessions.first { it.id == id }
     }
 
     fun config(): Conference {
-        return Sessionize.data.get().conference
+        return Sessionize.data().conference
     }
 
     fun bookmarkConnection(executionContext: ExecutionContext): BookmarkConnection {
@@ -208,11 +208,11 @@ class RootQuery {
             Entity.newBuilder(entity)
         }
 
-        return BookmarkConnection(Sessionize.data.get().sessions.filter { entity.names.contains(it.id) })
+        return BookmarkConnection(Sessionize.data().sessions.filter { entity.names.contains(it.id) })
     }
 
     fun conferences(@GraphQLDefault("null") orderBy: ConferenceOrderBy?): List<Conference> {
-        return listOf(Sessionize.data.get().conference)
+        return listOf(Sessionize.data().conference)
     }
 }
 
@@ -320,7 +320,7 @@ data class Session(
     val links: List<Link>
 ): Node {
     fun speakers(): List<Speaker> {
-        return Sessionize.data.get().speakers.filter { speakerIds.contains(it.id) }
+        return Sessionize.data().speakers.filter { speakerIds.contains(it.id) }
     }
 
     fun room(): Room? {
@@ -328,13 +328,13 @@ data class Session(
         if (roomId == null) {
             return null
         }
-        return Sessionize.data.get().rooms.firstOrNull {
+        return Sessionize.data().rooms.firstOrNull {
             it.id == roomId
         }
     }
 
     fun rooms(): List<Room> {
-        return Sessionize.data.get().rooms.filter {
+        return Sessionize.data().rooms.filter {
             roomIds.contains(it.id)
         }
     }
@@ -359,7 +359,7 @@ data class Speaker(
     private val sessionIds: List<String>,
 ): Node {
     fun sessions(): List<Session> {
-        return Sessionize.data.get().sessions.filter {
+        return Sessionize.data().sessions.filter {
             sessionIds.contains(it.id)
         }
     }

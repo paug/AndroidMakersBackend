@@ -2,6 +2,7 @@ package androidmakers.service
 
 import androidmakers.service.graphql.*
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.LocalDateTime
@@ -71,10 +72,20 @@ suspend fun getUrl(url: String): String {
 suspend fun getJsonUrl(url: String) = Json.parseToJsonElement(getUrl(url)).toAny()
 
 object Sessionize {
-    val data = AtomicReference<SessionizeData>()
+    private val data = AtomicReference<SessionizeData>()
 
-    suspend fun importAndroidMakers2024() {
-        val data = getData(
+    internal fun data(): SessionizeData {
+        val d = data.get()
+        if (d == null) {
+            runBlocking {
+                importAndroidMakers2024()
+            }
+        }
+        return data.get()
+    }
+
+    private suspend fun getData(): SessionizeData {
+        return getData(
             url = "https://sessionize.com/api/v2/ok1n6jgj/view/All",
             gridSmartUrl = "https://sessionize.com/api/v2/ok1n6jgj/view/GridSmart",
             config = Conference(
@@ -233,8 +244,13 @@ object Sessionize {
                 )
             )
         )
-
-        this.data.set(data)
+    }
+    suspend fun importAndroidMakers2024() {
+        try {
+            this.data.set(getData())
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
 
