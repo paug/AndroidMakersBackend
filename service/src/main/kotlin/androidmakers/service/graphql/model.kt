@@ -7,15 +7,18 @@ import androidmakers.service.context.bookmarksKeyFactory
 import androidmakers.service.context.datastore
 import androidmakers.service.context.uid
 import androidmakers.service.context.updateMaxAge
-import com.apollographql.apollo3.annotations.*
-import com.apollographql.apollo3.api.ExecutionContext
+import com.apollographql.apollo.annotations.*
+import com.apollographql.apollo.api.ExecutionContext
+import com.apollographql.execution.annotation.GraphQLDefault
+import com.apollographql.execution.annotation.GraphQLMutation
+import com.apollographql.execution.annotation.GraphQLQuery
 import com.google.cloud.datastore.BooleanValue
 import com.google.cloud.datastore.Entity
 import kotlinx.datetime.LocalDateTime
 
 const val KIND_BOOKMARKS = "Bookmarks"
 
-@GraphQLMutationRoot
+@GraphQLMutation
 class RootMutation {
     fun addBookmark(executionContext: ExecutionContext, sessionId: String): BookmarkConnection {
         val uid = executionContext.uid()
@@ -97,7 +100,7 @@ class RootMutation {
 }
 
 
-@GraphQLQueryRoot
+@GraphQLQuery
 class RootQuery {
     fun rooms(): List<Room> {
         return Sessionize.data().rooms
@@ -252,7 +255,6 @@ enum class OrderByDirection {
 enum class ConferenceField {
     DAYS,
 }
-
 
 data class Room(
     val id: String,

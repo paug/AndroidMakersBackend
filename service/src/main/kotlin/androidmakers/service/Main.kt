@@ -7,12 +7,11 @@ import androidmakers.service.context.AuthenticationContext
 import androidmakers.service.context.CacheControlContext
 import androidmakers.service.context.DatastoreContext
 import androidmakers.service.context.maxAge
-import com.apollographql.apollo3.api.ExecutionContext
-import com.apollographql.apollo3.execution.ExecutableSchema
-import com.apollographql.apollo3.execution.ktor.respondGraphQL
+import com.apollographql.apollo.api.ExecutionContext
+import com.apollographql.apollo.execution.ExecutableSchema
+import com.apollographql.execution.ktor.respondGraphQL
 import com.google.auth.oauth2.GoogleCredentials
 import com.google.cloud.datastore.DatastoreOptions
-import com.google.firebase.auth.FirebaseAuthException
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
@@ -56,12 +55,12 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
         }
 
         routing {
-            val executableSchema = androidmakers.graphql.AndroidmakersExecutableSchemaBuilder().build()
+            val executableSchema = androidmakers.graphql.AndroidMakersExecutableSchemaBuilder().build()
             post("/graphql") {
-                apolloCall(executableSchema)
+                call.respondGraphQL(executableSchema)
             }
             get("/graphql") {
-                apolloCall(executableSchema)
+                call.respondGraphQL(executableSchema)
             }
             get(Regex("/sandbox/?")) {
                 call.respondRedirect(call.url { path("/sandbox/index.html") })
