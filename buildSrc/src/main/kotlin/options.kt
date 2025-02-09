@@ -1,12 +1,8 @@
-import com.android.build.gradle.BaseExtension
-import org.gradle.api.JavaVersion
 import org.gradle.api.Project
 import org.gradle.api.plugins.JavaPluginExtension
 import org.gradle.api.tasks.compile.JavaCompile
 import org.gradle.jvm.toolchain.JavaLanguageVersion
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.dsl.KotlinCompile
-import org.jetbrains.kotlin.gradle.dsl.KotlinJvmCompilerOptions
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
 
 private fun Int.toJavaVersion(): String = when(this) {
@@ -31,14 +27,6 @@ fun Project.configureCompilerOptions(jvmVersion: Int = 11) {
         this as JavaPluginExtension
         toolchain {
             it.languageVersion.set(JavaLanguageVersion.of(17))
-        }
-    }
-
-    extensions.findByName("android")?.apply{
-        this as BaseExtension
-        compileOptions {
-            it.sourceCompatibility = JavaVersion.toVersion(jvmVersion.toJavaVersion())
-            it.targetCompatibility = JavaVersion.toVersion(jvmVersion.toJavaVersion())
         }
     }
 }

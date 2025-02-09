@@ -1,10 +1,10 @@
 package androidmakers.service.graphql
 
-import com.apollographql.apollo3.annotations.GraphQLScalar
-import com.apollographql.apollo3.ast.GQLStringValue
-import com.apollographql.apollo3.ast.GQLValue
-import com.apollographql.apollo3.execution.Coercing
-import com.apollographql.apollo3.execution.internal.ExternalValue
+import com.apollographql.apollo.ast.GQLStringValue
+import com.apollographql.apollo.ast.GQLValue
+import com.apollographql.apollo.execution.Coercing
+import com.apollographql.apollo.execution.ExternalValue
+import com.apollographql.execution.annotation.GraphQLScalar
 import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.LocalDateTime

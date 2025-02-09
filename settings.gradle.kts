@@ -4,7 +4,7 @@ pluginManagement {
             mavenCentral()
             google()
             gradlePluginPortal()
-            maven("https://storage.googleapis.com/martin-maven/m2/")
+            maven("https://storage.googleapis.com/apollo-snapshots/m2/")
         }
     }
 
@@ -19,7 +19,6 @@ pluginManagement {
 }
 
 rootProject.name = "AndroidMakersBackend"
-include(":service-graphql")
 include(":sessionize")
 include(":data")
 include(":sync")

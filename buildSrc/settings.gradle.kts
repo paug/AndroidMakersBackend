@@ -12,7 +12,7 @@ pluginManagement {
             mavenCentral()
             google()
             gradlePluginPortal()
-            maven("https://storage.googleapis.com/martin-maven/m2/")
+            maven("https://storage.googleapis.com/apollo-snapshots/m2/")
         }
     }
 }

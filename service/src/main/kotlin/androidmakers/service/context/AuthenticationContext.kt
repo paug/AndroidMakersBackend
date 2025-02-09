@@ -1,6 +1,6 @@
 package androidmakers.service.context
 
-import com.apollographql.apollo3.api.ExecutionContext
+import com.apollographql.apollo.api.ExecutionContext
 
 class AuthenticationContext(val uid: String?) : ExecutionContext.Element {
     override val key: ExecutionContext.Key<*>

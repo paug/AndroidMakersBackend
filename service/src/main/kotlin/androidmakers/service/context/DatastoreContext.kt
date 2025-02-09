@@ -1,7 +1,7 @@
 package androidmakers.service.context
 
 import androidmakers.service.graphql.KIND_BOOKMARKS
-import com.apollographql.apollo3.api.ExecutionContext
+import com.apollographql.apollo.api.ExecutionContext
 import com.google.auth.oauth2.GoogleCredentials
 import com.google.cloud.datastore.Datastore
 import com.google.cloud.datastore.DatastoreOptions
