@@ -14,6 +14,7 @@ import okhttp3.Request
 import okhttp3.executeAsync
 import java.util.concurrent.atomic.AtomicReference
 
+@Suppress("UNCHECKED_CAST")
 private fun <T> Any?.cast() = this as T
 private val Any?.asBoolean: Boolean get() = cast()
 private val Any?.asList: List<Any?> get() = cast()
@@ -78,7 +79,7 @@ object Sessionize {
         val d = data.get()
         if (d == null) {
             runBlocking {
-                importAndroidMakers2024()
+                importAndroidMakers2025()
             }
         }
         return data.get()
@@ -86,14 +87,14 @@ object Sessionize {
 
     private suspend fun getData(): SessionizeData {
         return getData(
-            url = "https://sessionize.com/api/v2/ok1n6jgj/view/All",
-            gridSmartUrl = "https://sessionize.com/api/v2/ok1n6jgj/view/GridSmart",
+            url = "https://sessionize.com/api/v2/g4o6gyjr/view/All",
+            gridSmartUrl = null,
             config = Conference(
-                id = "androidmakers2024",
-                name = "AndroidMakers by droidcon 2024",
+                id = "androidmakers2025",
+                name = "AndroidMakers by droidcon 2025",
                 timezone = "Europe/Paris",
                 themeColor = "0xffFB5C49",
-                days = listOf(LocalDate(2024, Month.APRIL, 25), LocalDate(2024, Month.APRIL, 26))
+                days = listOf(LocalDate(2025, Month.APRIL, 10), LocalDate(2025, Month.APRIL, 11))
             ),
             venues = listOf(
                 Venue(
@@ -136,10 +137,10 @@ object Sessionize {
                     title = "silver",
                     partners = listOf(
                         Partner(
-                            name = "bitrise",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/bitrise.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/bitrise_dark.png",
-                            url = "https://bitrise.io/?utm_source=sponsorship&utm_medium=referral&utm_campaign=androidmakers-paris-2024&utm_content=droidcon-homepage"
+                            name = "happn",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/happn_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/happn_dark.png",
+                            url = "https://www.happn.com/fr/"
                         ),
                         Partner(
                             name = "zimperium",
@@ -159,8 +160,8 @@ object Sessionize {
                             url = "https://appvestor.com/"
                         ),
                         Partner(
-                            name = "koin",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/koin.png",
+                            name = "kotzilla",
+                            logoUrl = "https://kotzilla.io/kotzillaLogo.webp",
                             logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/koin_dark.png",
                             url = "https://www.kotzilla.io/"
                         ),
@@ -169,12 +170,6 @@ object Sessionize {
                             logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/runway.png",
                             logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/runway_dark.png",
                             url = "https://runway.team/"
-                        ),
-                        Partner(
-                            name = "yavin",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/yavin.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/yavin_dark.png",
-                            url = "https://yavin.com/"
                         ),
                     )
                 ),
@@ -190,25 +185,8 @@ object Sessionize {
                     )
                 ),
                 PartnerGroup(
-                    title = "lanyard",
-                    partners = listOf(
-                        Partner(
-                            name = "amo",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/amo.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/amo_dark.png",
-                            url = "amo.co"
-                        )
-                    )
-                ),
-                PartnerGroup(
                     title = "community",
                     partners = listOf(
-                        Partner(
-                            name = "DevCafé",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/devcafe.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/devcafe_dark.png",
-                            url = "https://twitter.com/DevCafeYt"
-                        ),
                         Partner(
                             name = "Groundbreaker",
                             logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/groundbreaker.png",
@@ -216,7 +194,7 @@ object Sessionize {
                             url = "https://groundbreaker.org/"
                         ),
                         Partner(
-                            name = "leboncoin",
+                            name = "leboncointech",
                             logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/leboncoin.png",
                             logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/leboncoin_dark.png",
                             url = "https://medium.com/leboncoin-tech-blog"
@@ -234,10 +212,10 @@ object Sessionize {
                             url = "https://www.linkedin.com/company/womentechmakers/"
                         ),
                         Partner(
-                            name = "Women who code",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/women who code.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/women who code_dark.png",
-                            url = "https://womenwhocode.com/"
+                            name = "Duchess France",
+                            logoUrl = "https://www.duchess-france.fr/assets/bandeau.jpeg",
+                            logoUrlDark = "https://www.duchess-france.fr/assets/bandeau.jpeg",
+                            url = "https://www.duchess-france.fr"
                         )
                     )
 
@@ -245,26 +223,12 @@ object Sessionize {
             )
         )
     }
-    suspend fun importAndroidMakers2024() {
+    suspend fun importAndroidMakers2025() {
         try {
             this.data.set(getData())
         } catch (e: Exception) {
             e.printStackTrace()
         }
-    }
-
-
-    private suspend fun getLinks(id: String): List<Link> {
-        val data =
-            getJsonUrl("https://raw.githubusercontent.com/paug/AndroidMakersBackend/main/service-graphql/src/main/resources/links.json")
-
-        return data.asMap.get(id)?.asList.orEmpty()
-            .map {
-                Link(
-                    LinkType.valueOf(it.asMap.get("type").asString),
-                    it.asMap.get("url").asString
-                )
-            }
     }
 
 

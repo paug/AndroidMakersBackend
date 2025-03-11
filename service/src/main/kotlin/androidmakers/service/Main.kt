@@ -33,7 +33,7 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
      * Block to get the data just after boot
      */
     runBlocking {
-        Sessionize.importAndroidMakers2024()
+        Sessionize.importAndroidMakers2025()
     }
     /**
      * And then update every 5min.
@@ -42,7 +42,7 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
     GlobalScope.launch {
         while (true) {
             delay(5.minutes)
-            Sessionize.importAndroidMakers2024()
+            Sessionize.importAndroidMakers2025()
         }
     }
 
@@ -57,10 +57,10 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
         routing {
             val executableSchema = androidmakers.graphql.AndroidMakersExecutableSchemaBuilder().build()
             post("/graphql") {
-                call.respondGraphQL(executableSchema)
+                call.respondGraphQL2(executableSchema)
             }
             get("/graphql") {
-                call.respondGraphQL(executableSchema)
+                call.respondGraphQL2(executableSchema)
             }
             get(Regex("/sandbox/?")) {
                 call.respondRedirect(call.url { path("/sandbox/index.html") })
@@ -92,19 +92,21 @@ private fun Any?.toJsonElement(): JsonElement {
     }
 }
 
-private suspend fun PipelineContext<Unit, ApplicationCall>.apolloCall(executableSchema: ExecutableSchema) {
-    val authResult = call.firebaseUid()
+private suspend fun RoutingCall.respondGraphQL2(executableSchema: ExecutableSchema) {
+    val authResult = firebaseUid()
     var uid: String? =null
     when (authResult) {
         is FirebaseUidResult.Error -> {
-            call.respondText(ContentType.parse("application/json"), HttpStatusCode.Unauthorized) {
+            respondText(ContentType.parse("application/json"), HttpStatusCode.Unauthorized) {
                 mapOf("type" to "signout", "firebaseError" to authResult.code).toJsonString()
             }
+            return
         }
         FirebaseUidResult.Expired -> {
-            call.respondText(ContentType.parse("application/json"), HttpStatusCode.Unauthorized) {
+            respondText(ContentType.parse("application/json"), HttpStatusCode.Unauthorized) {
                 mapOf("type" to "refresh").toJsonString()
             }
+            return
         }
         is FirebaseUidResult.SignedIn -> {
             uid = authResult.uid
@@ -113,8 +115,8 @@ private suspend fun PipelineContext<Unit, ApplicationCall>.apolloCall(executable
             uid = null
         }
     }
-    val context = call.context(uid)
-    call.respondGraphQL(executableSchema, context) {
+    val context = context(uid)
+    respondGraphQL(executableSchema, context) {
         var maxAge = context.maxAge()
 
         if (it?.errors != null) {
@@ -129,7 +131,6 @@ private suspend fun PipelineContext<Unit, ApplicationCall>.apolloCall(executable
             }
         }
     }
-
 }
 
 private fun ApplicationCall.firebaseUid(): FirebaseUidResult {

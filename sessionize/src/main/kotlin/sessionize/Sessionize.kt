@@ -69,7 +69,7 @@ private val json = Json {
 }
 
 fun sessionizeData(): SeData {
-    val url = "https://sessionize.com/api/v2/ok1n6jgj/view/All"
+    val url = "https://sessionize.com/api/v2/g4o6gyjr/view/All"
 
     return Request.Builder()
         .get()
