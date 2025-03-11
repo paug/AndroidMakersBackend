@@ -14,6 +14,7 @@ import okhttp3.Request
 import okhttp3.executeAsync
 import java.util.concurrent.atomic.AtomicReference
 
+@Suppress("UNCHECKED_CAST")
 private fun <T> Any?.cast() = this as T
 private val Any?.asBoolean: Boolean get() = cast()
 private val Any?.asList: List<Any?> get() = cast()
@@ -78,7 +79,7 @@ object Sessionize {
         val d = data.get()
         if (d == null) {
             runBlocking {
-                importAndroidMakers2024()
+                importAndroidMakers2025()
             }
         }
         return data.get()
@@ -87,7 +88,7 @@ object Sessionize {
     private suspend fun getData(): SessionizeData {
         return getData(
             url = "https://sessionize.com/api/v2/g4o6gyjr/view/All",
-            gridSmartUrl = "https://sessionize.com/api/v2/ok1n6jgj/view/GridSmart",
+            gridSmartUrl = null,
             config = Conference(
                 id = "androidmakers2025",
                 name = "AndroidMakers by droidcon 2025",
@@ -222,26 +223,12 @@ object Sessionize {
             )
         )
     }
-    suspend fun importAndroidMakers2024() {
+    suspend fun importAndroidMakers2025() {
         try {
             this.data.set(getData())
         } catch (e: Exception) {
             e.printStackTrace()
         }
-    }
-
-
-    private suspend fun getLinks(id: String): List<Link> {
-        val data =
-            getJsonUrl("https://raw.githubusercontent.com/paug/AndroidMakersBackend/main/service-graphql/src/main/resources/links.json")
-
-        return data.asMap.get(id)?.asList.orEmpty()
-            .map {
-                Link(
-                    LinkType.valueOf(it.asMap.get("type").asString),
-                    it.asMap.get("url").asString
-                )
-            }
     }
 
 
