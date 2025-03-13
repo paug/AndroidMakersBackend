@@ -161,8 +161,8 @@ object Sessionize {
                         ),
                         Partner(
                             name = "kotzilla",
-                            logoUrl = "https://kotzilla.io/kotzillaLogo.webp",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/koin_dark.png",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/kotzilla.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/kotzilla_dark.png",
                             url = "https://www.kotzilla.io/"
                         ),
                         Partner(
