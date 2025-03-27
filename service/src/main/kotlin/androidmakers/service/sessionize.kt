@@ -160,9 +160,9 @@ object Sessionize {
                             url = "https://appvestor.com/"
                         ),
                         Partner(
-                            name = "Coyotte",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/coyotte_light.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/coyotte_dark.png",
+                            name = "Coyote",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/coyote_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/coyote_dark.png",
                             url = "https://www.moncoyote.com/"
                         ),
                         Partner(
@@ -230,8 +230,8 @@ object Sessionize {
                     partners = listOf(
                         Partner(
                             name = "AUTHADA",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/groundbreaker.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/groundbreaker_dark.png",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/authada_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/authada_dark.png",
                             url = "https://groundbreaker.org/"
                         ),
                         Partner(
@@ -272,8 +272,8 @@ object Sessionize {
                         ),
                         Partner(
                             name = "yubico",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/yubico_light.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/yubico_dark.png",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/yubico.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/yubico.png",
                             url = "https://www.yubico.com/press/media-assets/"
                         ),
                     )
