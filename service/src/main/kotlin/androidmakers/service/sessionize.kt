@@ -160,6 +160,12 @@ object Sessionize {
                             url = "https://appvestor.com/"
                         ),
                         Partner(
+                            name = "Coyotte",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/coyotte_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/coyotte_dark.png",
+                            url = "https://www.moncoyote.com/"
+                        ),
+                        Partner(
                             name = "kotzilla",
                             logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/kotzilla.png",
                             logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/kotzilla_dark.png",
@@ -213,12 +219,64 @@ object Sessionize {
                         ),
                         Partner(
                             name = "Duchess France",
-                            logoUrl = "https://www.duchess-france.fr/assets/bandeau.jpeg",
-                            logoUrlDark = "https://www.duchess-france.fr/assets/bandeau.jpeg",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/duchess_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/duchess_dark.png",
                             url = "https://www.duchess-france.fr"
                         )
                     )
-
+                ),
+                PartnerGroup(
+                    title = "speaker sponsors",
+                    partners = listOf(
+                        Partner(
+                            name = "AUTHADA",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/groundbreaker.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/groundbreaker_dark.png",
+                            url = "https://groundbreaker.org/"
+                        ),
+                        Partner(
+                            name = "axa",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/axa.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/axa.png",
+                            url = "https://axa.fr"
+                        ),
+                        Partner(
+                            name = "Deezer",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/deezer_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/deezer_dark.png",
+                            url = "https://www.deezer.com/fr/"
+                        ),
+                        Partner(
+                            name = "frog",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/frog_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/frog_dark.png",
+                            url = "https://www.frog.co/"
+                        ),
+                        Partner(
+                            name = "Gradle",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/gradle_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/gradle_dark.png",
+                            url = "https://gradle.com/"
+                        ),
+                        Partner(
+                            name = "JetBrains",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/jetbrains_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/jetbrains_dark.png",
+                            url = "https://www.jetbrains.com/"
+                        ),
+                        Partner(
+                            name = "Theodo apps",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/theodo_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/theodo_dark.png",
+                            url = "https://apps.theodo.com/"
+                        ),
+                        Partner(
+                            name = "yubico",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/yubico_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/yubico_dark.png",
+                            url = "https://www.yubico.com/press/media-assets/"
+                        ),
+                    )
                 )
             )
         )
