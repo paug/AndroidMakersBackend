@@ -265,6 +265,12 @@ object Sessionize {
                             url = "https://www.jetbrains.com/"
                         ),
                         Partner(
+                            name = "nevis",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/nevis_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/nevis_dark.png",
+                            url = "https://www.nevis.net/"
+                        ),
+                        Partner(
                             name = "Theodo apps",
                             logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/theodo_light.png",
                             logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/theodo_dark.png",
@@ -274,7 +280,7 @@ object Sessionize {
                             name = "yubico",
                             logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/yubico.png",
                             logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/yubico.png",
-                            url = "https://www.yubico.com/press/media-assets/"
+                            url = "https://www.yubico.com/"
                         ),
                     )
                 )
