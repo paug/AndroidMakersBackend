@@ -12,7 +12,7 @@ resource "gandi_domain" "androidmakers_fr" {
 
   # The owner block is required even though sadly it's not supported by the current provider
   owner {
-    email = "placeholder"
+    email = "contact@paug.fr"
     type = "company"
     street_addr = "placeholder"
     zip = "placeholder"

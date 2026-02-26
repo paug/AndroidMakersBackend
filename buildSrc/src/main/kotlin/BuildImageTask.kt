@@ -40,7 +40,7 @@ abstract class BuildImageTask : DefaultTask() {
         val containerizer = Containerizer.to(RegistryImage.named(imageRef).addCredential("_json_key", gcpServiceAccountJson.get()))
 
 
-        Jib.from("openjdk:17-alpine")
+        Jib.from("azul/zulu-openjdk:25")
             .addLayer(listOf(path), AbsoluteUnixPath.get("/"))
             .addLayer(runtimeClasspath.files.map { it.toPath() }, AbsoluteUnixPath.get("/classpath"))
             .setEntrypoint(

@@ -15,35 +15,35 @@
  * - create Gandi access token
  * - export the access token in TF_VAR_gandi_access_token
  */
-// These resources must be created manually before the first terraform apply
+# These resources must be created manually before the first terraform apply
 variable "project" {
   default = "androidmakers-a6883"
 }
 variable "domain" {
   default = "androidmakers.fr"
 }
-variable "gandi_access_token" {
-  type = string
-}
-
-terraform {
-  required_providers {
-    gandi = {
-      version = "2.3.0"
-      source   = "go-gandi/gandi"
-    }
-  }
-}
-
-provider "gandi" {
-  personal_access_token = var.gandi_access_token
-}
-
-module "gandi" {
-  source = "./modules/gandi"
-
-  loadbalancer_ip = google_compute_global_address.default.address
-}
+# variable "gandi_access_token" {
+#   type = string
+# }
+#
+# terraform {
+#   required_providers {
+#     gandi = {
+#       version = "2.3.0"
+#       source   = "go-gandi/gandi"
+#     }
+#   }
+# }
+#
+# provider "gandi" {
+#   personal_access_token = var.gandi_access_token
+# }
+#
+# module "gandi" {
+#   source = "./modules/gandi"
+#
+#   loadbalancer_ip = google_compute_global_address.default.address
+# }
 
 # Also create "androidmakers-tfstate" as it can sadly not be a variable
 # Typically use the same resource as for tfstate-bucket above (but doest have to)
@@ -293,12 +293,14 @@ resource "google_storage_bucket" "static_content" {
   }
 }
 
-# It's an appending app but we're only using datastore
-resource "google_app_engine_application" "datastore" {
-  project = var.project
-  location_id = "europe-west"
-  database_type = "CLOUD_DATASTORE_COMPATIBILITY"
-}
+# It's an appengine app but we're only using datastore
+# 2026: I haven't found a way to delete the appengine app neither importing it 🤷‍
+# So it's just ignored now.
+# resource "google_app_engine_application" "datastore" {
+#   project = var.project
+#   location_id = "europe-west"
+#   database_type = "CLOUD_DATASTORE_COMPATIBILITY"
+# }
 
 output "ip_addr" {
   value = google_compute_global_address.default.address

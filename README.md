@@ -1,9 +1,9 @@
 # Android Makers Backend
 
-You can explore the API using the [playground](https://androidmakers-2023.ew.r.appspot.com/playground):
+You can explore the API using the [sandbox](https://androidmakers.fr/sandbox):
 
 ```
-https://androidmakers-2023.ew.r.appspot.com/playground
+https://androidmakers.fr/sandbox
 ```
 
 For an example, the following query returns the 100 first sessions:
@@ -40,5 +40,5 @@ You can modify data in [service-graphql/src/main/resources/data.json](service-gr
 To run locally (requires Google Cloud service account key): 
 
 ```
-./gradlew bootRun
+./gradlew :service:run
 ```
