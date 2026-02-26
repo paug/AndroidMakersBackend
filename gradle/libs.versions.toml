@@ -1,6 +1,6 @@
 [versions]
-apollo-execution = "0.1.1-SNAPSHOT-5283588453f1afa8a449786890d52788cc3dc60e"
-kotlin = "2.1.10"
+apollo-execution = "0.1.3-SNAPSHOT-11e95624f8fe66e1d76b249a53c9d00fc80dc7a4"
+kotlin-gradle-plugin = "2.3.10"
 kotlinx-datetime = "0.4.0"
 
 [libraries]
@@ -20,7 +20,11 @@ ktor-server-netty = "io.ktor:ktor-server-netty:3.0.0"
 okhttp = "com.squareup.okhttp3:okhttp:5.0.0-alpha.11"
 okhttp-coroutines = "com.squareup.okhttp3:okhttp-coroutines:5.0.0-alpha.11"
 plugin-apollo-execution = { module = "com.apollographql.execution:apollo-execution-gradle-plugin", version.ref = "apollo-execution" }
-plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
-plugin-kotlin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
-plugin-ksp = { module = "com.google.devtools.ksp:symbol-processing-gradle-plugin", version = "2.1.10-1.0.29" }
+plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-gradle-plugin" }
+plugin-kotlin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin-gradle-plugin" }
+plugin-ksp = { module = "com.google.devtools.ksp:symbol-processing-gradle-plugin", version = "2.3.6" }
 slf4j-simple = "org.slf4j:slf4j-simple:2.0.9"
+
+[plugins]
+tapmoc = { id = "com.gradleup.tapmoc", version = "0.4.0"}
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-gradle-plugin" }

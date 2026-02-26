@@ -1,5 +1,6 @@
 plugins {
-    `embedded-kotlin`
+    alias(libs.plugins.kotlin)
+    alias(libs.plugins.tapmoc)
 }
 
 dependencies {
@@ -15,4 +16,8 @@ dependencies {
     implementation(libs.kotlinx.datetime)
     // See https://github.com/quarkiverse/quarkus-google-cloud-services/issues/547#issuecomment-1878765438
     implementation("io.grpc:grpc-netty:1.60.1")
+}
+
+tapmoc {
+    gradle(gradle.gradleVersion)
 }
