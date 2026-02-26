@@ -20,7 +20,6 @@ import io.ktor.server.plugins.cors.routing.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import io.ktor.server.util.*
-import io.ktor.util.pipeline.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -33,7 +32,7 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
      * Block to get the data just after boot
      */
     runBlocking {
-        Sessionize.importAndroidMakers2025()
+        Sessionize.importData()
     }
     /**
      * And then update every 5min.
@@ -42,7 +41,7 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
     GlobalScope.launch {
         while (true) {
             delay(5.minutes)
-            Sessionize.importAndroidMakers2025()
+            Sessionize.importData()
         }
     }
 

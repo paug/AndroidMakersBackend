@@ -79,7 +79,7 @@ object Sessionize {
         val d = data.get()
         if (d == null) {
             runBlocking {
-                importAndroidMakers2025()
+                importData()
             }
         }
         return data.get()
@@ -87,14 +87,14 @@ object Sessionize {
 
     private suspend fun getData(): SessionizeData {
         return getData(
-            url = "https://sessionize.com/api/v2/g4o6gyjr/view/All",
+            url = "https://sessionize.com/api/v2/kqy4c3ye/view/All",
             gridSmartUrl = null,
             config = Conference(
-                id = "androidmakers2025",
-                name = "AndroidMakers by droidcon 2025",
+                id = "androidmakers2026",
+                name = "AndroidMakers by droidcon 2026",
                 timezone = "Europe/Paris",
                 themeColor = "0xffFB5C49",
-                days = listOf(LocalDate(2025, Month.APRIL, 10), LocalDate(2025, Month.APRIL, 11))
+                days = listOf(LocalDate(2026, Month.APRIL, 9), LocalDate(2026, Month.APRIL, 10))
             ),
             venues = listOf(
                 Venue(
@@ -287,7 +287,7 @@ object Sessionize {
             )
         )
     }
-    suspend fun importAndroidMakers2025() {
+    suspend fun importData() {
         try {
             this.data.set(getData())
         } catch (e: Exception) {
