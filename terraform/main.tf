@@ -22,22 +22,22 @@ variable "project" {
 variable "domain" {
   default = "androidmakers.fr"
 }
-# variable "gandi_access_token" {
-#   type = string
-# }
-#
-# terraform {
-#   required_providers {
-#     gandi = {
-#       version = "2.3.0"
-#       source   = "go-gandi/gandi"
-#     }
-#   }
-# }
-#
-# provider "gandi" {
-#   personal_access_token = var.gandi_access_token
-# }
+variable "gandi_access_token" {
+  type = string
+}
+
+terraform {
+  required_providers {
+    gandi = {
+      version = "2.3.0"
+      source   = "go-gandi/gandi"
+    }
+  }
+}
+
+provider "gandi" {
+  personal_access_token = var.gandi_access_token
+}
 #
 # module "gandi" {
 #   source = "./modules/gandi"
