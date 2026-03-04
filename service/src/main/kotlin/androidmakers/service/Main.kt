@@ -93,7 +93,7 @@ private fun Any?.toJsonElement(): JsonElement {
 
 private suspend fun RoutingCall.respondGraphQL2(executableSchema: ExecutableSchema) {
     val authResult = firebaseUid()
-    var uid: String? =null
+    var uid: String? = null
     when (authResult) {
         is FirebaseUidResult.Error -> {
             respondText(ContentType.parse("application/json"), HttpStatusCode.Unauthorized) {

@@ -3,23 +3,86 @@
 package androidmakers.service.graphql
 
 import androidmakers.service.Sessionize
+import androidmakers.service.context.AuthenticationContext
 import androidmakers.service.context.bookmarksKeyFactory
 import androidmakers.service.context.datastore
 import androidmakers.service.context.uid
 import androidmakers.service.context.updateMaxAge
 import com.apollographql.apollo.annotations.*
 import com.apollographql.apollo.api.ExecutionContext
+import com.apollographql.apollo.execution.StringCoercing
 import com.apollographql.execution.annotation.GraphQLDefault
 import com.apollographql.execution.annotation.GraphQLMutation
 import com.apollographql.execution.annotation.GraphQLQuery
+import com.apollographql.execution.annotation.GraphQLScalar
 import com.google.cloud.datastore.BooleanValue
 import com.google.cloud.datastore.Entity
 import kotlinx.datetime.LocalDateTime
 
 const val KIND_BOOKMARKS = "Bookmarks"
+const val KIND_FEED_ITEMS = "FeedItems"
+
+/**
+ * A Markdown string as described by https://spec.commonmark.org
+ */
+@GraphQLScalar(StringCoercing::class)
+typealias Markdown = String
+
+@GraphQLScalar(StringCoercing::class)
+typealias ID = String
+
+class FeedItemInput(
+    val title: String,
+    val markdown: Markdown
+)
+
+sealed interface FeedItemResult
+
+data object FeedItemFailure: FeedItemResult
+data class FeedItemSuccess(
+    val feedItem: FeedItem
+): FeedItemResult
+
+class FeedItem(
+    val id: ID,
+    val title: String,
+    val markdown: Markdown
+)
 
 @GraphQLMutation
 class RootMutation {
+    fun addFeedItem(executionContext: ExecutionContext, feedItem: FeedItemInput): FeedItemResult {
+        val authenticationContext = executionContext.get(AuthenticationContext)!!
+        val email = authenticationContext.email
+        check(email != null) {
+            "Adding to the feed requires authentication"
+        }
+
+        if (email !in setOf("martinbonninandroid@gmail.com", "reno.mathieu@gmail.com")) {
+            throw Error("Only admins can add feed items")
+        }
+
+        val datastore = executionContext.datastore()
+
+        val key = datastore.newKeyFactory().setKind(KIND_FEED_ITEMS).newKey()
+        val entity = Entity.newBuilder(key)!!
+            .set("title", feedItem.title)
+            .set("markdown", feedItem.markdown)
+            .build()
+
+        val result = datastore.runInTransaction {
+            it.put(entity)
+        }
+
+        return FeedItemSuccess(
+            FeedItem(
+                id = result.key.toString(),
+                title = feedItem.title,
+                markdown = feedItem.markdown
+            )
+        )
+    }
+
     fun addBookmark(executionContext: ExecutionContext, sessionId: String): BookmarkConnection {
         val uid = executionContext.uid()
         check(uid != null) {
@@ -217,7 +280,12 @@ class RootQuery {
     fun conferences(@GraphQLDefault("null") orderBy: ConferenceOrderBy?): List<Conference> {
         return listOf(Sessionize.data().conference)
     }
+
+    fun feedItemsConnection(executionContext: ExecutionContext): FeedItemsConnection {
+    }
 }
+
+class FeedItemsConnection(val nodes: List<FeedItem>)
 
 class  BookmarkConnection(
     val nodes: List<Session>
