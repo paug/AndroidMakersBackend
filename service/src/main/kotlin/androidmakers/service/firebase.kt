@@ -18,11 +18,7 @@ sealed interface FirebaseUidResult {
     object SignedOut: FirebaseUidResult
 }
 
-fun String.firebaseUid(): FirebaseUidResult {
-    if (this == "testToken") {
-        return FirebaseUidResult.SignedIn("testUser")
-    }
-
+private fun ensureInitialized() {
     synchronized(lock) {
         if (!_isInitialized) {
             val options = FirebaseOptions.builder().setCredentials(GoogleCredentials.getApplicationDefault()).build()
@@ -30,6 +26,18 @@ fun String.firebaseUid(): FirebaseUidResult {
             _isInitialized = true
         }
     }
+}
+fun firebaseEmail(uid: String): String {
+    ensureInitialized()
+    return FirebaseAuth.getInstance().getUser(uid).email
+}
+
+fun String.firebaseUid(): FirebaseUidResult {
+    if (this == "testToken") {
+        return FirebaseUidResult.SignedIn("testUser")
+    }
+
+    ensureInitialized()
 
     return try {
         FirebaseUidResult.SignedIn(FirebaseAuth.getInstance().verifyIdToken(this).uid)
