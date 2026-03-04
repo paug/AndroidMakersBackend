@@ -43,7 +43,7 @@ internal val adminEmails = setOf("martinbonninandroid@gmail.com", "reno.mathieu@
 
 sealed interface FeedItemResult
 
-data object FeedItemFailure: FeedItemResult
+data class FeedItemFailure(val message: String = "Something wrong happened"): FeedItemResult
 data class FeedItemSuccess(
     val feedItem: FeedItem
 ): FeedItemResult
