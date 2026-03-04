@@ -7,6 +7,13 @@ scalar GraphQLLocalDate
 
 scalar GraphQLLocalDateTime
 
+scalar ID
+
+"""
+ A Markdown string as described by https://spec.commonmark.org
+"""
+scalar Markdown
+
 enum ConferenceField {
   DAYS
 }
@@ -47,6 +54,25 @@ type Conference {
   themeColor: String
 }
 
+type FeedItem {
+  id: ID!
+
+  title: String!
+
+  markdown: Markdown!
+}
+
+type FeedItemFailure
+type FeedItemSuccess {
+  feedItem: FeedItem!
+}
+
+type FeedItemsConnection {
+  nodes: [FeedItem!]!
+
+  pageInfo: PageInfo!
+}
+
 type Link {
   type: LinkType!
 
@@ -55,6 +81,8 @@ type Link {
 
 type PageInfo {
   endCursor: String
+
+  hasNextPage: Boolean!
 }
 
 type Partner {
@@ -83,6 +111,10 @@ type Room {
 }
 
 type RootMutation {
+  updateFeedItem(id: ID!, feedItem: FeedItemInput!): FeedItemResult!
+
+  addFeedItem(feedItem: FeedItemInput!): FeedItemResult!
+
   addBookmark(sessionId: String!): BookmarkConnection!
 
   removeBookmark(sessionId: String!): BookmarkConnection!
@@ -121,6 +153,13 @@ type RootQuery {
   bookmarkConnection: BookmarkConnection!
 
   conferences(orderBy: ConferenceOrderBy = null): [Conference!]!
+
+  feedItemsConnection(first: Int! = 10, after: String = null): FeedItemsConnection!
+
+  """
+   The current logged in user or null if the user is not logged in
+  """
+  user: User
 }
 
 """
@@ -218,6 +257,14 @@ type SpeakerConnection {
   pageInfo: PageInfo!
 }
 
+type User {
+  id: String!
+
+  email: String!
+
+  isAdmin: Boolean!
+}
+
 """
  @property floorPlanUrl the url to an image containing the floor plan
 """
@@ -252,10 +299,18 @@ interface Node {
   id: String!
 }
 
+union FeedItemResult = FeedItemFailure|FeedItemSuccess
+
 input ConferenceOrderBy {
   field: ConferenceField!
 
   direction: OrderByDirection!
+}
+
+input FeedItemInput {
+  title: String!
+
+  markdown: Markdown!
 }
 
 input SessionOrderBy {

@@ -16,7 +16,10 @@ import com.apollographql.execution.annotation.GraphQLMutation
 import com.apollographql.execution.annotation.GraphQLQuery
 import com.apollographql.execution.annotation.GraphQLScalar
 import com.google.cloud.datastore.BooleanValue
+import com.google.cloud.datastore.Cursor
 import com.google.cloud.datastore.Entity
+import com.google.cloud.datastore.Query
+import com.google.rpc.context.AttributeContext
 import kotlinx.datetime.LocalDateTime
 
 const val KIND_BOOKMARKS = "Bookmarks"
@@ -36,6 +39,8 @@ class FeedItemInput(
     val markdown: Markdown
 )
 
+internal val adminEmails = setOf("martinbonninandroid@gmail.com", "reno.mathieu@gmail.com")
+
 sealed interface FeedItemResult
 
 data object FeedItemFailure: FeedItemResult
@@ -51,6 +56,9 @@ class FeedItem(
 
 @GraphQLMutation
 class RootMutation {
+    fun updateFeedItem(executionContext: ExecutionContext, id: ID, feedItem: FeedItemInput): FeedItemResult {
+        TODO()
+    }
     fun addFeedItem(executionContext: ExecutionContext, feedItem: FeedItemInput): FeedItemResult {
         val authenticationContext = executionContext.get(AuthenticationContext)!!
         val email = authenticationContext.email
@@ -58,7 +66,7 @@ class RootMutation {
             "Adding to the feed requires authentication"
         }
 
-        if (email !in setOf("martinbonninandroid@gmail.com", "reno.mathieu@gmail.com")) {
+        if (email !in adminEmails) {
             throw Error("Only admins can add feed items")
         }
 
@@ -213,10 +221,10 @@ class RootQuery {
                 i += 1
             }
         }
-        var count = minOf(size - i, first)
+        val count = minOf(size - i, first)
         return block(
             this.subList(i, i + count),
-            PageInfo(get(i + count - 1).id)
+            PageInfo(get(i + count - 1).id, i + count < size)
         )
     }
 
@@ -281,11 +289,64 @@ class RootQuery {
         return listOf(Sessionize.data().conference)
     }
 
-    fun feedItemsConnection(executionContext: ExecutionContext): FeedItemsConnection {
+    fun feedItemsConnection(
+        executionContext: ExecutionContext,
+        @GraphQLDefault("10") first: Int,
+        @GraphQLDefault("null") after: String?
+    ): FeedItemsConnection {
+        val datastore = executionContext.datastore()
+
+        val query = Query.newEntityQueryBuilder()
+            .setKind(KIND_FEED_ITEMS)
+            .setLimit(first)
+            .apply {
+              if (after != null) {
+                  setStartCursor(Cursor.fromUrlSafe(after))
+              }
+            }
+            .build()
+
+        val results = datastore.run(query)
+
+        val allItems = mutableListOf<FeedItem>()
+        results.forEach { entity ->
+            allItems.add(
+                FeedItem(
+                    id = entity.key.toString(),
+                    title = entity.getString("title"),
+                    markdown = entity.getString("markdown")
+                )
+            )
+        }
+
+        return FeedItemsConnection(
+            nodes = allItems,
+            pageInfo = PageInfo(allItems.lastOrNull()?.id, results.hasNext())
+        )
+    }
+
+    /**
+     * The current logged in user or null if the user is not logged in
+     */
+    fun user(executionContext: ExecutionContext): User? {
+        val authenticationContext = executionContext[AuthenticationContext]!!
+        if (authenticationContext.uid == null) {
+            return null
+        }
+        return User(id = authenticationContext.uid, email = authenticationContext.email!!, isAdmin = authenticationContext.email in adminEmails)
     }
 }
 
-class FeedItemsConnection(val nodes: List<FeedItem>)
+class User(
+    val id: String,
+    val email: String,
+    val isAdmin: Boolean
+)
+
+class FeedItemsConnection(
+    val nodes: List<FeedItem>,
+    val pageInfo: PageInfo
+)
 
 class  BookmarkConnection(
     val nodes: List<Session>
@@ -338,6 +399,7 @@ data class SessionConnection(
 
 data class PageInfo(
     val endCursor: String?,
+    val hasNextPage: Boolean = true
 )
 
 enum class  LinkType {
