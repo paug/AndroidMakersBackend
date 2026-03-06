@@ -1,0 +1,7 @@
+indexes:
+
+  - kind: FeedItems
+    ancestor: yes
+    properties:
+      - name: createdAt
+        direction: desc

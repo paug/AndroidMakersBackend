@@ -27,10 +27,6 @@ private fun ensureInitialized() {
         }
     }
 }
-fun firebaseEmail(uid: String): String {
-    ensureInitialized()
-    return FirebaseAuth.getInstance().getUser(uid).email
-}
 
 fun String.firebaseUid(): FirebaseUidResult {
     if (this == "testToken") {

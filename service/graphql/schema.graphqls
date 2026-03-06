@@ -3,6 +3,11 @@ schema {
   mutation: RootMutation
 }
 
+"""
+ A type representing a formatted kotlinx.datetime.Instant
+"""
+scalar GraphQLInstant
+
 scalar GraphQLLocalDate
 
 scalar GraphQLLocalDateTime
@@ -57,12 +62,17 @@ type Conference {
 type FeedItem {
   id: ID!
 
+  createdAt: GraphQLInstant!
+
   title: String!
 
   markdown: Markdown!
 }
 
-type FeedItemFailure
+type FeedItemFailure {
+  message: String!
+}
+
 type FeedItemSuccess {
   feedItem: FeedItem!
 }
@@ -260,8 +270,6 @@ type SpeakerConnection {
 type User {
   id: String!
 
-  email: String!
-
   isAdmin: Boolean!
 }
 
@@ -308,9 +316,9 @@ input ConferenceOrderBy {
 }
 
 input FeedItemInput {
-  title: String!
+  title: String
 
-  markdown: Markdown!
+  markdown: Markdown
 }
 
 input SessionOrderBy {
