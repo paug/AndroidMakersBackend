@@ -3,13 +3,10 @@
 package androidmakers.service.graphql
 
 import androidmakers.service.Sessionize
-import androidmakers.service.context.AuthenticationContext
-import androidmakers.service.context.bookmarksKeyFactory
-import androidmakers.service.context.datastore
-import androidmakers.service.context.uid
-import androidmakers.service.context.updateMaxAge
-import com.apollographql.apollo.annotations.*
+import androidmakers.service.context.*
+import com.apollographql.apollo.annotations.ApolloExperimental
 import com.apollographql.apollo.api.ExecutionContext
+import com.apollographql.apollo.api.Optional
 import com.apollographql.apollo.execution.StringCoercing
 import com.apollographql.execution.annotation.GraphQLDefault
 import com.apollographql.execution.annotation.GraphQLMutation
@@ -19,8 +16,11 @@ import com.google.cloud.datastore.BooleanValue
 import com.google.cloud.datastore.Cursor
 import com.google.cloud.datastore.Entity
 import com.google.cloud.datastore.Query
-import com.google.rpc.context.AttributeContext
+import com.google.cloud.datastore.StructuredQuery
+import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDateTime
+import kotlinx.datetime.toInstant
+import kotlin.time.Clock
 
 const val KIND_BOOKMARKS = "Bookmarks"
 const val KIND_FEED_ITEMS = "FeedItems"
@@ -35,11 +35,11 @@ typealias Markdown = String
 typealias ID = String
 
 class FeedItemInput(
-    val title: String,
-    val markdown: Markdown
+    val title: Optional<String?>,
+    val markdown: Optional<Markdown?>,
 )
 
-internal val adminEmails = setOf("martinbonninandroid@gmail.com", "reno.mathieu@gmail.com")
+internal val adminUids = setOf("AY7jNYS4EpNhRHBxW89LjomGCtl1")
 
 sealed interface FeedItemResult
 
@@ -50,6 +50,7 @@ data class FeedItemSuccess(
 
 class FeedItem(
     val id: ID,
+    val createdAt: GraphQLInstant,
     val title: String,
     val markdown: Markdown
 )
@@ -57,25 +58,61 @@ class FeedItem(
 @GraphQLMutation
 class RootMutation {
     fun updateFeedItem(executionContext: ExecutionContext, id: ID, feedItem: FeedItemInput): FeedItemResult {
-        TODO()
-    }
-    fun addFeedItem(executionContext: ExecutionContext, feedItem: FeedItemInput): FeedItemResult {
         val authenticationContext = executionContext.get(AuthenticationContext)!!
-        val email = authenticationContext.email
-        check(email != null) {
-            "Adding to the feed requires authentication"
+        if (authenticationContext.uid !in adminUids) {
+            throw Error("Only admins can add feed items")
         }
 
-        if (email !in adminEmails) {
+        val datastore = executionContext.datastore()
+        val key = datastore.newKeyFactory().setKind(KIND_FEED_ITEMS).newKey(id.toLong())
+        val entity = datastore.get(key)
+        if (entity == null) {
+            return FeedItemFailure("No item found for id $id")
+        }
+        val updatedEntity = Entity.newBuilder(entity)
+            .apply {
+                if (feedItem.title.getOrNull() != null) {
+                    set("title", feedItem.title.getOrThrow())
+                }
+                if (feedItem.markdown.getOrNull() != null) {
+                    set("markdown", feedItem.markdown.getOrThrow())
+                }
+            }
+            .build()
+
+        val newEntity = datastore.put(updatedEntity)
+
+        return FeedItemSuccess(
+            FeedItem(
+                id = id,
+                title = newEntity.getString("title"),
+                markdown = newEntity.getString("markdown"),
+                createdAt = Instant.parse(newEntity.getString("createdAt"))
+            )
+        )
+    }
+
+    fun addFeedItem(executionContext: ExecutionContext, feedItem: FeedItemInput): FeedItemResult {
+        val authenticationContext = executionContext.get(AuthenticationContext)!!
+        if (authenticationContext.uid !in adminUids) {
             throw Error("Only admins can add feed items")
         }
 
         val datastore = executionContext.datastore()
 
+        check(feedItem.title.getOrNull() != null) {
+           "title is required"
+        }
+        check(feedItem.markdown.getOrNull() != null) {
+            "markdown is required"
+        }
         val key = datastore.newKeyFactory().setKind(KIND_FEED_ITEMS).newKey()
+        val now = Clock.System.now()
+
         val entity = Entity.newBuilder(key)!!
-            .set("title", feedItem.title)
-            .set("markdown", feedItem.markdown)
+            .set("title", feedItem.title.getOrThrow())
+            .set("markdown", feedItem.markdown.getOrThrow())
+            .set("createdAt", now.toString())
             .build()
 
         val result = datastore.runInTransaction {
@@ -84,9 +121,10 @@ class RootMutation {
 
         return FeedItemSuccess(
             FeedItem(
-                id = result.key.toString(),
-                title = feedItem.title,
-                markdown = feedItem.markdown
+                id = result.key.id.toString(),
+                title = result.getString("title"),
+                markdown = result.getString("markdown"),
+                createdAt = result.getString("createdAt").toInstant()
             )
         )
     }
@@ -298,6 +336,7 @@ class RootQuery {
 
         val query = Query.newEntityQueryBuilder()
             .setKind(KIND_FEED_ITEMS)
+            .addOrderBy(StructuredQuery.OrderBy.desc("createdAt"))
             .setLimit(first)
             .apply {
               if (after != null) {
@@ -312,9 +351,10 @@ class RootQuery {
         results.forEach { entity ->
             allItems.add(
                 FeedItem(
-                    id = entity.key.toString(),
+                    id = entity.key.id.toString(),
                     title = entity.getString("title"),
-                    markdown = entity.getString("markdown")
+                    markdown = entity.getString("markdown"),
+                    createdAt = entity.getString("createdAt").toInstant(),
                 )
             )
         }
@@ -333,13 +373,12 @@ class RootQuery {
         if (authenticationContext.uid == null) {
             return null
         }
-        return User(id = authenticationContext.uid, email = authenticationContext.email!!, isAdmin = authenticationContext.email in adminEmails)
+        return User(id = authenticationContext.uid, isAdmin = authenticationContext.uid in adminUids)
     }
 }
 
 class User(
     val id: String,
-    val email: String,
     val isAdmin: Boolean
 )
 

@@ -62,3 +62,4 @@ object GraphQLLocalDateTimeCoercing : Coercing<LocalDateTime> {
         return internalValue.toString()
     }
 }
+

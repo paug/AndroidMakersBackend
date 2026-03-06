@@ -31,6 +31,7 @@ tasks.register("run", JavaExec::class.java) {
     classpath(configurations.getByName("runtimeClasspath"))
     classpath(kotlin.target.compilations.getByName("main").output.classesDirs)
     mainClass.set("androidmakers.service.MainKt")
+    debug = true
 }
 
 configureDeploy("service", "androidmakers.service.MainKt")
