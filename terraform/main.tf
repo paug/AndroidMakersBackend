@@ -227,7 +227,7 @@ resource "google_artifact_registry_repository" "service-images" {
 
 resource "google_service_account" "cloudrun_service_identity" {
   provider = google-beta
-  account_id = "my-service-account"
+  account_id = "cloud-run-service-account"
 }
 
 resource "google_cloud_run_v2_service" "service" {
