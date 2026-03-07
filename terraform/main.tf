@@ -230,6 +230,11 @@ resource "google_service_account" "cloudrun_service_identity" {
   account_id = "cloud-run-service-account"
 }
 
+import {
+  id = "projects/androidmakers-a6883/serviceAccounts/cloud-run-service-account@androidmakers-a6883.iam.gserviceaccount.com"
+  to = google_service_account.cloudrun_service_identity
+}
+
 resource "google_cloud_run_v2_service" "service" {
   name     = "service"
   provider = google-beta
