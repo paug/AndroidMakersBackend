@@ -59,6 +59,10 @@ type Conference {
   themeColor: String
 }
 
+type FeatureFlags {
+  feed: Boolean!
+}
+
 type FeedItem {
   id: ID!
 
@@ -136,6 +140,8 @@ type RootMutation {
 }
 
 type RootQuery {
+  featureFlags: FeatureFlags!
+
   rooms: [Room!]!
 
   sessions(first: Int! = 10, after: String = null, orderBy: SessionOrderBy! = {
