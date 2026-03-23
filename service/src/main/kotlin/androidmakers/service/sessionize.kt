@@ -129,50 +129,39 @@ object Sessionize {
                             name = "RevenueCat",
                             logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/revenuecat.png",
                             logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/revenuecat_dark.png",
-                            url = "https://www.revenuecat.com"
-                        )
+                            url = "https://www.revenuecat.com/for-developers/"
+                        ),
+                        Partner(
+                            name = "Stripe",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/stripe.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/stripe_dark.png",
+                            url = "https://stripe.com/"
+                        ),
+                        Partner(
+                            name = "Trade Republic",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/traderepublic.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/traderepublic_dark.png",
+                            url = "https://traderepublic.com/"
+                        ),
                     )
                 ),
                 PartnerGroup(
                     title = "silver",
                     partners = listOf(
                         Partner(
-                            name = "happn",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/happn_light.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/happn_dark.png",
-                            url = "https://www.happn.com/fr/"
+                            name = "Bitrise",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/bitrise.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/bitrise_dark.png",
+                            url = "https://bitrise.io/"
                         ),
                         Partner(
-                            name = "zimperium",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/zimperium.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/zimperium_dark.png",
-                            url = "https://www.zimperium.com/"
-                        )
-                    )
-                ),
-                PartnerGroup(
-                    title = "bronze",
-                    partners = listOf(
-                        Partner(
-                            name = "appvestor",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/appvestor.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/appvestor_dark.png",
-                            url = "https://appvestor.com/"
+                            name = "FastSpring",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/fastspring.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/fastspring_dark.png",
+                            url = "https://fastspring.com/"
                         ),
                         Partner(
-                            name = "Coyote",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/coyote_light.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/coyote_dark.png",
-                            url = "https://www.moncoyote.com/"
-                        ),
-                        Partner(
-                            name = "kotzilla",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/kotzilla.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/kotzilla_dark.png",
-                            url = "https://www.kotzilla.io/"
-                        ),
-                        Partner(
-                            name = "runway",
+                            name = "Runway",
                             logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/runway.png",
                             logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/runway_dark.png",
                             url = "https://runway.team/"
@@ -180,30 +169,133 @@ object Sessionize {
                     )
                 ),
                 PartnerGroup(
+                    title = "bronze",
+                    partners = listOf(
+                        Partner(
+                            name = "Kotzilla",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/kotzilla.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/kotzilla_dark.png",
+                            url = "https://kotzilla.io/"
+                        ),
+                        Partner(
+                            name = "Maestro",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/maestro.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/maestro_dark.png",
+                            url = "https://maestro.dev/"
+                        ),
+                        Partner(
+                            name = "Sentry",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/sentry.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/sentry_dark.png",
+                            url = "https://sentry.io/"
+                        ),
+                    )
+                ),
+                PartnerGroup(
                     title = "startup",
                     partners = listOf(
                         Partner(
-                            name = "screenshotbot",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/screenshotbot.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/screenshotbot_dark.png",
-                            url = "https://screenshotbot.io/"
-                        )
+                            name = "emulator.wtf",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/emulatorwtf.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/emulatorwtf_dark.png",
+                            url = "https://emulator.wtf/"
+                        ),
+                    )
+                ),
+                PartnerGroup(
+                    title = "content sponsor",
+                    partners = listOf(
+                        Partner(
+                            name = "Google",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/google.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/google_dark.png",
+                            url = "https://about.google.com/"
+                        ),
+                    )
+                ),
+                PartnerGroup(
+                    title = "lanyard sponsor",
+                    partners = listOf(
+                        Partner(
+                            name = "Amo",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/amo.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/amo_dark.png",
+                            url = "https://amo.co/"
+                        ),
+                    )
+                ),
+                PartnerGroup(
+                    title = "t-shirt sponsor",
+                    partners = listOf(
+                        Partner(
+                            name = "Coyote",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/coyote_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/coyote_dark.png",
+                            url = "https://www.moncoyote.com/"
+                        ),
+                    )
+                ),
+                PartnerGroup(
+                    title = "goodie bag sponsor",
+                    partners = listOf(
+                        Partner(
+                            name = "RevenueCat",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/revenuecat.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/revenuecat_dark.png",
+                            url = "https://www.revenuecat.com/for-developers/"
+                        ),
                     )
                 ),
                 PartnerGroup(
                     title = "community",
                     partners = listOf(
                         Partner(
-                            name = "Groundbreaker",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/groundbreaker.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/groundbreaker_dark.png",
-                            url = "https://groundbreaker.org/"
+                            name = "Duchess France",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/duchess_light.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/duchess_dark.png",
+                            url = "https://www.duchess-france.fr/"
                         ),
                         Partner(
-                            name = "leboncointech",
+                            name = "GDG Bordeaux",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/gdg_bordeaux.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/gdg_bordeaux_dark.png",
+                            url = "https://gdg.community.dev/gdg-bordeaux/"
+                        ),
+                        Partner(
+                            name = "GDG Le Mans",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/gdg_lemans.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/gdg_lemans_dark.png",
+                            url = "https://gdg.community.dev/gdg-le-mans/"
+                        ),
+                        Partner(
+                            name = "GDG Paris",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/gdg_paris.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/gdg_paris_dark.png",
+                            url = "https://gdg.community.dev/gdg-paris/"
+                        ),
+                        Partner(
+                            name = "GDG Sophia Antipolis",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/gdg_sophia.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/gdg_sophia_dark.png",
+                            url = "https://gdg.community.dev/gdg-sophia-antipolis/"
+                        ),
+                        Partner(
+                            name = "Ladies of Code Paris",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/ladiesofcode.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/ladiesofcode_dark.png",
+                            url = "https://ladiesofcodeparis.netlify.app/"
+                        ),
+                        Partner(
+                            name = "leboncoin tech",
                             logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/leboncoin.png",
                             logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/leboncoin_dark.png",
-                            url = "https://medium.com/leboncoin-tech-blog"
+                            url = "https://leboncoincorporate.com/equipes-tech/"
+                        ),
+                        Partner(
+                            name = "PAUG",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/paug.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/paug_dark.png",
+                            url = "https://paug.fr/"
                         ),
                         Partner(
                             name = "stickermule",
@@ -215,48 +307,30 @@ object Sessionize {
                             name = "WomenTechMakers",
                             logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/womentechmakers.png",
                             logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/womentechmakers_dark.png",
-                            url = "https://www.linkedin.com/company/womentechmakers/"
+                            url = "https://www.technovation.org/women-techmakers/"
                         ),
-                        Partner(
-                            name = "Duchess France",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/duchess_light.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/duchess_dark.png",
-                            url = "https://www.duchess-france.fr"
-                        )
                     )
                 ),
                 PartnerGroup(
                     title = "speaker sponsors",
                     partners = listOf(
                         Partner(
-                            name = "AUTHADA",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/authada_light.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/authada_dark.png",
-                            url = "https://groundbreaker.org/"
+                            name = "Almaviva",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/almaviva.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/almaviva_dark.png",
+                            url = "https://www.almaviva.it/"
                         ),
                         Partner(
-                            name = "axa",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/axa.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/axa.png",
-                            url = "https://axa.fr"
+                            name = "GetYourGuide",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/getyourguide.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/getyourguide_dark.png",
+                            url = "https://www.getyourguide.careers/"
                         ),
                         Partner(
-                            name = "Deezer",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/deezer_light.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/deezer_dark.png",
-                            url = "https://www.deezer.com/fr/"
-                        ),
-                        Partner(
-                            name = "frog",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/frog_light.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/frog_dark.png",
-                            url = "https://www.frog.co/"
-                        ),
-                        Partner(
-                            name = "Gradle",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/gradle_light.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/gradle_dark.png",
-                            url = "https://gradle.com/"
+                            name = "Infomaniak",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/infomaniak.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/infomaniak_dark.png",
+                            url = "https://www.infomaniak.com/"
                         ),
                         Partner(
                             name = "JetBrains",
@@ -265,22 +339,22 @@ object Sessionize {
                             url = "https://www.jetbrains.com/"
                         ),
                         Partner(
-                            name = "nevis",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/nevis_light.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/nevis_dark.png",
-                            url = "https://www.nevis.net/"
+                            name = "Novibet",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/novibet.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/novibet_dark.png",
+                            url = "https://www.novibet.com/"
                         ),
                         Partner(
-                            name = "Theodo apps",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/theodo_light.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/theodo_dark.png",
-                            url = "https://apps.theodo.com/"
+                            name = "Pictarine",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/pictarine.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/pictarine_dark.png",
+                            url = "https://pictarine.com/"
                         ),
                         Partner(
-                            name = "yubico",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/yubico.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/yubico.png",
-                            url = "https://www.yubico.com/"
+                            name = "Skroutz",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/skroutz.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/skroutz_dark.png",
+                            url = "https://corporate.skroutz.gr/en/"
                         ),
                     )
                 )
