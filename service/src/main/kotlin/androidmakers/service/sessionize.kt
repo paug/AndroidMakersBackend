@@ -139,8 +139,8 @@ object Sessionize {
                         ),
                         Partner(
                             name = "Trade Republic",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/traderepublic.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/traderepublic_dark.png",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/trade_republic.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/trade_republic_dark.png",
                             url = "https://traderepublic.com/"
                         ),
                     )
@@ -156,8 +156,8 @@ object Sessionize {
                         ),
                         Partner(
                             name = "FastSpring",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/fastspring.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/fastspring_dark.png",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/fast_spring.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/fast_spring_dark.png",
                             url = "https://fastspring.com/"
                         ),
                         Partner(
@@ -196,8 +196,8 @@ object Sessionize {
                     partners = listOf(
                         Partner(
                             name = "emulator.wtf",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/emulatorwtf.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/emulatorwtf_dark.png",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/emulator_wtf.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/emulator_wtf_dark.png",
                             url = "https://emulator.wtf/"
                         ),
                     )
@@ -251,7 +251,7 @@ object Sessionize {
                     partners = listOf(
                         Partner(
                             name = "Duchess France",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/duchess_light.png",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/duchess.png",
                             logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/duchess_dark.png",
                             url = "https://www.duchess-france.fr/"
                         ),
@@ -263,8 +263,8 @@ object Sessionize {
                         ),
                         Partner(
                             name = "GDG Le Mans",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/gdg_lemans.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/gdg_lemans_dark.png",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/gdg_le_mans.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/gdg_le_mans_dark.png",
                             url = "https://gdg.community.dev/gdg-le-mans/"
                         ),
                         Partner(
@@ -281,8 +281,8 @@ object Sessionize {
                         ),
                         Partner(
                             name = "Ladies of Code Paris",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/ladiesofcode.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/ladiesofcode_dark.png",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/ladies.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/ladies_dark.png",
                             url = "https://ladiesofcodeparis.netlify.app/"
                         ),
                         Partner(
@@ -322,8 +322,8 @@ object Sessionize {
                         ),
                         Partner(
                             name = "GetYourGuide",
-                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/getyourguide.png",
-                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/getyourguide_dark.png",
+                            logoUrl = "https://storage.googleapis.com/androidmakers-static/partners/get_your_guide.png",
+                            logoUrlDark = "https://storage.googleapis.com/androidmakers-static/partners/get_your_guide_dark.png",
                             url = "https://www.getyourguide.careers/"
                         ),
                         Partner(
