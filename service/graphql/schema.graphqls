@@ -61,6 +61,8 @@ type Conference {
 
 type FeatureFlags {
   feed: Boolean!
+
+  venue: Boolean!
 }
 
 type FeedItem {

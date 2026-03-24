@@ -209,12 +209,13 @@ class RootMutation {
 }
 
 class FeatureFlags(
-    val feed: Boolean
+    val feed: Boolean,
+    val venue: Boolean,
 )
 
 @GraphQLQuery
 class RootQuery {
-    fun featureFlags(): FeatureFlags = FeatureFlags(true)
+    fun featureFlags(): FeatureFlags = FeatureFlags(true, true)
 
     fun rooms(): List<Room> {
         return Sessionize.data().rooms
