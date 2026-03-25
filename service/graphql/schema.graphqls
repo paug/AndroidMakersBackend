@@ -3,16 +3,16 @@ schema {
   mutation: RootMutation
 }
 
+scalar ID
+
 """
  A type representing a formatted kotlinx.datetime.Instant
 """
-scalar GraphQLInstant
+scalar Instant
 
-scalar GraphQLLocalDate
+scalar LocalDate
 
-scalar GraphQLLocalDateTime
-
-scalar ID
+scalar LocalDateTime
 
 """
  A Markdown string as described by https://spec.commonmark.org
@@ -62,7 +62,7 @@ type Conference {
 
   timezone: String!
 
-  days: [GraphQLLocalDate!]!
+  days: [LocalDate!]!
 
   themeColor: String
 }
@@ -78,7 +78,7 @@ type FeedItem {
 
   type: FeedItemType!
 
-  createdAt: GraphQLInstant!
+  createdAt: Instant!
 
   title: String!
 
@@ -217,9 +217,9 @@ type Session implements Node {
 
   tags: [String!]!
 
-  startsAt: GraphQLLocalDateTime!
+  startsAt: LocalDateTime!
 
-  endsAt: GraphQLLocalDateTime!
+  endsAt: LocalDateTime!
 
   complexity: String
 
