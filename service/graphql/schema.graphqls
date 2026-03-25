@@ -82,7 +82,7 @@ type FeedItem {
 
   title: String!
 
-  markdown: Markdown!
+  body: Markdown!
 }
 
 type FeedItemFailure {
@@ -336,7 +336,7 @@ input ConferenceOrderBy {
 input FeedItemInput {
   title: String
 
-  markdown: Markdown
+  body: Markdown
 }
 
 input SessionOrderBy {

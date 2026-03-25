@@ -36,7 +36,7 @@ typealias ID = String
 
 class FeedItemInput(
     val title: Optional<String?>,
-    val markdown: Optional<Markdown?>,
+    val body: Optional<Markdown?>,
 )
 
 internal val adminUids = setOf("AY7jNYS4EpNhRHBxW89LjomGCtl1")
@@ -59,7 +59,7 @@ class FeedItem(
     val type: FeedItemType,
     val createdAt: GraphQLInstant,
     val title: String,
-    val markdown: Markdown
+    val body: Markdown
 )
 
 @GraphQLMutation
@@ -81,8 +81,8 @@ class RootMutation {
                 if (feedItem.title.getOrNull() != null) {
                     set("title", feedItem.title.getOrThrow())
                 }
-                if (feedItem.markdown.getOrNull() != null) {
-                    set("markdown", feedItem.markdown.getOrThrow())
+                if (feedItem.body.getOrNull() != null) {
+                    set("body", feedItem.body.getOrThrow())
                 }
             }
             .build()
@@ -93,7 +93,7 @@ class RootMutation {
             FeedItem(
                 id = id,
                 title = newEntity.getString("title"),
-                markdown = newEntity.getString("markdown"),
+                body = newEntity.getString("body"),
                 createdAt = Instant.parse(newEntity.getString("createdAt")),
                 type = newEntity.getString("type").toFeedItemType() ?: FeedItemType.INFO
             )
@@ -111,7 +111,7 @@ class RootMutation {
         check(feedItem.title.getOrNull() != null) {
            "title is required"
         }
-        check(feedItem.markdown.getOrNull() != null) {
+        check(feedItem.body.getOrNull() != null) {
             "markdown is required"
         }
         val key = datastore.newKeyFactory().setKind(KIND_FEED_ITEMS).newKey()
@@ -119,7 +119,7 @@ class RootMutation {
 
         val entity = Entity.newBuilder(key)!!
             .set("title", feedItem.title.getOrThrow())
-            .set("markdown", feedItem.markdown.getOrThrow())
+            .set("body", feedItem.body.getOrThrow())
             .set("createdAt", now.toString())
             .build()
 
@@ -131,7 +131,7 @@ class RootMutation {
             FeedItem(
                 id = result.key.id.toString(),
                 title = result.getString("title"),
-                markdown = result.getString("markdown"),
+                body = result.getString("body"),
                 createdAt = result.getString("createdAt").toInstant(),
                 type = result.getString("type").toFeedItemType() ?: FeedItemType.INFO
             )
@@ -368,7 +368,7 @@ class RootQuery {
                 FeedItem(
                     id = entity.key.id.toString(),
                     title = entity.getString("title"),
-                    markdown = entity.getString("markdown"),
+                    body = entity.getString("body"),
                     createdAt = entity.getString("createdAt").toInstant(),
                     type = entity.getString("type")?.toFeedItemType() ?: FeedItemType.INFO
                 )
