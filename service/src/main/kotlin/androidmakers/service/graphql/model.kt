@@ -24,6 +24,7 @@ import kotlin.time.Clock
 
 const val KIND_BOOKMARKS = "Bookmarks"
 const val KIND_FEED_ITEMS = "FeedItems"
+const val KIND_REVIEW = "Ratings"
 
 /**
  * A Markdown string as described by https://spec.commonmark.org
@@ -49,10 +50,10 @@ enum class FeedItemType {
     ANNOUNCEMENT
 }
 
-data class FeedItemFailure(val message: String = "Something wrong happened"): FeedItemResult
+data class FeedItemFailure(val message: String = "Something wrong happened") : FeedItemResult
 data class FeedItemSuccess(
     val feedItem: FeedItem
-): FeedItemResult
+) : FeedItemResult
 
 class FeedItem(
     val id: ID,
@@ -62,8 +63,59 @@ class FeedItem(
     val body: Markdown
 )
 
+enum class Rating {
+    Disappointed,
+    Neutral,
+    Happy
+}
+
+class ReviewInput(
+    val id: ID,
+    val rating: Rating,
+    val comment: Markdown
+)
+
+sealed interface ReviewResult
+
+data class ReviewFailure(val message: String = "Something wrong happened") : ReviewResult
+data class ReviewSuccess(
+    val review: Review
+) : ReviewResult
+
+class Review(
+    val id: ID,
+    val rating: Rating,
+    val comment: Markdown
+)
+
 @GraphQLMutation
 class RootMutation {
+    fun upsertReview(executionContext: ExecutionContext, review: ReviewInput): ReviewResult {
+        val datastore = executionContext.datastore()
+        val key = datastore.newKeyFactory().setKind(KIND_REVIEW).newKey(review.id)
+        val entity = datastore.get(key)
+        val builder = if (entity == null) {
+            val key = datastore.newKeyFactory().setKind(KIND_REVIEW).newKey(review.id)
+            Entity.newBuilder(key)
+        } else {
+            Entity.newBuilder(entity)
+        }
+        builder.apply {
+            set("rating", review.rating.name)
+            set("comment", review.comment)
+        }
+
+        val newEntity = datastore.put(builder.build())
+
+        return ReviewSuccess(
+            Review(
+                id = review.id,
+                rating = Rating.valueOf(newEntity.getString("rating")),
+                comment = newEntity.getString("comment"),
+            )
+        )
+    }
+
     fun updateFeedItem(executionContext: ExecutionContext, id: ID, feedItem: FeedItemInput): FeedItemResult {
         val authenticationContext = executionContext.get(AuthenticationContext)!!
         if (authenticationContext.uid !in adminUids) {
@@ -109,7 +161,7 @@ class RootMutation {
         val datastore = executionContext.datastore()
 
         check(feedItem.title.getOrNull() != null) {
-           "title is required"
+            "title is required"
         }
         check(feedItem.body.getOrNull() != null) {
             "markdown is required"
@@ -226,6 +278,21 @@ class FeatureFlags(
 class RootQuery {
     fun featureFlags(): FeatureFlags = FeatureFlags(true, true)
 
+    fun review(executionContext: ExecutionContext, id: ID): Review? {
+        val datastore = executionContext.datastore()
+        val key = datastore.newKeyFactory().setKind(KIND_REVIEW).newKey(id)
+        val entity = datastore.get(key)
+        if (entity == null) {
+            return null
+        }
+        return Review(
+            id = id,
+            rating = Rating.valueOf(entity.getString("rating")),
+            comment = entity.getString("comment"),
+        )
+
+    }
+
     fun rooms(): List<Room> {
         return Sessionize.data().rooms
     }
@@ -235,18 +302,18 @@ class RootQuery {
         @GraphQLDefault("null") after: String?,
         @GraphQLDefault("{field: STARTS_AT, direction: ASCENDING}") orderBy: SessionOrderBy
     ): SessionConnection {
-        var sessions =  Sessionize.data().sessions
+        var sessions = Sessionize.data().sessions
 
         when (orderBy.direction) {
-                OrderByDirection.ASCENDING -> {
-                    when (orderBy.field) {
-                        SessionField.STARTS_AT -> {
-                            sessions = sessions.sortedBy {
-                                it.startsAt
-                            }
+            OrderByDirection.ASCENDING -> {
+                when (orderBy.field) {
+                    SessionField.STARTS_AT -> {
+                        sessions = sessions.sortedBy {
+                            it.startsAt
                         }
                     }
                 }
+            }
 
             OrderByDirection.DESCENDING -> {
                 when (orderBy.field) {
@@ -264,7 +331,7 @@ class RootQuery {
         }
     }
 
-    private fun <T: Node, C> List<T>.splice(first: Int, after: String?, block: (List<T>, PageInfo) -> C): C {
+    private fun <T : Node, C> List<T>.splice(first: Int, after: String?, block: (List<T>, PageInfo) -> C): C {
         var i = 0
         if (after != null) {
             i = indexOfFirst { it.id == after }
@@ -300,7 +367,7 @@ class RootQuery {
     }
 
     fun venue(id: String): Venue {
-        return Sessionize.data().venues.first { it.id == id}
+        return Sessionize.data().venues.first { it.id == id }
     }
 
     fun venues(): List<Venue> {
@@ -354,9 +421,9 @@ class RootQuery {
             .addOrderBy(StructuredQuery.OrderBy.desc("createdAt"))
             .setLimit(first)
             .apply {
-              if (after != null) {
-                  setStartCursor(Cursor.fromUrlSafe(after))
-              }
+                if (after != null) {
+                    setStartCursor(Cursor.fromUrlSafe(after))
+                }
             }
             .build()
 
@@ -403,7 +470,7 @@ class FeedItemsConnection(
     val pageInfo: PageInfo
 )
 
-class  BookmarkConnection(
+class BookmarkConnection(
     val nodes: List<Session>
 )
 
@@ -457,7 +524,7 @@ data class PageInfo(
     val hasNextPage: Boolean = true
 )
 
-enum class  LinkType {
+enum class LinkType {
     YouTube,
     Audio,
     AudioUncompressed,
@@ -505,7 +572,7 @@ data class Session(
      */
     val type: String,
     val links: List<Link>
-): Node {
+) : Node {
     fun speakers(): List<Speaker> {
         return Sessionize.data().speakers.filter { speakerIds.contains(it.id) }
     }
@@ -544,7 +611,7 @@ data class Speaker(
     val photoUrl: String?,
     val photoUrlThumbnail: String?,
     private val sessionIds: List<String>,
-): Node {
+) : Node {
     fun sessions(): List<Session> {
         return Sessionize.data().sessions.filter {
             sessionIds.contains(it.id)
@@ -637,7 +704,7 @@ data class Conference(
 private fun String.toFeedItemType(): FeedItemType? {
     return try {
         FeedItemType.valueOf(this)
-    } catch (_: Exception){
+    } catch (_: Exception) {
         println("Unknown feed item type: $this")
         null
     }
