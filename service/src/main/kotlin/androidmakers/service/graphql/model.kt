@@ -278,6 +278,9 @@ class FeatureFlags(
 class RootQuery {
     fun featureFlags(): FeatureFlags = FeatureFlags(true, true)
 
+    /**
+     * @return null if the Feedback isn't found.
+     */
     fun feedback(executionContext: ExecutionContext, id: ID): Feedback? {
         val datastore = executionContext.datastore()
         val key = datastore.newKeyFactory().setKind(KIND_FEEDBACK).newKey(id)
