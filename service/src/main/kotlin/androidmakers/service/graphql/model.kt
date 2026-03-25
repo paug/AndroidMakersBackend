@@ -24,7 +24,7 @@ import kotlin.time.Clock
 
 const val KIND_BOOKMARKS = "Bookmarks"
 const val KIND_FEED_ITEMS = "FeedItems"
-const val KIND_REVIEW = "Reviews"
+const val KIND_FEEDBACK = "Feedback"
 
 /**
  * A Markdown string as described by https://spec.commonmark.org
@@ -69,20 +69,20 @@ enum class Rating {
     Happy
 }
 
-class ReviewInput(
+class FeedbackInput(
     val id: ID,
     val rating: Rating,
     val comment: Markdown
 )
 
-sealed interface ReviewResult
+sealed interface FeedbackResult
 
-data class ReviewFailure(val message: String = "Something wrong happened") : ReviewResult
-data class ReviewSuccess(
-    val review: Review
-) : ReviewResult
+data class FeedbackFailure(val message: String = "Something wrong happened") : FeedbackResult
+data class FeedbackSuccess(
+    val feedback: Feedback
+) : FeedbackResult
 
-class Review(
+class Feedback(
     val id: ID,
     val rating: Rating,
     val comment: Markdown
@@ -90,26 +90,26 @@ class Review(
 
 @GraphQLMutation
 class RootMutation {
-    fun upsertReview(executionContext: ExecutionContext, review: ReviewInput): ReviewResult {
+    fun upsertFeedback(executionContext: ExecutionContext, feedback: FeedbackInput): FeedbackResult {
         val datastore = executionContext.datastore()
-        val key = datastore.newKeyFactory().setKind(KIND_REVIEW).newKey(review.id)
+        val key = datastore.newKeyFactory().setKind(KIND_FEEDBACK).newKey(feedback.id)
         val entity = datastore.get(key)
         val builder = if (entity == null) {
-            val key = datastore.newKeyFactory().setKind(KIND_REVIEW).newKey(review.id)
+            val key = datastore.newKeyFactory().setKind(KIND_FEEDBACK).newKey(feedback.id)
             Entity.newBuilder(key)
         } else {
             Entity.newBuilder(entity)
         }
         builder.apply {
-            set("rating", review.rating.name)
-            set("comment", review.comment)
+            set("rating", feedback.rating.name)
+            set("comment", feedback.comment)
         }
 
         val newEntity = datastore.put(builder.build())
 
-        return ReviewSuccess(
-            Review(
-                id = review.id,
+        return FeedbackSuccess(
+            Feedback(
+                id = feedback.id,
                 rating = Rating.valueOf(newEntity.getString("rating")),
                 comment = newEntity.getString("comment"),
             )
@@ -278,14 +278,14 @@ class FeatureFlags(
 class RootQuery {
     fun featureFlags(): FeatureFlags = FeatureFlags(true, true)
 
-    fun review(executionContext: ExecutionContext, id: ID): Review? {
+    fun feedback(executionContext: ExecutionContext, id: ID): Feedback? {
         val datastore = executionContext.datastore()
-        val key = datastore.newKeyFactory().setKind(KIND_REVIEW).newKey(id)
+        val key = datastore.newKeyFactory().setKind(KIND_FEEDBACK).newKey(id)
         val entity = datastore.get(key)
         if (entity == null) {
             return null
         }
-        return Review(
+        return Feedback(
             id = id,
             rating = Rating.valueOf(entity.getString("rating")),
             comment = entity.getString("comment"),

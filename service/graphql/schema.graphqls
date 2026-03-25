@@ -107,6 +107,22 @@ type FeedItemsConnection {
   pageInfo: PageInfo!
 }
 
+type Feedback {
+  id: ID!
+
+  rating: Rating!
+
+  comment: Markdown!
+}
+
+type FeedbackFailure {
+  message: String!
+}
+
+type FeedbackSuccess {
+  feedback: Feedback!
+}
+
 type Link {
   type: LinkType!
 
@@ -136,22 +152,6 @@ type PartnerGroup {
   partners: [Partner!]!
 }
 
-type Review {
-  id: ID!
-
-  rating: Rating!
-
-  comment: Markdown!
-}
-
-type ReviewFailure {
-  message: String!
-}
-
-type ReviewSuccess {
-  review: Review!
-}
-
 type Room {
   id: String!
 
@@ -161,7 +161,7 @@ type Room {
 }
 
 type RootMutation {
-  upsertReview(review: ReviewInput!): ReviewResult!
+  upsertFeedback(feedback: FeedbackInput!): FeedbackResult!
 
   updateFeedItem(id: ID!, feedItem: FeedItemInput!): FeedItemResult!
 
@@ -180,7 +180,7 @@ type RootMutation {
 type RootQuery {
   featureFlags: FeatureFlags!
 
-  review(id: ID!): Review
+  feedback(id: ID!): Feedback
 
   rooms: [Room!]!
 
@@ -355,7 +355,7 @@ interface Node {
 
 union FeedItemResult = FeedItemFailure|FeedItemSuccess
 
-union ReviewResult = ReviewFailure|ReviewSuccess
+union FeedbackResult = FeedbackFailure|FeedbackSuccess
 
 input ConferenceOrderBy {
   field: ConferenceField!
@@ -369,7 +369,7 @@ input FeedItemInput {
   body: Markdown
 }
 
-input ReviewInput {
+input FeedbackInput {
   id: ID!
 
   rating: Rating!
