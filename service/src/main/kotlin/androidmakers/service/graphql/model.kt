@@ -24,7 +24,7 @@ import kotlin.time.Clock
 
 const val KIND_BOOKMARKS = "Bookmarks"
 const val KIND_FEED_ITEMS = "FeedItems"
-const val KIND_REVIEW = "Ratings"
+const val KIND_REVIEW = "Reviews"
 
 /**
  * A Markdown string as described by https://spec.commonmark.org
