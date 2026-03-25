@@ -23,6 +23,14 @@ enum ConferenceField {
   DAYS
 }
 
+enum FeedItemType {
+  INFO
+
+  ALERT
+
+  ANNOUNCEMENT
+}
+
 enum LinkType {
   YouTube
 
@@ -67,6 +75,8 @@ type FeatureFlags {
 
 type FeedItem {
   id: ID!
+
+  type: FeedItemType!
 
   createdAt: GraphQLInstant!
 

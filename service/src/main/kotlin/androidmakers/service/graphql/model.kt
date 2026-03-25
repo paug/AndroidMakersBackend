@@ -43,6 +43,12 @@ internal val adminUids = setOf("AY7jNYS4EpNhRHBxW89LjomGCtl1")
 
 sealed interface FeedItemResult
 
+enum class FeedItemType {
+    INFO,
+    ALERT,
+    ANNOUNCEMENT
+}
+
 data class FeedItemFailure(val message: String = "Something wrong happened"): FeedItemResult
 data class FeedItemSuccess(
     val feedItem: FeedItem
@@ -50,6 +56,7 @@ data class FeedItemSuccess(
 
 class FeedItem(
     val id: ID,
+    val type: FeedItemType,
     val createdAt: GraphQLInstant,
     val title: String,
     val markdown: Markdown
@@ -87,7 +94,8 @@ class RootMutation {
                 id = id,
                 title = newEntity.getString("title"),
                 markdown = newEntity.getString("markdown"),
-                createdAt = Instant.parse(newEntity.getString("createdAt"))
+                createdAt = Instant.parse(newEntity.getString("createdAt")),
+                type = newEntity.getString("type").toFeedItemType() ?: FeedItemType.INFO
             )
         )
     }
@@ -124,7 +132,8 @@ class RootMutation {
                 id = result.key.id.toString(),
                 title = result.getString("title"),
                 markdown = result.getString("markdown"),
-                createdAt = result.getString("createdAt").toInstant()
+                createdAt = result.getString("createdAt").toInstant(),
+                type = result.getString("type").toFeedItemType() ?: FeedItemType.INFO
             )
         )
     }
@@ -361,6 +370,7 @@ class RootQuery {
                     title = entity.getString("title"),
                     markdown = entity.getString("markdown"),
                     createdAt = entity.getString("createdAt").toInstant(),
+                    type = entity.getString("type")?.toFeedItemType() ?: FeedItemType.INFO
                 )
             )
         }
@@ -623,3 +633,12 @@ data class Conference(
     val days: List<GraphQLLocalDate>,
     val themeColor: String? = null
 )
+
+private fun String.toFeedItemType(): FeedItemType? {
+    return try {
+        FeedItemType.valueOf(this)
+    } catch (_: Exception){
+        println("Unknown feed item type: $this")
+        null
+    }
+}
