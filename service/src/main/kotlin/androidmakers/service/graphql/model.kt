@@ -276,7 +276,7 @@ class FeatureFlags(
 
 @GraphQLQuery
 class RootQuery {
-    fun featureFlags(): FeatureFlags = FeatureFlags(feed = true, venue = true)
+    fun featureFlags(): FeatureFlags = FeatureFlags(feed = false, venue = true)
 
     /**
      * @return null if the Feedback isn't found.
